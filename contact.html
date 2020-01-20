@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formant - Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/navigation.css">
+    <link rel="stylesheet" href="/contact.css">
+    
+  </head>  
+  <body>   
+    
+  <!--This here is muh' navigation bar.-->
+  <header>     
+    <div class="headerBox">      
+      <!--Tylers' Nav section-->
+      <a href="index.html"><div class="homeLabel smallShadows" id="homeLabel">Home</div></a>
+      
+      <a href="contact.html"><div class="contLabel smallShadows" id="contLabel">Contact Us</div></a> 
+    
+    <!--Gemmas' Nav section-->          
+      <div id="header">
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <div class="textBoxLeft smallShadows">
+              <div class="leftBoxTitle">Title left</div></div>
+            <div class="clickLay2"  onclick="closeNav()"> </div>
+            <a href="index.html"><li>Home</li></a>
+            
+            <a href="contact.html"><li>Contact</li></a>
+          </div>
+        </div>      
+      <div class="clickLay" onclick="openNav()"></div>      
+        </div>
+    </div>
+  </header>
+    
+  <!--The general body of the page after navigation starts here-->
+  <div class="titleBox smallShadows" id="homeTitle">Formant</div>
+
+  <div class="textBoxCentre boxShadows" id="woah"><div class="centreBoxTitle">Contact Us</div>
+  You can contact me here 
+  <!--start of contact form-->
+  <div class="contactBox">
+    <form action="mailto:t.johnstonkent233@mybvc.ca" method="post" enctype="text/plain">
+      <fieldset style="width:0px">
+      <legend>Contact Us:</legend>
+        <label for="subject">Subject:</label>
+        <br>
+        <input type="text" id="subject" name="subject" placeholder="Enter a subject.." maxlength="24">
+        <br>
+        <label for="body">Message:</label>
+        <br>
+        <textarea id="body" name="body" placeholder="Write something.." ></textarea>  	
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" 
+        placeholder="whoever@whatever.com"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">    
+        <!---->
+        <span class="validity"></span>           
+        <button id="sbmt" type="submit" value="Submit">Submit</button>
+        <button id="rst" type="reset" value="Reset">Reset</button>
+        </fieldset>
+    </form>      
+  </div>   
+  <!--end of contact form--> 
+    
+    </div>  
+    
+ <!--The footer section-->
+  <div class="bottomBox">
+    <a href="index.html">
+    <div class="iconBox1 smallShadows" id="iconBox1"><img src="https://cdn.glitch.com/6b7fc1f9-a660-4007-8547-38060690b378%2Ficons8-facebook-100.png?v=1572121968202"
+         height="42px" width="42px"></div>
+    </a>
+    <a href="index.html">
+    <div class="iconBox2 smallShadows" id="iconBox2"><img src="https://cdn.glitch.com/6b7fc1f9-a660-4007-8547-38060690b378%2Ficons8-instagram-100.png?v=1572121998189"
+         height="42px" width="42px"></div>
+    </a>
+    <div class="bottomFirstBox smallShadows">  
+      <div id="builtWith"></div>
+    </div> 
+  </div> 
+    <div id="bgimg"></div>   
+  <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>  
+  </body>
+</html>

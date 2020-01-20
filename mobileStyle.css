@@ -1,0 +1,42 @@
+@media screen and (max-width: 500px) {
+  div.titleBox  {
+    height:4vh;
+    font-size:6vw;
+  }
+  
+  div.centreBoxTitle {
+    background-color: rgba(0,0,0,1);
+    width: 100vw;
+    
+  }
+  div.textBoxCentre {
+    background-color: rgba(0,0,0,1);
+    width: 100vw;
+    left: 0vw;
+  }
+
+  div.textBoxLeft {
+  float: left;
+  left: 0vw;
+  top: 55%;
+  width: 100vw;
+  background-image: url(Resources/logo2\ blobs\ separate.png);
+  
+}
+}
+
+@media screen and (max-height: 400px) {
+  div.titleBox  {
+    height:8vh;
+    font-size:9vw;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

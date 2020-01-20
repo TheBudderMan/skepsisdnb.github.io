@@ -1,0 +1,267 @@
+
+
+
+/* CSS files add styling rules to your content */
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1em;
+  margin: 0em;
+  height: 100vh;
+  width:100vw;  
+  color: white;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+form {
+  display: inline-block;
+  margin:0;
+  padding:0;
+}
+label, button {
+  margin:0%;
+  height:15px;
+} 
+caption {  
+  border-top:1px solid;  
+  border-bottom:1px solid; 
+  border-left:1px solid;
+  border-right:1px solid;
+}
+table td, table th{
+  font-size:2vw;
+  height: 3vh;
+  text-align: center;
+  width:100%;
+  font-size:1vw;   
+  border-left:1px solid;
+  border-bottom:1px solid;  
+}
+
+/*The area for the dropdown stuff*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(255,10,10,0.4);
+  color: white;
+  padding: 0%;
+  margin: 0%;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.clickLay:hover, .dropbtn:focus {
+  background-color: rgba(240,0,0,0.4);
+}
+.clickLay2:hover {
+  background-color: rgba(140,40,250,0.4);  
+}
+.clickLay2 {
+  z-index: 9999;
+  float: top;
+  top:-11vh;
+  left:93vw;
+  position: relative;  
+  height: 2vh;
+  width: 2vw;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(200,10,10,0.3);
+}
+
+.clickLay {
+  top:1vh;
+  position: fixed;  
+  height: 3vh;
+  width: 3vw;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(200,10,10,0.3);
+}
+
+/**********************************
+*******BODY BOXES FOR PAGE*********
+***********************************/
+.textBoxRight {  
+  float: right;   
+}
+.leftBoxTitle, .rightBoxTitle {
+  height: 3vh;
+  width: 70vw;
+  color:white;
+  left: 25vw;
+  background-color: rgba(50,10,10,0.3); 
+  text-align: center;
+}
+
+.textBoxLeft {
+  float: left;
+  left: 15vw;
+  top: 55%;
+  background-image: url(Resources/logo2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.textBoxLeft, .textBoxRight {
+  text-align: center;
+  margin: 2%;
+  height: 40vh;
+  position: relative;
+  background-color: rgba(5,0,0,0.3); 
+  color:white;
+  width: 70vw;
+  top: 40%; 
+}
+.centreBoxTitle {
+  height: 3vh;
+  width: 70vw;
+  background-color: rgba(0,0,0,0.1); 
+  text-align: center;  
+}
+.textBoxCentre {
+  z-index: 900;
+  margin: 0%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  height: 60vh;
+  width: 70vw;
+  float: top;
+  top: 22vh;
+  left: 15vw;
+  text-align: center;
+}
+.titleBox {
+  text-align: center;
+  font-size: 5vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.3); 
+  float: top;  
+  height: 6vh;
+  width: 50vw;
+  top: 8%;
+  left: 25vw;  
+}
+
+
+.boxShadows {
+  box-shadow: 2px 2px 15px black;
+}
+.smallShadows {
+  box-shadow: 2px 3px 9px black;
+}
+#iconBox2 {
+  left: 10%;
+}
+
+#div1 {
+  float: left; 
+  color: skyblue;
+}
+
+#bgOv {
+  background-color: rgba(255,255,255,0.9);
+  height: 90vh;
+  width: 100vw;
+  z-index: 50;
+}
+
+#bgimg {  
+  background-image: url(Resources/wlp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+  top:0%;
+  height: 110vh;
+  width: 100vw;
+  z-index: -100;
+}
+
+/*Gemmas' CSS*/
+
+.body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.boxText {
+  color: white;
+}
+
+#main {
+  color: white;
+  text-align: center;  
+}
+
+#focal {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-style: italic;
+}
+
+.overlay {
+  height:100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  
+  /*background-color: #206a80;*/
+  background-color: rgba(10,0,20,0.7);
+  overflow-x: hidden;
+  transition: 0.5s;  
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: black;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 50px;
+}
+
+#header {
+  float: top;
+  left:92vw;
+  top:1vh;
+  position: relative;
+  z-index: 1;
+  height: 3vh;
+  width: 3vw;  
+}

@@ -1,0 +1,75 @@
+/*
+***********************************
+******HEADER AND FOOTER AREA*******
+***********************************
+*/
+ /*header area*/
+.headerBox{
+  z-index:9999;
+  background-color: rgba(0,0,0,0.2);   
+  margin:0%;
+  padding: 0%;
+  width:100%;
+  height:6vh;
+  position: fixed;
+  float: top; 
+  text-align: center;   
+}
+/*******NAVIGATION AREA********/
+.homeLabel, .contLabel, .bioLabel{
+  /*Home label for navigation bar*/
+  margin:1%;
+  position:relative;
+  font-size: 0.7em;
+  color: white;
+  background-color: rgba(50,10,110,0.3); 
+  float:left;
+  height:2.5vh;
+  width: 16vw;
+  left:0%;
+  text-align: center;   
+  top:0vh;
+}
+/******END OF NAVIGATION AREA*****/
+/*
+***********FOOTER AREA*************
+*/
+.bottomBox{
+  /*footer area*/
+  margin:0;
+  z-index:9999;
+  background-color: rgba(0,0,0,0.4); 
+  width:100%;
+  height:8vh;
+  position: fixed;
+  float:left;
+  left: 0%;
+  bottom:0%;  
+}
+
+/**/
+.bottomFirstBox{/*text on the footer*/
+  font-size:0.8em;
+  margin:0%;
+  position:fixed;
+  background-color: rgba(200,10,10,0.3); 
+  float:right;
+  height:2.5vh;
+  width: 40vw;
+  left:55vw;
+  text-align: center;   
+  bottom:3%;
+}
+
+.iconBox1, .iconBox2 {
+  padding: 0%;
+  margin: 0%;
+  height: 12vh;
+  width: 12vw; 
+  
+  text-align: center;
+  position: relative; 
+  float: left;
+  left:5%;
+  bottom: -1%;
+}
