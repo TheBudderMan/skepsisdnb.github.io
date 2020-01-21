@@ -1,7 +1,4 @@
-
-
-
-/* CSS files add styling rules to your content */
+/* General CSS for body and other shit*/
 body {
   font-family: helvetica, arial, sans-serif;
   font-size: 1em;
@@ -29,15 +26,6 @@ caption {
   border-bottom:1px solid; 
   border-left:1px solid;
   border-right:1px solid;
-}
-table td, table th{
-  font-size:2vw;
-  height: 3vh;
-  text-align: center;
-  width:100%;
-  font-size:1vw;   
-  border-left:1px solid;
-  border-bottom:1px solid;  
 }
 
 /*The area for the dropdown stuff*/
@@ -147,21 +135,23 @@ table td, table th{
   position: relative;  
   background-color: rgba(0,0,0,0.3); 
   float: top;  
-  height: 12vh;
+  height: 25vh;
   width: 80vw;
   left: 10vw;  
 }
 
 .titleimg {   
   left: 10vw;
-  top: 7vh;
+  top: 10vh;
   background-image: url(Resources/logo2.png);
-  background-size: 80vw 24vh;
+  background-size: 75vw 25vh;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;  
   z-index: 0;
 }
+
+
 
 
 .boxShadows {
