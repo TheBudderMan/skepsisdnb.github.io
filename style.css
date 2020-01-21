@@ -119,22 +119,25 @@ table td, table th{
   width: 80vw;
   top: 40%; 
 }
+
 .centreBoxTitle {
   height: 3vh;
   width: 80vw;
   background-color: rgba(0,0,0,0.1); 
   text-align: center;  
 }
+
 .textBoxCentre {
   z-index: 900;
   margin: 0%;
   position: fixed;
-  background-color: rgba(0,0,0,0.4);
-  height: 60vh;
-  width: 80vw;
+  background-color: rgba(0,0,0,1);
+  background-size: 40vw 15vh;
+  height: 28vh;
+  width: 100vw;
   float: top;
-  top: 22vh;
-  left: 10vw;
+  top: 40vh;
+  left: 0vw;
   text-align: center;
 }
 
