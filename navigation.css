@@ -60,14 +60,14 @@
   text-align: center;   
   bottom:3%;
 }
-.iconbox1 {
-  background-color: rgba(255,0,110,0.7);
+.iconBox1 {
+  background-color: rgba(125,10,10,0.3);
 }
 .iconBox2 {
-  background-color: rgba(155,100,50,0.7);
+  background-color: rgba(155,100,50,0.3);
 }
 .iconBox3 {
-  background-color: rgba(5,100,250,0.7);
+  background-color: rgba(5,100,250,0.3);
 }
 .iconBox1, .iconBox2, .iconBox3 {
   padding: 0%;

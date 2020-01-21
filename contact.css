@@ -1,0 +1,39 @@
+
+/*contact and stats alignment*/ 
+#body,#email,#date,#subject,#phone{
+  font-size:2vw;
+  height:3vh;
+  width:30vw;
+  background-color:black;
+  color:white;
+}
+#sbmt,#rst{
+  text-align: center; 
+  font-size:1vw;
+  height:3vh;
+  width:10vw;
+}
+
+.contactBox{/*places the contact form on the page in the bottomMasterBox*/
+  font-size:1.5vw;
+  right:-65vw;
+  top: -15%;
+  z-index:5500;
+  margin:0;
+  width:15%;
+  height:20vh;
+  position: relative;
+  float: top;
+  color:white;
+  text-align: center; 
+} 
+
+.cImg {
+  float: left;
+  left: 15vw;
+  top: 0%;
+  background-image: url(Resources/logo2\ blobs\ separate.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40vw 8vh;
+}
