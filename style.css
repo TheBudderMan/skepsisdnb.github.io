@@ -137,16 +137,27 @@ table td, table th{
   left: 10vw;
   text-align: center;
 }
+
 .titleBox {
   text-align: center;
   font-size: 5vh;
-  position: relative;
+  position: relative;  
   background-color: rgba(0,0,0,0.3); 
   float: top;  
-  height: 6vh;
+  height: 12vh;
   width: 80vw;
-  top: 8%;
-  left: 25vw;  
+  left: 10vw;  
+}
+
+.titleimg {   
+  left: 10vw;
+  top: 7vh;
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2FFormantTextOnly.png?v=1579567463708);
+  background-size: 80vw 24vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;  
+  z-index: 0;
 }
 
 
@@ -264,4 +275,18 @@ table td, table th{
   z-index: 1;
   height: 3vh;
   width: 3vw;  
+}
+
+
+/** FX and stuff**/
+.homeLabel:hover,
+.bioLabel:hover, 
+.contLabel:hover, 
+.bottomFirstBox:hover,
+.iconBox1:hover,
+.iconBox2:hover,
+.iconBox3:hover{
+  background-color: rgba(10,0,20,0.4);
+  color: rgba(225,10,50,1);
+  transition: 0.3s;
 }
