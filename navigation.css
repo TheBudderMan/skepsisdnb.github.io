@@ -22,7 +22,7 @@
   position:relative;
   font-size: 0.7em;
   color: white;
-  background-color: rgba(50,10,110,0.3); 
+  background-color: rgba(10,10,10,0.3); 
   float:left;
   height:2.5vh;
   width: 16vw;
@@ -61,10 +61,10 @@
   bottom:3%;
 }
 .iconbox1 {
-  background-color: rgba(255,0,0,0.5);
+  background-color: rgba(255,0,110,0.5);
 }
 .iconBox2 {
-  background-color: rgba(255,150,0,0.5);
+  background-color: rgba(155,100,50,0.5);
 }
 .iconBox1, .iconBox2 {
   padding: 0%;
