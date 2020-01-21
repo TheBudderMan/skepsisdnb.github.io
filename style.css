@@ -116,12 +116,12 @@ table td, table th{
   position: relative;
   background-color: rgba(5,0,0,0.3); 
   color:white;
-  width: 70vw;
+  width: 80vw;
   top: 40%; 
 }
 .centreBoxTitle {
   height: 3vh;
-  width: 70vw;
+  width: 80vw;
   background-color: rgba(0,0,0,0.1); 
   text-align: center;  
 }
@@ -134,7 +134,7 @@ table td, table th{
   width: 70vw;
   float: top;
   top: 22vh;
-  left: 15vw;
+  left: 10vw;
   text-align: center;
 }
 .titleBox {
