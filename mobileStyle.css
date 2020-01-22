@@ -1,13 +1,27 @@
 @media screen and (max-width: 500px) {
-  div.titleBox {
-    height:25vh;
-    width: 80vw;
-    left: 10vw;    
+  div.titleBox  {
+    height:8vh;
+    width: 60vw;
+    left: 20vw;
+    top: 7vh;
     font-size:6vw;
     z-index: 9999;
+    
   }
-
-  div.headerBox {
+  
+  #bgimg {  
+  background-image: url(Resources/wlp3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+  top:0%;
+  height: 110vh;
+  width: 100vw;
+  z-index: -100;
+  }
+  
+  div.headerBox{
   z-index:999;
   background-color: rgba(0,0,0,0.2);   
   margin:0%;
@@ -15,43 +29,73 @@
   width:100vw;
   }
   
-  div.homeLabel, div.contLabel, div.bioLabel {
+  div.homeLabel, div.contLabel, div.bioLabel{
   /*Home label for navigation bar*/
     margin:1%;
     width: 14vw;
   }
-  
   div.clickLay, div.clickLay2 {
     width: 10vw;
     background-color: rgba(155,155,155,0.3);
   }
-
+  
   div.clickLay2 {
     left: 83vw;
     height: 4vh;
-    top: -12vh;
+    top: -8vh;
     background-color: rgba(155,155,155,0.6);
   }
-
+  
+  div.contactBox{/*places the contact form on the page in the bottomMasterBox*/
+  font-size:4vw;
+  right:-15vw;
+  top: 0%;
+  z-index:5500;
+  margin:0;
+  width:15%;
+  height:60vh;
+  position: relative;
+  float: top;
+  color:white;
+  text-align: center; 
+  } 
+  /*contact and stats alignment*/ 
+  #body,#email,#date,#subject,#phone{
+  font-size:4vw;
+  height:12vh;
+  width:60vw;
+  background-color:black;
+  color:white;
+  }
+  #email {
+   height: 5vh;
+  }
+  #sbmt,#rst{
+  text-align: center; 
+  font-size:2vw;
+  height:4vh;
+  width:10vw;
+  }
+  div.titleimg {   
+  background-size: 40vw 8vh;
+  }
   div.centreBoxTitle {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.1);
     width: 100vw;
     
   }
   div.textBoxCentre {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.5);
     width: 100vw;
+    height: 72vh;
     left: 0vw;
+    top: 18vh;
   }
-
-  div.textBoxLeft {
-  float: left;
-  left: 0vw;
-  top: 55%;
-  width: 100vw;
-  background-image: url(Resources/logo2\ blobs\ separate.png);
+  .bottomBox{
+  /*footer area*/
+  width:100vw;
+  }
   
-  }
 }
 
 @media screen and (max-height: 400px) {
@@ -69,3 +113,4 @@
   right: 35px;
   }
 }
+

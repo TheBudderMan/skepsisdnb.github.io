@@ -61,30 +61,35 @@
   text-align: center;   
   bottom:3%;
 }
+
 .iconBox1 {
   background-color: rgba(125,10,10,0.3);
 }
+
 .iconBox2 {
   background-color: rgba(155,100,50,0.3);
 }
+
 .iconBox3 {
   background-color: rgba(5,100,250,0.3);
 }
+
 .iconBox1, .iconBox2, .iconBox3 {
   padding: 0%;
   margin: 0%;
   height: 12vh;
-  width: 12vw; 
-  
+  width: 12vw;   
   text-align: center;
   position: relative; 
   float: left;
   left:5%;
   bottom: -1%;
 }
+
 #iconBox2 {
   left: 10%;
 }
+
 #iconBox3 {
   left: 15%;
 }
@@ -108,30 +113,32 @@
 .clickLay:hover, .dropbtn:focus {
   background-color: rgba(200,200,200,0.4);
 }
+
 .clickLay2:hover {
   background-color: rgba(140,140,140,0.4);  
 }
+
 .clickLay2 {
   z-index: 9999;
   float: top;
-  top:-11vh;
+  top:-9vh;
   left:93vw;
   position: relative;  
-  height: 2vh;
-  width: 2vw;
+  height: 4vh;
+  width: 4vw;
   margin: 0;
   padding: 0;
-  background-color: rgba(200,10,10,0.3);
+  background-color: rgba(0,0,0,0.3);
 }
 
 .clickLay {
   z-index: 9900;
-  top:1vh;
+  top:1.5vh;
   position: fixed;  
   height: 3vh;
   width: 3vw;
   margin: 0;
   padding: 0;
   right: 5vw;
-  background-color: rgba(200,10,10,0.3);
+  background-color: rgba(0,0,0,0.3);
 }

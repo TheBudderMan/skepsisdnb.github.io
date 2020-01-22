@@ -1,4 +1,4 @@
-/* General CSS for body and other shit*/
+/* CSS files add styling rules to your content */
 body {
   font-family: helvetica, arial, sans-serif;
   font-size: 1em;
@@ -27,6 +27,15 @@ caption {
   border-left:1px solid;
   border-right:1px solid;
 }
+table td, table th{
+  font-size:2vw;
+  height: 3vh;
+  text-align: center;
+  width:100%;
+  font-size:1vw;   
+  border-left:1px solid;
+  border-bottom:1px solid;  
+}
 
 /**********************************
 *******BODY BOXES FOR PAGE*********
@@ -36,7 +45,7 @@ caption {
 }
 .leftBoxTitle, .rightBoxTitle {
   height: 3vh;
-  width: 70vw;
+  width: 50vw;
   color:white;
   left: 25vw;
   background-color: rgba(50,10,10,0.3); 
@@ -45,28 +54,28 @@ caption {
 
 .textBoxLeft {
   float: left;
-  left: 15vw;
-  top: 55%;
-  background-image: url(Resources/logo2.png);
+  left: 0vw;
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 40vw 8vh;
 }
 
 .textBoxLeft, .textBoxRight {
   text-align: center;
   margin: 2%;
-  height: 40vh;
+  height: 15vh;
   position: relative;
   background-color: rgba(5,0,0,0.3); 
   color:white;
-  width: 80vw;
-  top: 40%; 
+  width: 50vw;
+  float: top;
+  top: 5vh;
 }
 
 .centreBoxTitle {
-  height: 3vh;
-  width: 100vw;
+  height: 8vh;
+  width: 80vw;
   background-color: rgba(0,0,0,0.1); 
   text-align: center;  
 }
@@ -77,11 +86,11 @@ caption {
   position: fixed;
   background-color: rgba(0,0,0,1);
   background-size: 40vw 15vh;
-  height: 28vh;
-  width: 100vw;
+  height: 40vh;
+  width: 80vw;
   float: top;
   top: 40vh;
-  left: 0vw;
+  left: 10vw;
   text-align: center;
 }
 
@@ -99,17 +108,16 @@ caption {
 .titleimg {   
   left: 10vw;
   top: 10vh;
-  background-image: url(Resources/logo2.png);
-  background-size: 75vw 25vh;
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;  
-  z-index: 0;
+  background-size: 80vw 32vh;
 }
 
 .boxShadows {
   box-shadow: 2px 2px 15px black;
 }
+
 .smallShadows {
   box-shadow: 2px 3px 9px black;
 }
@@ -126,8 +134,9 @@ caption {
   z-index: 50;
 }
 
+
 #bgimg {  
-  background-image: url(Resources/wlp.jpg);
+  background-image: url(Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -139,13 +148,6 @@ caption {
 }
 
 /*Gemmas' CSS*/
-
-
-
-#main {
-  color: white;
-  text-align: center;  
-}
 
 #focal {
   display: flex;
@@ -212,7 +214,6 @@ caption {
   height: 3vh;
   width: 3vw;  
 }
-
 
 /** FX and stuff**/
 .homeLabel:hover,
