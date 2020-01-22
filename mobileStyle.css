@@ -1,9 +1,38 @@
 @media screen and (max-width: 500px) {
-  div.titleBox  {
-    height:4vh;
+  div.titleBox {
+    height:25vh;
+    width: 80vw;
+    left: 10vw;    
     font-size:6vw;
+    z-index: 9999;
+  }
+
+  div.headerBox {
+  z-index:999;
+  background-color: rgba(0,0,0,0.2);   
+  margin:0%;
+  padding: 0%;
+  width:100vw;
   }
   
+  div.homeLabel, div.contLabel, div.bioLabel {
+  /*Home label for navigation bar*/
+    margin:1%;
+    width: 14vw;
+  }
+  
+  div.clickLay, div.clickLay2 {
+    width: 10vw;
+    background-color: rgba(155,155,155,0.3);
+  }
+
+  div.clickLay2 {
+    left: 83vw;
+    height: 4vh;
+    top: -12vh;
+    background-color: rgba(155,155,155,0.6);
+  }
+
   div.centreBoxTitle {
     background-color: rgba(0,0,0,1);
     width: 100vw;
@@ -22,7 +51,7 @@
   width: 100vw;
   background-image: url(Resources/logo2\ blobs\ separate.png);
   
-}
+  }
 }
 
 @media screen and (max-height: 400px) {
