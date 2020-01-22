@@ -5,14 +5,15 @@
 */
  /*header area*/
 .headerBox{
-  z-index:9999;
+  z-index:999;
   background-color: rgba(0,0,0,0.2);   
   margin:0%;
   padding: 0%;
-  width:80%;
+  width:50vw;
   height:6vh;
   position: fixed;
-  float: top; 
+  float: top;
+  right: 0vw;
   text-align: center;   
 }
 /*******NAVIGATION AREA********/
@@ -22,13 +23,13 @@
   position:relative;
   font-size: 0.7em;
   color: white;
-  background-color: rgba(10,10,10,0.3); 
+  background-color: rgba(50,10,10,0.3); 
   float:left;
   height:2.5vh;
-  width: 16vw;
+  width: 10vw;
   left:0%;
   text-align: center;   
-  top:0vh;
+  top:1vh;
 }
 /******END OF NAVIGATION AREA*****/
 /*
@@ -81,7 +82,6 @@
   left:5%;
   bottom: -1%;
 }
-
 #iconBox2 {
   left: 10%;
 }
