@@ -55,7 +55,7 @@ table td, table th{
 .textBoxLeft {
   float: left;
   left: 0vw;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+  background-image: url(Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40vw 8vh;
@@ -108,7 +108,7 @@ table td, table th{
 .titleimg {   
   left: 10vw;
   top: 10vh;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+  background-image: url(Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80vw 32vh;
@@ -136,7 +136,7 @@ table td, table th{
 
 
 #bgimg {  
-  background-image: url(Resources/logo2.png);
+  background-image: url(Resources/wlp.jpg);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
