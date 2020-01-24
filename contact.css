@@ -1,3 +1,4 @@
+
 /*contact and stats alignment*/ 
 #body,#email,#date,#subject,#phone{
   font-size:2vw;
@@ -25,7 +26,8 @@
   float: top;
   color:white;
   text-align: center; 
-}
+} 
+
 
 .cImg {
   float: left;
