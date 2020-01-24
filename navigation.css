@@ -40,11 +40,11 @@
   margin:0;
   z-index:9999;
   background-color: rgba(0,0,0,0.4); 
-  width:100%;
+  width:50vw;
   height:8vh;
   position: fixed;
-  float:left;
-  left: 0%;
+  float:right;
+  right: 0%;
   bottom:0%;  
 }
 
