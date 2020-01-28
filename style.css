@@ -54,8 +54,8 @@ table td, table th{
 
 .textBoxLeft {
   float: left;
-  left: 0vw;
-  background-image: url(Resources/logo2.png);
+  left: 10vw;
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40vw 8vh;
@@ -70,7 +70,7 @@ table td, table th{
   color:white;
   width: 50vw;
   float: top;
-  top: 5vh;
+  top: 35vh;
 }
 
 .centreBoxTitle {
@@ -79,7 +79,6 @@ table td, table th{
   background-color: rgba(0,0,0,0.1); 
   text-align: center;  
 }
-
 .textBoxCentre {
   z-index: 900;
   margin: 0%;
@@ -108,7 +107,7 @@ table td, table th{
 .titleimg {   
   left: 10vw;
   top: 10vh;
-  background-image: url(Resources/logo2.png);
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80vw 32vh;
@@ -117,11 +116,9 @@ table td, table th{
 .boxShadows {
   box-shadow: 2px 2px 15px black;
 }
-
 .smallShadows {
   box-shadow: 2px 3px 9px black;
 }
-
 #div1 {
   float: left; 
   color: skyblue;
@@ -135,8 +132,9 @@ table td, table th{
 }
 
 
+
 #bgimg {  
-  background-image: url(Resources/wlp.jpg);
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp.jpg?v=1579552578595);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -147,7 +145,12 @@ table td, table th{
   z-index: -100;
 }
 
+
+
 /*Gemmas' CSS*/
+
+
+
 
 #focal {
   display: flex;
