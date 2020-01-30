@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 body {
   font-family: helvetica, arial, sans-serif;
-  font-size: 1em;
+  font-size: 0.7em;
   margin: 0em;
   height: 100vh;
   width:100vw;  
@@ -134,7 +134,7 @@ table td, table th{
 
 
 #bgimg {  
-  background-image: url(Resources/wlp3.jpg);
+  background-image: url(Resources/wlp.jpg);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
