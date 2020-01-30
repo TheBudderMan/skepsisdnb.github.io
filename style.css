@@ -55,7 +55,7 @@ table td, table th{
 .textBoxLeft {
   float: left;
   left: 10vw;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+  background-image: url(Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40vw 8vh;
@@ -107,7 +107,7 @@ table td, table th{
 .titleimg {   
   left: 10vw;
   top: 10vh;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+  background-image: url(/Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80vw 32vh;
@@ -134,7 +134,7 @@ table td, table th{
 
 
 #bgimg {  
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp.jpg?v=1579552578595);
+  background-image: url(Resources/wlp3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -144,12 +144,6 @@ table td, table th{
   width: 100vw;
   z-index: -100;
 }
-
-
-
-/*Gemmas' CSS*/
-
-
 
 
 #focal {
@@ -173,8 +167,6 @@ table td, table th{
   z-index: 1;
   top: 0;
   right: 0;
-  
-  /*background-color: #206a80;*/
   background-color: rgba(10,0,20,0.7);
   overflow-x: hidden;
   transition: 0.5s;  

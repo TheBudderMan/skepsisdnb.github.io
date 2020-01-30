@@ -1,12 +1,11 @@
-@media screen and (max-width: 900px) and (max-height: 350px){
+@media screen and (max-width: 350px) and (max-height: 350px) {
   div.titleBox  {
     height:8vh;
     width: 60vw;
     left: 20vw;
     top: 7vh;
     font-size:6vw;
-    z-index: 9999;
-    
+    z-index: 9999;    
   }
   
   #bgimg {  
