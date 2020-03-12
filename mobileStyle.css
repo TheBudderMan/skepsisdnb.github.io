@@ -1,15 +1,19 @@
-@media screen and (max-width: 350px) and (max-height: 350px) {
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 1em;
+  }
   div.titleBox  {
     height:8vh;
     width: 60vw;
     left: 20vw;
     top: 7vh;
     font-size:6vw;
-    z-index: 9999;    
+    z-index: 9999;
+    
   }
   
   #bgimg {  
-  background-image: url(Resources/wlp3.jpg);
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp3.jpg?v=1579730741842);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
