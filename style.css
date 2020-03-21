@@ -131,6 +131,17 @@ table td, table th{
   z-index: 50;
 }
 
+.bgimg {  
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp.jpg?v=1579552578595);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+  top:0%;
+  height: 110vh;
+  width: 100vw;
+  z-index: -1;
+}
 
 
 #bgimg {  
@@ -142,7 +153,7 @@ table td, table th{
   top:0%;
   height: 110vh;
   width: 100vw;
-  z-index: -100;
+  z-index: -1;
 }
 
 
