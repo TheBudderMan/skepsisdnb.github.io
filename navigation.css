@@ -63,33 +63,29 @@
 }
 
 .iconBox1 {
-  background-color: rgba(125,10,10,0.3);
+  background-color: rgba(5,100,250,0.2);
 }
-
 .iconBox2 {
-  background-color: rgba(155,100,50,0.3);
+  background-color: rgba(155,100,50,0.2);
 }
-
 .iconBox3 {
-  background-color: rgba(5,100,250,0.3);
+  background-color: rgba(125,10,10,0.2);
 }
-
 .iconBox1, .iconBox2, .iconBox3 {
   padding: 0%;
   margin: 0%;
   height: 12vh;
-  width: 12vw;   
+  width: 12vw; 
+  
   text-align: center;
   position: relative; 
   float: left;
   left:5%;
   bottom: -1%;
 }
-
 #iconBox2 {
   left: 10%;
 }
-
 #iconBox3 {
   left: 15%;
 }
@@ -113,11 +109,9 @@
 .clickLay:hover, .dropbtn:focus {
   background-color: rgba(200,200,200,0.4);
 }
-
 .clickLay2:hover {
   background-color: rgba(140,140,140,0.4);  
 }
-
 .clickLay2 {
   z-index: 9999;
   float: top;
