@@ -1,6 +1,6 @@
-@media screen and (max-width: 1800px) and (max-height: 2700) {
+@media screen and (max-width: 1800px) {
   div.titleBox  {
-    height:8vh;
+    height: 8vh;
     width: 60vw;
     left: 20vw;
     top: 7vh;
@@ -8,7 +8,19 @@
     z-index: 9999;
     
   }
-  
+
+  .bgimg {  
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp3.jpg?v=1579730741842);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+  top:0%;
+  height: 110vh;
+  width: 100vw;
+  z-index: -1;
+  }
+
   #bgimg {  
   background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp3.jpg?v=1579730741842);
   background-repeat: no-repeat;
@@ -18,7 +30,7 @@
   top:0%;
   height: 110vh;
   width: 100vw;
-  z-index: -100;
+  z-index: -1;
   }
   
   div.headerBox{
@@ -94,8 +106,7 @@
   .bottomBox{
   /*footer area*/
   width:100vw;
-  }
-  
+  }  
 }
 
 @media screen and (max-height: 400px) {
