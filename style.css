@@ -74,14 +74,14 @@ table td, table th{
 }
 
 .centreBoxTitle {
-  z-index: 900;
+  z-index: 100;
   height: 8vh;
   width: 80vw;
   background-color: rgba(0,0,0,0.1); 
   text-align: center;  
 }
 .textBoxCentre {
-  z-index: 900;
+  z-index: 100;
   margin: 0%;
   position: fixed;
   background-color: rgba(0,0,0,1);
@@ -95,6 +95,7 @@ table td, table th{
 }
 
 .titleBox {
+  z-index: 100;
   text-align: center;
   font-size: 5vh;
   position: relative;  
@@ -106,6 +107,7 @@ table td, table th{
 }
 
 .titleimg {   
+  z-index: 100;
   left: 10vw;
   top: 10vh;
   background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
