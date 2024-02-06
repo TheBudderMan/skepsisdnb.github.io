@@ -2,118 +2,164 @@
   body {
     font-size: 1em;
   }
-  div.titleBox  {
-    height:8vh;
-    width: 60vw;
-    left: 20vw;
-    top: 7vh;
-    font-size:6vw;
-    z-index: 9999;
-    
-  }
   
-  #bgimg {  
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp3.jpg?v=1579730741842);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  top:0%;
-  height: 110vh;
-  width: 100vw;
-  z-index: -100;
+  #bgimg {
+    background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp3.jpg?v=1579730741842);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    background-size: cover;
+    top: 0%;
+    height: 110vh;
+    width: 100vw;
+    z-index: -100;
   }
-  
-  div.headerBox{
-  z-index:999;
-  background-color: rgba(0,0,0,0.2);   
-  margin:0%;
-  padding: 0%;
-  width:100vw;
-  }
-  
-  div.homeLabel, div.contLabel, div.bioLabel{
-  /*Home label for navigation bar*/
-    margin:1%;
-    width: 14vw;
-  }
-  div.clickLay, div.clickLay2 {
-    width: 10vw;
-    background-color: rgba(155,155,155,0.3);
-  }
-  
-  div.clickLay2 {
-    left: 83vw;
-    height: 4vh;
-    top: -8vh;
-    background-color: rgba(155,155,155,0.6);
-  }
-  
-  div.contactBox{/*places the contact form on the page in the bottomMasterBox*/
-  font-size:4vw;
-  right:-15vw;
-  top: 0%;
-  z-index:5500;
-  margin:0;
-  width:15%;
-  height:60vh;
+  .titleBox {
+  z-index: 100;
+  text-align: center;
+  font-size: 5vh;
   position: relative;
+  background-color: rgba(0, 0, 0, 0);
   float: top;
-  color:white;
-  text-align: center; 
-  } 
-  /*contact and stats alignment*/ 
-  #body,#email,#date,#subject,#phone{
-  font-size:4vw;
-  height:12vh;
-  width:60vw;
-  background-color:black;
-  color:white;
+  top: -2vh;
+  height: 8vh;
+  width: 60vw;
+  left: 30vw;
+}
+.formantLogo {
+  z-index: 100;
+  position: relative;
+  left: 0vw;
+  top: -8vh;
+  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30vw 8vh;
+  width: 30vw;
+  height: 8vh;
+}
+  div.headerBox {
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 10vw;
+  }  
+  /*Javascript boxes for menu*/
+  div.clickOverLay,
+  div.clickLay2 {
+    width: 5vw;
+    height: 4vh;
+    background-color: rgba(155, 155, 155, 0.3);
   }
-  #email {
-   height: 5vh;
+
+  div.clickLay2 {
+    left: 90vw;
+    top: -11vh;
+    background-color: rgba(155, 155, 155, 0.6);
   }
-  #sbmt,#rst{
-  text-align: center; 
-  font-size:2vw;
-  height:4vh;
-  width:10vw;
-  }
-  div.titleimg {   
-  background-size: 40vw 8vh;
-  }
+
   div.centreBoxTitle {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 30vw;
+  }
+  .introHeaderTextBox {
+  z-index: 100;
+  height: 3vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  }
+  .bioHeaderTextBox {
+  z-index: 100;
+  height: 3vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  }
+  div.introTextBoxCentre {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    height: 60vh;
+    left: 10vw;
+    top: 15vh;
+  }
+  div.bioAlignmentPointer {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    width: 80vw;
+    height: 6vh;
+    left: 10vw;
+    top: 20vh;
+  }
+  div.textBoxBioCentre {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    left: 10vw;
+    top: 30vh;
+  }
+  /*places the contact form 
+  on the page*/
+  .contactBox {
+    font-size: 4vw;
+    left: 10vw;
+    top: 90vh;
+    z-index: 5500;
+    margin: 0;
+    width: 80vw;
+    height: 60vh;
+    position: relative;
+    float: top;
+    color: white;
+    text-align: center;
+  }
+  .bottomBox {
+    /*footer area*/
     width: 100vw;
-    
+  }  
+  /*contact and stats alignment*/
+  #body,
+  #email,
+  #date,
+  #subject,
+  #phone {
+    font-size: 4vw;
+    height: 12vh;
+    width: 60vw;
+    background-color: black;
+    color: white;
   }
-  div.textBoxCentre {
-    background-color: rgba(0,0,0,0.5);
-    width: 100vw;
-    height: 72vh;
-    left: 0vw;
-    top: 18vh;
+
+  #email {
+    height: 5vh;
   }
-  .bottomBox{
-  /*footer area*/
-  width:100vw;
+
+  #sbmt,
+  #rst {
+    text-align: center;
+    font-size: 2vw;
+    height: 4vh;
+    width: 10vw;
   }
-  
 }
 
 @media screen and (max-height: 400px) {
-  div.titleBox  {
-    height:8vh;
-    font-size:9vw;
+  div.titleBox {
+    height: 8vh;
+    font-size: 9vw;
   }
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
-
