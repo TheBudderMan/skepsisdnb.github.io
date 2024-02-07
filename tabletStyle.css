@@ -34,7 +34,7 @@
     margin:1%;
     width: 14vw;
   }
-  div.clickLay, div.clickLay2 {
+  div.clickOverLay, div.clickLay2 {
     width: 10vw;
     background-color: rgba(155,155,155,0.3);
   }
