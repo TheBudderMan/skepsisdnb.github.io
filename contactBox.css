@@ -1,0 +1,18 @@
+/*places the contact form 
+  on the page*/
+  .contactBox {
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 4vw;
+    left: 30vw;
+    top: 122vh;
+    z-index: 500;
+    margin: 0;
+    width: 40vw;
+    height: 80vh;
+    position: relative;
+    float: top;
+    color: white;
+    text-align: center;
+    }
+   
+  

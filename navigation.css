@@ -25,7 +25,7 @@
   position: relative;
   font-size: 0.5em;
   color: white;
-  background-color: rgba(50, 10, 10, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   float: left;
   height: 2.5vh;
   width: 10vw;
@@ -65,13 +65,13 @@
 }
 
 .iconBox1 {
-  background-color: rgba(5, 100, 250, 0.2);
+  background-color: rgba(5, 100, 250, 0);
 }
 .iconBox2 {
-  background-color: rgba(155, 100, 50, 0.2);
+  background-color: rgba(155, 100, 50, 0);
 }
 .iconBox3 {
-  background-color: rgba(125, 10, 10, 0.2);
+  background-color: rgba(125, 10, 10, 0);
 }
 .iconBox1,
 .iconBox2,
@@ -94,39 +94,7 @@
   left: 0%;
 }
 
-/*
-
-.dropbtn {
-  background-color: rgba(255,10,10,0.4);
-  color: white;
-  padding: 0%;
-  margin: 0%;
-  width: 16px;
-  height: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-*/
-
-
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #000000;
-}
 /* Dropdown button on hover & focus */
-
 .hamburgerButton2 {
   z-index: 9999;
   float: top;
@@ -137,10 +105,10 @@
   width: 3vw;
   margin: 0;
   padding: 0;
-  background-color: rgba(300, 200, 300, 0.5);
+  background-color: black;
 }
 .hamburgerButton2:hover {
-  background-color: rgba(140, 140, 140, 0.4);
+  background-color: black;
 }
 .hamburgerButton1 {
   z-index: 500;
@@ -151,10 +119,10 @@
   margin: 0;
   padding: 0;
   right: 5vw;
-  background-color: rgba(100, 100, 200, 0.3);
+  background-color: black;
 }
 .hamburgerButton1:hover,
 .dropbtn:focus {
   z-index: 9999;
-  background-color: rgba(300, 0, 0, 0.6);
+  background-color: black;
 }

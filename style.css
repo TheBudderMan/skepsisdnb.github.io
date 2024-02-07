@@ -68,21 +68,6 @@ width:100vw;
 height:8vh;
 }
 
-.hamburger-menu {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-height: 24px;
-width: 30px;
-cursor: pointer;
-}
-
-.bar {
-width: 30px;
-height: 3px;
-background-color: #000000;
-}
-
 /*contact and stats alignment*/ 
 #body,#email,#date,#subject,#phone{
 font-size:1vw;
@@ -106,9 +91,7 @@ font-size: 2vw;
 /**********************************
 *******BODY BOXES FOR PAGE*********
 ***********************************/
-.textBoxRight {
-float: right;
-}
+
 .leftBoxTitle,
 .rightBoxTitle {
 height: 3vh;
@@ -190,20 +173,7 @@ text-align: center;
 }
 /*places the contact form 
 on the page*/
-.contactBox {
-background-color: rgba(0, 0, 0, 1);
-font-size: 4vw;
-left: 30vw;
-top: 122vh;
-z-index: 500;
-margin: 0;
-width: 40vw;
-height: 80vh;
-position: relative;
-float: top;
-color: white;
-text-align: center;
-}
+
 .titleBox {
 z-index: 100;
 text-align: center;
@@ -328,8 +298,70 @@ z-index: 1;
 height: 3vh;
 width: 3vw;
 }
+.hamburger-menu {
+position: relative;
+display: flex;
+float: top;
+flex-direction: column;
+justify-content: space-around;
+height: 4vh;
+right: -3vw;
+width: 2vw;
+cursor: pointer;
+}
 
+.hamburger-menu2 {
+position: relative;
+display: flex;
+float: top;
+flex-direction: row;
+justify-content: space-around;
+top: -22vh;
+right: -3vw;
+height: 4vh;
+width: 3vw;
+}
+.bar {
+width: 3vw;
+height: 4px;
+background-color:white;
+margin: 0;
+}
+.shortBar {
+width: 1vw;
+height: 4px;
+background-color:white;
+margin: 0;
+}
+.vertBar {
+width: 0.3vw;
+height: 5vh;
+background-color: white;
+margin: 0;
+}
+.vertShortBar {
+width: 0.3vw;
+height: 3vh;
+background-color: white;
+margin: 0;
+}
+/*Javascript boxes for menu*/
+div.hamburgerButton1 {
+  width: 5vw;
+  height: 3vh;
+  background-color:black;
+}
+
+div.hamburgerButton2 {
+  left: 90vw;
+  top: -12vh;
+  background-color:black;
+}
 /** FX and stuff**/
+.bar:hover,
+.shortBar:hover,
+.vertBar:hover,
+.vertShortBar:hover,
 .homeLabel:hover,
 .bioLabel:hover,
 .contLabel:hover,
@@ -337,7 +369,7 @@ width: 3vw;
 .iconBox1:hover,
 .iconBox2:hover,
 .iconBox3:hover {
-background-color: rgba(0, 0, 0, 0.4);
-color: rgb(65, 53, 55);
+background-color: black;
+color: grey;
 transition: 0.3s;
 }

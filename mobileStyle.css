@@ -11,7 +11,7 @@
   position: relative;
   font-size: 0.3em;
   color: white;
-  background-color: rgba(50, 10, 10, 0.3);
+  background-color: black;
   float: left;
   height: 2vh;
   width: 5vw;
@@ -63,6 +63,8 @@
   width: 30vw;
   height: 6vh;
 }
+  
+
   div.headerBox {
     z-index: 999;
     background-color: rgba(0, 0, 0, 1);
@@ -71,18 +73,53 @@
     width: 100vw;
     height: 10vw;
   }  
+
+.hamburger-menu2 {
+  position: relative;
+  display: flex;
+  float: top;
+  flex-direction: row;
+  justify-content: space-around;
+  top: -17vh;
+  height: 4vh;
+  width: 5vw;
+}  
+.bar {
+  width: 5vw;
+  height: 4px;
+  background-color:white;
+  margin: 0;
+}
+.vertBar {
+  width: 1vw;
+  height: 3vh;
+  background-color: white;
+  margin: 0;
+}
+.vertShortBar {
+  width: 0.9vw;
+  height: 2vh;
+  background-color: white;
+  margin: 0;
+}
+.shortBar {
+  width: 3vw;
+  height: 4px;
+  background-color:white;
+  margin: 0;
+}
   /*Javascript boxes for menu*/
   div.hamburgerButton1,
   div.hamburgerButton2 {
     width: 5vw;
-    height: 4vh;
-    background-color: rgba(155, 155, 155, 0.3);
+    height: 3vh;
+    background-color:black;
   }
 
   div.hamburgerButton2 {
     left: 90vw;
     top: -12vh;
-    background-color: rgba(155, 155, 155, 1);
+    background-color:black;
   }
 
   div.centreBoxTitle {
@@ -182,7 +219,7 @@
   position: relative;
   float: left;
   left: 30vw;
-  bottom: -2vh;
+  bottom: -1vh;
 }
 @media screen and (max-height: 400px) {
   div.titleBox {
