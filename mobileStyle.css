@@ -2,9 +2,34 @@
   body {
     font-size: 1em;
   }
-  
+  /*******NAVIGATION AREA********/
+.homeLabel,
+.contLabel,
+.bioLabel {
+  /*Home label for navigation bar*/
+  margin: 0.5%;
+  position: relative;
+  font-size: 0.3em;
+  color: white;
+  background-color: rgba(50, 10, 10, 0.3);
+  float: left;
+  height: 2vh;
+  width: 5vw;
+  left: 10vw;
+  text-align: center;
+  top: 4vh;
+}
+.homeLabel {
+  left: 10%;
+}
+.bioLabel {
+  left: 20%;
+}
+.contLabel {
+  left: 25%;
+}
   #bgimg {
-    background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp3.jpg?v=1579730741842);
+    background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
@@ -30,13 +55,13 @@
   z-index: 100;
   position: relative;
   left: 0vw;
-  top: -8vh;
+  top: -8.5vh;
   background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 30vw 8vh;
+  background-size: 30vw 6vh;
   width: 30vw;
-  height: 8vh;
+  height: 6vh;
 }
   div.headerBox {
     z-index: 999;
@@ -47,17 +72,17 @@
     height: 10vw;
   }  
   /*Javascript boxes for menu*/
-  div.clickOverLay,
-  div.clickLay2 {
+  div.hamburgerButton1,
+  div.hamburgerButton2 {
     width: 5vw;
     height: 4vh;
     background-color: rgba(155, 155, 155, 0.3);
   }
 
-  div.clickLay2 {
+  div.hamburgerButton2 {
     left: 90vw;
-    top: -11vh;
-    background-color: rgba(155, 155, 155, 0.6);
+    top: -12vh;
+    background-color: rgba(155, 155, 155, 1);
   }
 
   div.centreBoxTitle {
@@ -146,6 +171,19 @@
   }
 }
 
+.showYear {
+  background-color: rgba(0, 0, 0, 1);
+  height: 3vh;
+  width: 20vw;
+  font-size: 0.8em;
+  padding: 0%;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  float: left;
+  left: 30vw;
+  bottom: -2vh;
+}
 @media screen and (max-height: 400px) {
   div.titleBox {
     height: 8vh;

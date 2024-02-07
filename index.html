@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta property="og:image" content="https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/logo2%20blobs%20separate.png?v=1707265137266" />
     <title>Formant - Home</title>
     <meta charset="utf-8" />
     <meta https-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,12 +17,14 @@
     <header>
       <div class="headerBox">
         <div class="titleBox" id="homeTitle">
-        <a href="#"><div class="homeLabel">Home</div></a>
-          <a href="#position2"><div class="bioLabel">Bio</div></a>
-          <a href="#position3"><div class="contLabel">Contact</div></a>
+          <nav>
+          <a href="/"><div class="homeLabel">Home</div></a>
+          <a href="#bio"><div class="bioLabel">Bio</div></a>
+          <a href="#contact"><div class="contLabel">Contact</div></a>
+          </nav>
         </div>
-         <a href="index.html"><div class="formantLogo"></div></a>
-        <div class="clickOverLay" onclick="openNav()"></div>
+         <a href="/"><div class="formantLogo"></div></a>
+        <div class="hamburgerButton1" id = "hamburgerButton1" onclick="openNav()"></div>
         <!--Gemmas' Nav section-->
         <div id="header">
           <div id="myNav" class="overlay">
@@ -29,10 +32,12 @@
               <div class="textBoxLeft smallShadows">
                 <div class="leftBoxTitle">Woah!</div>
               </div>
-              <div class="clickLay2 smallShadows" onclick="closeNav()"></div>
-              <a href="#" onclick="closeNav()"><li>Home</li></a>
-              <a href="#position2" onclick="closeNav()"><li>Bio</li></a>
-              <a href="#position3" onclick="closeNav()"><li>Contact</li></a>
+              <div class="hamburgerButton2 smallShadows" onclick="closeNav()"></div>
+              <nav>
+              <a href="/" onclick="closeNav()"><li>Home</li></a>
+              <a href="#bio" onclick="closeNav()"><li>Bio</li></a>
+              <a href="#contact" onclick="closeNav()"><li>Contact</li></a>
+              </nav>
             </div>
           </div>
         </div>
@@ -43,7 +48,7 @@
 
     <!--The main textout box -->
 
-    <div class="introTextBoxCentre boxShadows" id="position1">
+    <div class="introTextBoxCentre boxShadows" id="/">
       <div class="introHeaderTextBox">woah</div>
       <br />
       So hi there! <br />
@@ -65,7 +70,7 @@
       as I go so make sure to check back! <br />
     </div>
     <!--The main textout box -->
-    <div class="bioAlignmentPointer" id="position2"></div>
+    <div class="bioAlignmentPointer" id="bio"></div>
     <div class="textBoxBioCentre boxShadows">
       <div class="bioHeaderTextBox">A little about myself</div>
       <br />
@@ -91,7 +96,7 @@
     </div>
 
     <!--start of contact form-->
-    <div class="contactBox" id="position3">
+    <div class="contactBox" id="contact">
       <form
         action="mailto:skepsisdrumandbass@gmail.com"
         method="post"
@@ -165,7 +170,7 @@
         </div>
       </a>
       <div class="showYear">
-        Maintained by : Formant <br/>
+        Maintained by : Formant 
         &copy
         <span id = "currentYear">2020</span>
       </div>
@@ -174,6 +179,8 @@
     <div id="bgimg" class="bg"></div>
 
     <!-- import the webpage's javascript file -->
+    <script src="/hash-router.js" defer></script>
+    <script src="/navigation-functions.js" defer></script>
     <script src="/script.js" defer></script>
   </body>
 </html>

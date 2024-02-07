@@ -1,14 +1,12 @@
+//This is for the year in the bottom right
+
 const yearSpan = document.querySelector('#currentYear');
 const currentYear = new Date();
 console.log(currentYear);
 yearSpan.innerText = currentYear.getFullYear();
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+///////////////////
+
 
 
 /*
