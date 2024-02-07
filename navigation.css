@@ -49,7 +49,6 @@
   right: 0%;
   bottom: 0%;
 }
-
 .bottomFirstBox {
   /*text on the footer*/
   font-size: 0.8em;
@@ -63,37 +62,6 @@
   text-align: center;
   bottom: 3%;
 }
-
-.iconBox1 {
-  background-color: rgba(5, 100, 250, 0);
-}
-.iconBox2 {
-  background-color: rgba(155, 100, 50, 0);
-}
-.iconBox3 {
-  background-color: rgba(125, 10, 10, 0);
-}
-.iconBox1,
-.iconBox2,
-.iconBox3 {
-  padding: 0%;
-  margin: 0%;
-  height: 12vh;
-  width: 15vw;
-
-  text-align: center;
-  position: relative;
-  float: left;
-  left: 0%;
-  bottom: -1%;
-}
-#iconBox2 {
-  left: 0%;
-}
-#iconBox3 {
-  left: 0%;
-}
-
 /* Dropdown button on hover & focus */
 .hamburgerButton2 {
   z-index: 9999;
@@ -118,7 +86,7 @@
   width: 3vw;
   margin: 0;
   padding: 0;
-  right: 5vw;
+  right: 9vw;
   background-color: black;
 }
 .hamburgerButton1:hover,

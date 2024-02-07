@@ -2,10 +2,12 @@
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("hamburgerButton1").style.visibility='hidden';
+  document.getElementById("contact").style.visibility='hidden';
 }
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.getElementById("hamburgerButton1").style.visibility='visible';
+  document.getElementById("contact").style.visibility='visible';
 }
 //
 var overlayPage = document.getElementById('hamburgerButton1');

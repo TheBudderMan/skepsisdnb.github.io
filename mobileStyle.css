@@ -73,7 +73,16 @@
     width: 100vw;
     height: 10vw;
   }  
-
+.hamburger-menu {
+  position: relative;
+  display: flex;
+  float: top;
+  flex-direction: column;
+  justify-content: space-around;
+  top: -0.5vh;
+  height: 4vh;
+  width: 5vw;
+}  
 .hamburger-menu2 {
   position: relative;
   display: flex;
@@ -81,33 +90,35 @@
   flex-direction: row;
   justify-content: space-around;
   top: -17vh;
+  left: 2vw;
   height: 4vh;
-  width: 5vw;
+  width: 7vw;
 }  
 .bar {
-  width: 5vw;
-  height: 4px;
+  width: 6vw;
+  height: 0.4vh;
+  background-color:white;
+  margin: 0;
+}
+  .shortBar {
+  width: 4vw;
+  height: 0.3vh;
   background-color:white;
   margin: 0;
 }
 .vertBar {
-  width: 1vw;
+  width: 0.7vw;
   height: 3vh;
   background-color: white;
   margin: 0;
 }
 .vertShortBar {
-  width: 0.9vw;
+  width: 0.7vw;
   height: 2vh;
   background-color: white;
   margin: 0;
 }
-.shortBar {
-  width: 3vw;
-  height: 4px;
-  background-color:white;
-  margin: 0;
-}
+
   /*Javascript boxes for menu*/
   div.hamburgerButton1,
   div.hamburgerButton2 {
@@ -126,13 +137,7 @@
     background-color: rgba(0, 0, 0, 0.1);
     width: 30vw;
   }
-  .introHeaderTextBox {
-  z-index: 100;
-  height: 3vh;
-  width: 80vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-  }
+  
   .bioHeaderTextBox {
   z-index: 100;
   height: 3vh;
@@ -140,48 +145,65 @@
   background-color: rgba(0, 0, 0, 1);
   text-align: center;
   }
+  .introHeaderTextBox {
+  z-index: 100;
+  height: 3vh;
+  width: 60vw;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  }
+  .introHeaderTextBox2 {
+  z-index: 100;
+  height: 3vh;
+  width: 60vw;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  }
   div.introTextBoxCentre {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 80vw;
-    height: 60vh;
-    left: 10vw;
-    top: 15vh;
+    width: 60vw;
+    height: 30vh;
+    left: 40vw;
+    top: 6vh;
+  }
+  div.introTextBoxCentre2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60vw;
+    height: 30vh;
+    left: 40vw;
+    top: 16vh;
   }
   div.bioAlignmentPointer {
     background-color: rgba(0, 0, 0, 0);
-    position: relative;
+    position: absolute;
     width: 80vw;
     height: 6vh;
     left: 10vw;
-    top: 20vh;
+    top: 100vh;
   }
   div.textBoxBioCentre {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     width: 80vw;
-    height: 60vh;
+    height: 58vh;
     left: 10vw;
-    top: 30vh;
+    top: 60vh;
   }
   /*places the contact form 
   on the page*/
   .contactBox {
     font-size: 4vw;
     left: 10vw;
-    top: 90vh;
+    top: 220vh;
     z-index: 5500;
     margin: 0;
     width: 80vw;
     height: 60vh;
-    position: relative;
+    position: absolute;
     float: top;
     color: white;
     text-align: center;
   }
-  .bottomBox {
-    /*footer area*/
-    width: 100vw;
-  }  
   /*contact and stats alignment*/
   #body,
   #email,
@@ -206,6 +228,11 @@
     height: 4vh;
     width: 10vw;
   }
+  .bottomBox {
+    /*footer area*/
+    width: 100vw;
+  }  
+  
 }
 
 .showYear {
