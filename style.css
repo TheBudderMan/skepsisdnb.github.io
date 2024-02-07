@@ -1,331 +1,331 @@
 /* CSS files add styling rules to your content */
 html{
-    height: 300vh;
-    margin: auto;
-    width: 100vw;
-    overflow: hidden;
+  height: 300vh;
+  margin: auto;
+  width: 100vw;
+  overflow: hidden;
 }
 body {
-  font-family: helvetica, arial, sans-serif;
-  font-size: 1em;
-  margin: 0em;
-  height: 100vh;
-  width: 100vw;
-  color: white;
+font-family: helvetica, arial, sans-serif;
+font-size: 1em;
+margin: 0em;
+height: 100vh;
+width: 100vw;
+color: white;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+font-style: italic;
+color: #373fff;
 }
 form {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  height: 40vh;
-  width: 70vw;
+display: inline-block;
+margin: 0;
+padding: 0;
+height: 40vh;
+width: 70vw;
 }
 label,
 button {
-  margin: 0%;
-  height: 15px;
+margin: 0%;
+height: 15px;
 }
 caption {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-left: 1px solid;
-  border-right: 1px solid;
+border-top: 1px solid;
+border-bottom: 1px solid;
+border-left: 1px solid;
+border-right: 1px solid;
 }
 table td,
 table th {
-  font-size: 2vw;
-  height: 3vh;
-  text-align: center;
-  width: 100%;
-  font-size: 1vw;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
+font-size: 2vw;
+height: 3vh;
+text-align: center;
+width: 100%;
+font-size: 1vw;
+border-left: 1px solid;
+border-bottom: 1px solid;
 }
 
 div.headerBox{
-  z-index:999;
-  background-color: rgba(0,0,0,1);   
-  margin:0%;
-  padding: 0%;
-  width:100vw;
-  height:8vh;
-  }
+z-index:999;
+background-color: rgba(0,0,0,1);   
+margin:0%;
+padding: 0%;
+width:100vw;
+height:8vh;
+}
 
 .hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 24px;
+width: 30px;
+cursor: pointer;
 }
 
 .bar {
-  width: 30px;
-  height: 3px;
-  background-color: #000000;
+width: 30px;
+height: 3px;
+background-color: #000000;
 }
 
 /*contact and stats alignment*/ 
 #body,#email,#date,#subject,#phone{
-  font-size:1vw;
-  height:2vh;
-  width:30vw;
-  background-color:black;
-  color:white;
+font-size:1vw;
+height:2vh;
+width:30vw;
+background-color:black;
+color:white;
 }
 #sbmt,#rst{
-  text-align: center; 
-  font-size:1vw;
-  height:3vh;
-  width:10vw;
+text-align: center; 
+font-size:1vw;
+height:3vh;
+width:10vw;
 }
 legend{
- font-size: 2vw; 
+font-size: 2vw; 
 }
 label{
- font-size: 2vw; 
+font-size: 2vw; 
 }
 /**********************************
 *******BODY BOXES FOR PAGE*********
 ***********************************/
 .textBoxRight {
-  float: right;
+float: right;
 }
 .leftBoxTitle,
 .rightBoxTitle {
-  height: 3vh;
-  width: 50vw;
-  color: white;
-  left: 25vw;
-  background-color: rgba(50, 10, 10, 0.3);
-  text-align: center;
+height: 3vh;
+width: 50vw;
+color: white;
+left: 25vw;
+background-color: rgba(50, 10, 10, 0.3);
+text-align: center;
 }
 
 .textBoxLeft {
-  float: left;
-  left: 10vw;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40vw 8vh;
+float: left;
+left: 10vw;
+background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 40vw 8vh;
 }
 
 .textBoxLeft,
 .textBoxRight {
-  text-align: center;
-  margin: 2%;
-  height: 15vh;
-  position: relative;
-  background-color: rgba(5, 0, 0, 0.3);
-  color: white;
-  width: 50vw;
-  float: top;
-  top: 35vh;
+text-align: center;
+margin: 2%;
+height: 15vh;
+position: relative;
+background-color: rgba(5, 0, 0, 0.3);
+color: white;
+width: 50vw;
+float: top;
+top: 35vh;
 }
 
 .introHeaderTextBox {
-  z-index: 100;
-  height: 2vh;
-  width: 60vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
+z-index: 100;
+height: 2vh;
+width: 60vw;
+background-color: rgba(0, 0, 0, 1);
+text-align: center;
 }
 .bioHeaderTextBox {
-  z-index: 100;
-  height: 2vh;
-  width: 60vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
+z-index: 100;
+height: 2vh;
+width: 60vw;
+background-color: rgba(0, 0, 0, 1);
+text-align: center;
 }
 .introTextBoxCentre {
-  z-index: 100;
-  margin: 0%;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: 40vw 15vh;
-  height: 32vh;
-  width: 60vw;
-  float: top;
-  top: 30vh;
-  left: 20vw;
-  text-align: center;
+z-index: 100;
+margin: 0%;
+position: relative;
+background-color: rgba(0, 0, 0, 0.5);
+background-size: 40vw 15vh;
+height: 32vh;
+width: 60vw;
+float: top;
+top: 30vh;
+left: 20vw;
+text-align: center;
 }
-  .bioAlignmentPointer {
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
-    width: 80vw;
-    height: 6vh;
-    left: 10vw;
-    top: 40vh;
-  }
-.textBoxBioCentre {
-  z-index: 100;
-  margin: 0%;
+.bioAlignmentPointer {
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-size: 40vw 15vh;
-  height: 50vh;
-  width: 60vw;
-  float: top;
-  top: 60vh;
-  left: 20vw;
-  text-align: center;
+  width: 80vw;
+  height: 6vh;
+  left: 10vw;
+  top: 40vh;
+}
+.textBoxBioCentre {
+z-index: 100;
+margin: 0%;
+position: relative;
+background-color: rgba(0, 0, 0, 0.1);
+background-size: 40vw 15vh;
+height: 50vh;
+width: 60vw;
+float: top;
+top: 60vh;
+left: 20vw;
+text-align: center;
 }
 /*places the contact form 
-  on the page*/
-  .contactBox {
-    background-color: rgba(0, 0, 0, 1);
-    font-size: 4vw;
-    left: 30vw;
-    top: 122vh;
-    z-index: 500;
-    margin: 0;
-    width: 40vw;
-    height: 80vh;
-    position: relative;
-    float: top;
-    color: white;
-    text-align: center;
-  }
-.titleBox {
-  z-index: 100;
-  text-align: center;
-  font-size: 5vh;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  float: top;
-  top: -2vh;
-  height: 8vh;
-  width: 60vw;
+on the page*/
+.contactBox {
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 4vw;
   left: 30vw;
+  top: 122vh;
+  z-index: 500;
+  margin: 0;
+  width: 40vw;
+  height: 80vh;
+  position: relative;
+  float: top;
+  color: white;
+  text-align: center;
+}
+.titleBox {
+z-index: 100;
+text-align: center;
+font-size: 5vh;
+position: relative;
+background-color: rgba(0, 0, 0, 0);
+float: top;
+top: -2vh;
+height: 8vh;
+width: 60vw;
+left: 30vw;
 }
 
 .formantLogo {
-  z-index: 100;
-  position: relative;
-  left: 0vw;
-  top: -8vh;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 30vw 8vh;
-  width: 30vw;
-  height: 8vh;
+z-index: 100;
+position: relative;
+left: 0vw;
+top: -8vh;
+background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+background-repeat: no-repeat;
+background-position: left;
+background-size: 30vw 8vh;
+width: 30vw;
+height: 8vh;
 }
 
 .boxShadows {
-  box-shadow: 2px 2px 15px black;
+box-shadow: 2px 2px 15px black;
 }
 .smallShadows {
-  box-shadow: 2px 3px 9px black;
+box-shadow: 2px 3px 9px black;
 }
 #div1 {
-  float: left;
-  color: skyblue;
+float: left;
+color: skyblue;
 }
 
 #bgOv {
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 90vh;
-  width: 100vw;
-  z-index: 50;
+background-color: rgba(255, 255, 255, 0.9);
+height: 90vh;
+width: 100vw;
+z-index: 50;
 }
 
 .bg {
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp.jpg?v=1579552578595);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  top: 0%;
-  height: 110vh;
-  width: 100vw;
-  z-index: 1;
+background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp.jpg?v=1579552578595);
+background-repeat: no-repeat;
+background-position: center;
+position: fixed;
+background-size: cover;
+top: 0%;
+height: 110vh;
+width: 100vw;
+z-index: 1;
 }
 
 #bgimg {
-  background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  top: 0%;
-  height: 110vh;
-  width: 100vw;
-  z-index: 1;
+background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
+background-repeat: no-repeat;
+background-position: center;
+position: fixed;
+background-size: cover;
+top: 0%;
+height: 110vh;
+width: 100vw;
+z-index: 1;
 }
 
 #focal {
-  display: flex;
-  height: 500px;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+height: 500px;
+flex-direction: column;
+align-items: center;
 }
 
 #testimonials {
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-  font-style: italic;
+display: flex;
+justify-content: space-evenly;
+color: white;
+font-style: italic;
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
 
-  /*background-color: #206a80;*/
-  background-color: rgba(10, 0, 20, 1);
-  overflow-x: hidden;
-  transition: 0.5s;
+/*background-color: #206a80;*/
+background-color: rgba(10, 0, 20, 1);
+overflow-x: hidden;
+transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 10%;
-  width: 100%;
-  text-align: right;
-  margin-top: 25px;
+position: relative;
+top: 10%;
+width: 100%;
+text-align: right;
+margin-top: 25px;
 }
 
 .overlay a {
-  padding: 20px;
-  text-decoration: none;
-  font-size: 12px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+padding: 20px;
+text-decoration: none;
+font-size: 12px;
+color: white;
+display: block;
+transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: grey;
+color: grey;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  font-size: 50px;
+position: absolute;
+top: 10%;
+right: 10%;
+font-size: 50px;
 }
 
 #header {
-  float: top;
-  left: 92vw;
-  top: 1vh;
-  position: relative;
-  z-index: 1;
-  height: 3vh;
-  width: 3vw;
+float: top;
+left: 92vw;
+top: 1vh;
+position: relative;
+z-index: 1;
+height: 3vh;
+width: 3vw;
 }
 
 /** FX and stuff**/
@@ -336,7 +336,7 @@ label{
 .iconBox1:hover,
 .iconBox2:hover,
 .iconBox3:hover {
-  background-color: rgba(10, 0, 20, 0.4);
-  color: rgba(225, 10, 50, 1);
-  transition: 0.3s;
+background-color: rgba(10, 0, 20, 0.4);
+color: rgba(225, 10, 50, 1);
+transition: 0.3s;
 }
