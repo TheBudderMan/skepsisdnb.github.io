@@ -1,7 +1,7 @@
-//importing from another file/class
-/*import {whatever} 'filename';   */
-
-/* Gemmas javascript for navigation */
+const yearSpan = document.querySelector('#currentYear');
+const currentYear = new Date();
+console.log(currentYear);
+yearSpan.innerText = currentYear.getFullYear();
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
@@ -30,14 +30,14 @@ function closeNav() {
 ***********************************
 ***********************************
 */
-function currentYear() {
+function currentYears() {
     "use strict";
     /*jslint browser:true */
     const woah = new Date().getFullYear();
     return woah;
 }
 
-function outputThing() {
+function outputYear() {
     "use strict";
     /*jslint browser:true */
     const builtWith = '"Formant \u00A9 Copyright ' + currentYear() + '"';
@@ -48,75 +48,9 @@ function outputThing() {
 This here starts the beautiful, simplified version
 that has no need for any weird if statement. 
 */
-class labelHolder {
-  constructor(home,destination,packages,about,contact){
-    home ="Home";    
-    destination = "Destinations";
-    packages = "Packages";
-    about = "About Us";
-    contact = "Contact Us";    
-    this.home = home;
-    this.destination = destination;
-    this.packages = packages;
-    this.about = about;
-    this.contact = contact;   
-    
-  }  
-  getHome() {
-    return this.home;
-  }
-  getDestination() {
-    return this.destination;    
-  }
-  getPackage() {
-    return this.packages;
-  }
-  getAbout() {
-    return this.about;
-  }
-  getContact() {
-    return this.contact;
-  }  
-}
-class labelOutput extends labelHolder {
-  getHome() {
-    return super.getHome();
-  }
-  getDestination() {
-    return super.getDestination();
-  }
-  getPackage() {
-    return super.getPackage();
-  }
-  getAbout() {
-    return super.getAbout();
-  }
-  getContact() {
-    return super.getContact();
-  }
-}
 
-let labelMakerPro = new labelOutput();
 
-//Use these to output labels to ID tags.
-labelMakerPro.getHome().fontcolor( "white" );
-labelMakerPro.getDestination();
-labelMakerPro.getPackage();
-labelMakerPro.getAbout();
-labelMakerPro.getContact();
 
-document.getElementById("builtWith").textContent = outputThing();
-document.getElementById("homeLabel").textContent = labelMakerPro.getHome();
-document.getElementById("destLabel").textContent = labelMakerPro.getDestination();
-document.getElementById("packLabel").textContent = labelMakerPro.getPackage();
-document.getElementById("aboutLabel").textContent = labelMakerPro.getAbout();
-document.getElementById("contLabel").textContent = labelMakerPro.getContact();
-
-document.getElementById("dropHome").textContent = labelMakerPro.getHome();
-document.getElementById("dropDest").textContent = labelMakerPro.getDestination();
-document.getElementById("dropPack").textContent = labelMakerPro.getPackage();
-document.getElementById("dropAbout").textContent = labelMakerPro.getAbout();
-document.getElementById("dropCont").textContent = labelMakerPro.getContact();
 
 /*
 ********************************************************************************************************************************************
