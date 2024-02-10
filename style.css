@@ -195,7 +195,7 @@ on the page*/
   position: relative;
   left: 0vw;
   top: -8vh;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+  background-image: url(Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: 16vw 8vh;
@@ -221,7 +221,7 @@ on the page*/
 }
 
 .bg {
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Fwlp.jpg?v=1579552578595);
+  background-image: url(Resources/Website\ Background.png);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -233,7 +233,7 @@ on the page*/
 }
 
 #bgimg {
-  background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
+  background-image: url(Resources/Website\ Background.png);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -408,19 +408,19 @@ div.hamburgerButton2 {
 }
 .iconBox1 {
   background-color: rgba(5, 100, 250, 0);
-  background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/whitefbicon.png?v=1707278272956);
+  background-image: url(Resources/whitefbicon.png);
 }
 .iconBox2 {
   background-color: rgba(155, 100, 50, 0);
-  background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/whitesoundcloudlogo.png?v=1707278515104);
+  background-image: url(Resources/whitesoundcloudlogo.png);
 }
 .iconBox3 {
   background-color: rgba(125, 10, 10, 0);
-  background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/whiteinstalogo.png?v=1707278448002);
+  background-image: url(Resources/whiteinstalogo.png);
 }
 .iconBox4 {
   background-color: rgba(125, 10, 10, 0);
-  background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/white_youtube_icon.png?v=1707278580269);
+  background-image: url(Resources/white_youtube_icon.png);
 }
 .iconBox1,
 .iconBox2,
@@ -459,3 +459,7 @@ div.hamburgerButton2 {
   color: grey;
   transition: 0.3s;
 }
+
+
+
+
