@@ -109,44 +109,43 @@ label {
   float: top;
   top: 35vh;
 }
+
+.homePageMusicBox {
+  display:flex;
+  flex-wrap: wrap;
+  z-index: 100;
+  margin: 0%;
+  position: absolute;
+  background-color: white;
+  float: top;
+  right: 5vw;
+  top: 25vh;
+  height: 50vh;
+  width: 40vw;
+}
+
 .introHeaderTextBox {
   z-index: 100;
   height: 2vh;
-  width: 30vw;
+  width: 8vw;
   background-color: rgba(0, 0, 0, 1);
   text-align: center;
 }
-.introHeaderTextBox2 {
+
+.musicPlayerBox1 {  
+  flex: 1;
   z-index: 100;
-  height: 2vh;
-  width: 30vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-}
-.musicPlayerBox1 {
-  z-index: 100;
-  margin: 0%;
+  margin: 5%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 10vh;
-  width: 30vw;
+  height: 8vh;
+  width: 8vw;
   float: top;
-  top: 9vh;
-  left: 70vw;
+  top: 3vh;
+  left: 0vw;
   text-align: center;
 }
-.introTextBoxCentre2 {
-  z-index: 100;
-  margin: 0%;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 20vh;
-  width: 30vw;
-  float: top;
-  top: 40vh;
-  left: 70vw;
-  text-align: center;
-}
+
 .bioHeaderTextBox {
   z-index: 100;
   height: 2vh;
@@ -160,7 +159,7 @@ label {
   width: 80vw;
   height: 6vh;
   left: 10vw;
-  top: 50vh;
+  top: 80vh;
 }
 .textBoxBioCentre {
   z-index: 100;
@@ -171,7 +170,7 @@ label {
   height: 50vh;
   width: 60vw;
   float: top;
-  top: 60vh;
+  top: 90vh;
   left: 20vw;
   text-align: center;
 }
@@ -209,6 +208,7 @@ on the page*/
   box-shadow: 2px 3px 9px black;
 }
 #div1 {
+  z-index:9999;
   float: left;
   color: skyblue;
 }
