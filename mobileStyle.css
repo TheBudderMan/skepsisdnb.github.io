@@ -205,30 +205,7 @@
     color: white;
     text-align: center;
   }
-  /*contact and stats alignment*/
-  #body,
-  #email,
-  #date,
-  #subject,
-  #phone {
-    font-size: 4vw;
-    height: 12vh;
-    width: 60vw;
-    background-color: black;
-    color: white;
-  }
-
-  #email {
-    height: 5vh;
-  }
-
-  #sbmt,
-  #rst {
-    text-align: center;
-    font-size: 2vw;
-    height: 4vh;
-    width: 10vw;
-  }
+  
   .bottomBox {
     /*footer area*/
     width: 100vw;

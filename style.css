@@ -305,49 +305,21 @@ on the page*/
 
 /*places the contact form 
   on the page*/
-.contactBox {
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 4vw;
-  left: 30vw;
-  top: 122vh;
-  z-index: -5000;
-  margin: 0;
-  width: 40vw;
-  height: 80vh;
-  position: relative;
-  float: top;
-  color: white;
-  text-align: center;
-}
-/*places the contact form 
-  on the page*/
   .contactBox {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+    color: black;
     font-size: 4vw;
-    left: 15vw;
-    top: 122vh;
+    left: 30vw;
+    top: 220vh;
     z-index: 500;
     margin: 0;
     width: 40vw;
     height: 40vh;
-    position: relative;
+    position: absolute;
     float: top;
-    color: white;
     text-align: center;
-
   }  
-/*contact and stats alignment*/
-#body,
-#email,
-#date,
-#subject,
-#phone {
-  font-size: 4vw;
-  height: 12vh;
-  width: 60vw;
-  background-color: black;
-  color: white;
-}
+
 .hamburger-menu {
   position: relative;
   display: flex;
