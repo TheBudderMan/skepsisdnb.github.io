@@ -7,26 +7,38 @@
 .jsLabel,
 .bioLabel {
   /*Home label for navigation bar*/
-  margin: 0.5%;
   position: relative;
-  font-size: 0.3em;
+  padding:0;
+  margin: 0%;
+  font-size: 1em;
   color: white;
   background-color: black;
   float: left;
   height: 2vh;
   width: 5vw;
-  left: 10vw;
+  left: 7vw;
   text-align: center;
-  top: 4vh;
+  top: 0vh;
 }
 .homeLabel {
-  left: 10%;
+  left: 3vw;
 }
 .bioLabel {
-  left: 20%;
+  left: 18vw;
 }
 .jsLabel {
-  left: 25%;
+  left: 27vw;
+}
+.homeLabel:hover,
+.bioLabel:hover,.text:hover {
+  background-color: rgb(0, 0, 0,0);
+  color: rgb(255, 255, 255,0);
+  font-size: 1.5em;
+}
+.jsLabel:hover,.text:hover {
+  background-color: rgb(0, 0, 0,0);
+  color: rgb(255, 255, 255,0);
+  font-size: 1.1em;
 }
   #bgimg {
     background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
@@ -80,18 +92,18 @@
   flex-direction: column;
   justify-content: space-around;
   top: -0.5vh;
-  left: 6vw;
+  left: 0vw;
   height: 4vh;
   width: 5vw;
 }  
 .hamburger-menu2 {
-  position: relative;
+  position: absolute;
   display: flex;
   float: top;
   flex-direction: row;
   justify-content: space-around;
-  top: -17vh;
-  left: 1vw;
+  top: -0vh;
+  left: 2vw;
   height: 4vh;
   width: 7vw;
 }  
@@ -119,7 +131,45 @@
   background-color: white;
   margin: 0;
 }
-
+.musicHeaderTextBox {
+  position:relative;
+  z-index: 100;
+  height: 2vh;
+  float:top;
+  width: 8vw;
+  padding: 1;
+  left:35vw;
+  top:1vh;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.homePageMusicBox {
+  display:flex;
+  flex-wrap: wrap;
+  z-index: 100;
+  margin: 0%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  float: top;
+  left: 10vw;
+  top: 15vh;
+  height: 60vh;
+  width: 80vw;
+}
+.musicPlayerBox1 {  
+  flex: 1;
+  z-index: 100;
+  margin: 3%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8vh;
+  width: 8vw;
+  float: top;
+  top: 8vh;
+  right: 5vw;
+  text-align: center;
+  transition: 0.5s;
+}
   /*Javascript boxes for menu*/
   div.hamburgerButton1,
   div.hamburgerButton2 {
@@ -146,34 +196,8 @@
   background-color: rgba(0, 0, 0, 1);
   text-align: center;
   }
-  .introHeaderTextBox {
-  z-index: 100;
-  height: 3vh;
-  width: 60vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-  }
-  .introHeaderTextBox2 {
-  z-index: 100;
-  height: 3vh;
-  width: 60vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-  }
-  div.introTextBoxCentre {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 60vw;
-    height: 30vh;
-    left: 40vw;
-    top: 6vh;
-  }
-  div.introTextBoxCentre2 {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 60vw;
-    height: 30vh;
-    left: 40vw;
-    top: 16vh;
-  }
+
+  
   div.bioAlignmentPointer {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
@@ -188,7 +212,7 @@
     width: 80vw;
     height: 58vh;
     left: 10vw;
-    top: 60vh;
+    top: 120vh;
   }
   /*places the contact form 
   on the page*/
@@ -210,7 +234,32 @@
     /*footer area*/
     width: 100vw;
   }  
-  
+  .iconBox1,
+.iconBox2,
+.iconBox3,
+.iconBox4 {
+  padding: 2em;
+  margin: 1;
+  text-align: center;
+  position: relative;
+  float: left;
+  left: 0%;
+  z-index: 100;
+  position: relative;
+  left: 28vw;
+  top: -0.5vh;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 6vw 6vh;
+  width: 8vw;
+  height: 8vh;
+}
+.iconBox1,
+.iconBox4 {  
+  background-size: 5vw 5vh;
+  width: 8vw;
+  height: 8vh;
+}
 }
 
 .showYear {
@@ -222,9 +271,9 @@
   margin: 0;
   text-align: left;
   position: relative;
-  float: left;
-  left: 30vw;
-  bottom: -1vh;
+  float: right;
+  right: 10vw;
+  top:3vh;
 }
 @media screen and (max-height: 400px) {
   div.titleBox {
