@@ -189,18 +189,7 @@ on the page*/
   width: 60vw;
   left: 30vw;
 }
-.formantLogo {
-  z-index: 100;
-  position: relative;
-  left: 0vw;
-  top: -8vh;
-  background-image: url(Resources/logo2.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 16vw 8vh;
-  width: 16vw;
-  height: 8vh;
-}
+
 .boxShadows {
   box-shadow: 2px 2px 15px black;
 }
@@ -261,7 +250,7 @@ on the page*/
   /*background-color: #206a80;*/
   background-color: rgba(0, 0, 0, 1);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .overlay-content {
@@ -278,7 +267,7 @@ on the page*/
   font-size: 12px;
   color: white;
   display: block;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .overlay a:hover,
@@ -305,7 +294,7 @@ on the page*/
 
 /*places the contact form 
   on the page*/
-  .contactBox {
+  .javascriptProjectsBox {
     background-color: rgb(255, 255, 255);
     color: black;
     font-size: 4vw;
@@ -320,28 +309,7 @@ on the page*/
     text-align: center;
   }  
 
-.hamburger-menu {
-  position: relative;
-  display: flex;
-  float: top;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 4vh;
-  right: -10.5vw;
-  width: 2vw;
-  cursor: pointer;
-}
-.hamburger-menu2 {
-  position: relative;
-  display: flex;
-  float: top;
-  flex-direction: row;
-  justify-content: space-around;
-  top: -22vh;
-  right: -6.5vw;
-  height: 4vh;
-  width: 3vw;
-}
+
 .bar {
   width: 3vw;
   height: 4px;
@@ -367,16 +335,38 @@ on the page*/
   margin: 0;
 }
 /*Javascript boxes for menu*/
+.hamburger-menu {
+  display: flex;
+  float: top;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 4vh;
+  left: 0vw;
+  cursor: pointer;
+}
+.hamburger-menu2 {
+  display: flex;
+  float: top;
+  flex-direction: row;
+  justify-content: space-around;
+}
 div.hamburgerButton1 {
-  width: 5vw;
-  height: 3vh;
-  background-color: black;
+  position: absolute;
+  right: 2vw;
+  width: 3vw;
+  height: 4vh;
+  background-color: rgb(209, 11, 11, 0);
+  transition: 0.1s;
 }
 
 div.hamburgerButton2 {
-  left: 90vw;
-  top: -12vh;
-  background-color: black;
+  position: absolute;
+  right: 2vw;
+  top: -11vh;
+  height: 5vh;
+  width: 3vw;
+  background-color: rgb(187, 25, 25, 0);
+  transition: 0.5s;
 }
 .iconBox1 {
   background-color: rgba(5, 100, 250, 0);
@@ -400,7 +390,6 @@ div.hamburgerButton2 {
 .iconBox4 {
   padding: 0%;
   margin: 0%;
-
   text-align: center;
   position: relative;
   float: left;
@@ -415,6 +404,22 @@ div.hamburgerButton2 {
   width: 5vw;
   height: 5vh;
 }
+
+
+/*Side Scroller Functions*/
+.scrollBox {
+  z-index: 99;
+  height: 10vh;
+  width: 10vw;
+  margin: 0;
+  background-color: red;
+  opacity: 1;
+  float: top;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
 /** FX and stuff**/
 .bar:hover,
 .shortBar:hover,
@@ -422,14 +427,14 @@ div.hamburgerButton2 {
 .vertShortBar:hover,
 .homeLabel:hover,
 .bioLabel:hover,
-.contLabel:hover,
+.jsLabel:hover,
 .bottomFirstBox:hover,
 .iconBox1:hover,
 .iconBox2:hover,
 .iconBox3:hover {
-  background-color: black;
-  color: grey;
-  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: red;
+  transition: 0.2s;
 }
 
 

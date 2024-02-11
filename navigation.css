@@ -14,24 +14,60 @@
   position: fixed;
   float: top;
   right: 0vw;
-  text-align: center;
+  text-align: left;
 }
 /*******NAVIGATION AREA********/
 .homeLabel,
-.contLabel,
-.bioLabel {
+.bioLabel,
+.jsLabel {
   /*Home label for navigation bar*/
-  margin: 0.5%;
+  z-index:9999;
   position: relative;
-  font-size: 0.5em;
+  padding:0;
+  margin: 0%;
+  font-size: 1em;
   color: white;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
+  border-width:1px;
+  border-color: aliceblue;
   float: left;
-  height: 2.5vh;
-  width: 10vw;
   left: 5vw;
-  text-align: center;
-  top: 4vh;
+  text-align: left;
+  top: 1.5vh;
+}
+.homeLabel{
+  left: 5vw;
+}
+.bioLabel{
+  left: 15vw;
+}
+.jsLabel{
+  left: 25vw;
+}
+div.navigationTopBox {
+  position: absolute;
+  float: top;
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  left: 30vw;
+  top:2vh;
+  width: 40vw;
+  height:5vh;
+  background-color: rgb(163, 117, 117,0);
+
+}
+.formantLogo {
+  z-index: 100;
+  position: relative;
+  left: 0vw;
+  top: -8vh;
+  background-image: url(Resources/logo2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 16vw 8vh;
+  width: 16vw;
+  height: 8vh;
 }
 /******END OF NAVIGATION AREA*****/
 /*
@@ -67,16 +103,17 @@
   z-index: 9999;
   float: top;
   top: -11.5vh;
-  left: 92vw;
+  right: 6vw;
   position: relative;
-  height: 4vh;
+  height: 6vh;
   width: 3vw;
   margin: 0;
   padding: 0;
   background-color: black;
 }
+.hamburgerButton1:hover,
 .hamburgerButton2:hover {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .hamburgerButton1 {
   z-index: 500;
@@ -86,11 +123,7 @@
   width: 3vw;
   margin: 0;
   padding: 0;
-  right: 9vw;
+  right: 7vw;
   background-color: black;
 }
-.hamburgerButton1:hover,
-.dropbtn:focus {
-  z-index: 9999;
-  background-color: black;
-}
+

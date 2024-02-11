@@ -1,212 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/logo2%20blobs%20separate.png?v=1707265137266"
-    />
-    <title>Formant - Home</title>
-    <meta charset="utf-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/navigation.css" />
-    <link rel="stylesheet" href="/mobileStyle.css" />
-  </head>
-  <body>
-    <!--This here is muh' navigation bar.-->
-    <header>
-      <div class="headerBox">
-        <div class="titleBox" id="homeTitle"></div>
-        <a href="/"><div class="formantLogo"></div></a>
+<head>
+  <meta property="og:image"
+    content="https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/logo2%20blobs%20separate.png?v=1707265137266" />
+  <title>Formant - Home</title>
+  <meta charset="utf-8" />
+  <meta https-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <div class="hamburgerButton1" id="hamburgerButton1" onclick="openNav()">
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="shortBar"></div>
-          </div>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navigation.css" />
+  <link rel="stylesheet" href="/mobileStyle.css" />
+  <link rel="stylesheet" href="/ticTacToe.css" />
+  <!-- import the webpage's javascript file -->
+  <script src="/hash-router.js" defer></script>
+  <script src="/navigation-functions.js" defer></script>
+  <script src="/script.js" defer></script>
+  <script src="/index.js" defer></script>
+  <script src="/time.js" defer></script>
+  <script src="/ticTacToe.js" defer></script>
+</head>
+
+<body>
+  <!--This here is muh' navigation bar.-->
+  <header>
+    <div class="headerBox">
+      <div class="titleBox" id="homeTitle"></div>
+      <a href="/">
+        <div class="formantLogo"></div>
+      </a>
+      <div class="navigationTopBox">
+        <a href="/" onclick="closeNav()">
+          <div class="homeLabel">Home</div>
+        </a>
+        <a href="#bio" onclick="closeNav()">
+          <div class="bioLabel">Bio</div>
+        </a>
+        <a href="#jsProjectBox" onclick="closeNav()">
+          <div class="jsLabel">Javascript Projects</div>
+        </a>     
+      </div>
+
+      <div class="hamburgerButton1" id="hamburgerButton1" onclick="openNav()">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="shortBar"></div>
         </div>
-        
-        <!--hamburger navigation-->
-        <div id="header">
-          <div id="myNav" class="overlay">
-            <div class="overlay-content">
-              <div class="textBoxLeft smallShadows">
-                <div class="leftBoxTitle"></div>
-              </div>
-              <div class="hamburgerButton2 smallShadows" onclick="closeNav()">
-                <div class="hamburger-menu2">
-                  <div class="vertBar"></div>
-                  <div class="vertBar"></div>
-                  <div class="vertShortBar"></div>
-                </div>
-              </div>
-              <nav>
-                <a href="/" onclick="closeNav()"><li>Home</li></a>
-                <a href="#bio" onclick="closeNav()"><li>Bio</li></a>
-                <a href="#contact" onclick="closeNav()"><li>Contact</li></a>
-              </nav>
+      </div>
+
+      <!--hamburger navigation-->
+      <div id="header">
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <div class="textBoxLeft smallShadows">
+              <div class="leftBoxTitle"></div>
             </div>
+            <div class="hamburgerButton2 smallShadows" onclick="closeNav()">
+              <div class="hamburger-menu2">
+                <div class="vertBar"></div>
+                <div class="vertBar"></div>
+                <div class="vertShortBar"></div>
+              </div>
+            </div>
+            <nav>
+              <a href="/" onclick="closeNav()">
+                <li>Home</li>
+              </a>
+              <a href="#bio" onclick="closeNav()">
+                <li>Bio</li>
+              </a>
+              <a href="#jsProjectBox" onclick="closeNav()">
+                <li>Javascript Projects</li>
+              </a>
+            </nav>
           </div>
         </div>
       </div>
-    </header>
-
-    <!--The general body of the page after navigation starts here-->
-
-    <!--The main textout box -->
-
-    <div class="homePageMusicBox boxShadows" id="/">
-
-      <div class="musicPlayerBox1 boxShadows" id="/">
-        <div class="introHeaderTextBox">Latest Music</div>
-        <br />
-        <iframe
-          width="100%"
-          height="300"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1717832175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe>
-        <div
-          style="
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-          "
-        >
-          <a
-            href="https://soundcloud.com/formant4udio"
-            title="Formant"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >Formant</a
-          >
-          ·
-          <a
-            href="https://soundcloud.com/formant4udio/formant-wild-original-mix"
-            title="Formant - Wild (Original Mix)"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >Formant - Wild (Original Mix)</a
-          >
-        </div>
-      </div>
-      <div class="musicPlayerBox1 boxShadows">
-        <div class="introHeaderTextBox">Latest Music</div>
-        <br />
-        <iframe
-          width="100%"
-          height="300"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1400550580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe>
-        <div
-          style="
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-          "
-        >
-          <a
-            href="https://soundcloud.com/tytaniumarmourrecordings"
-            title="Tytanium Armour Recordings / Tycaine"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >Tytanium Armour Recordings / Tycaine</a
-          >
-          
-          <a
-            href="https://soundcloud.com/tytaniumarmourrecordings/drugs"
-            title="Formant - Drugs"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >Formant - Drugs</a
-          >
-        </div>
-      </div>
     </div>
+  </header>
 
-    
-    <!--The main textout box -->
-    <div class="bioAlignmentPointer" id="bio"></div>
-    <div class="textBoxBioCentre boxShadows">
-      <div class="bioHeaderTextBox">A little about myself</div>
+  <!--The general body of the page after navigation starts here-->
+
+  <!--The main textout box -->
+
+
+  <div class="homePageMusicBox boxShadows" id="/">
+
+    <div class="musicPlayerBox1 boxShadows" id="/">
+      <div class="introHeaderTextBox">Latest Music</div>
       <br />
-      Stagma Records // Intaface Audio // Boey Audio<br />
-
-      Tyler Johnston, AKA Formant is a new, <br />
-      up and coming drum and bass <br />
-      artist from Calgary, Alberta. <br />
-      DJing from an early age he <br />
-      has been rocking the sounds <br />
-      of jump-up, tech-step and nuerofunk <br />
-      from his earlier years in Winnipegs <br />
-      electronic scene, <br />
-      playing weekly at AM afterhours <br />
-      under the name, Spam as well <br />
-      as at Soundwave Entertainment <br />
-      events such as Tranceformers, <br />
-      Scream and Vinyl Fantasy IX. <br />
-      Now having his own music released on <br />
-      Canadian label Intaface Audio, <br />
-      Irish labels Stagma Records and Boey Audio, <br />
-      he now does so with his own productions in drum and bass. <br />
-    </div>
-
-    <!--start of contact form-->
-    <div class="contactBox" id="contact">
-      wuddup
-      <nav id="navigation"></nav>   
-    </div>
-    <!--end of contact form-->
-
-    <!--The footer section-->
-    <div class="bottomBox">
-      <a href="https://www.facebook.com/form4nt" target="_blank">
-        <div class="iconBox1 smallShadows" id="iconBox1"></div>
-      </a>
-      <a href="https://www.soundcloud.com/formant4udio" target="_blank">
-        <div class="iconBox2 smallShadows" id="iconBox2"></div>
-      </a>
-      <a href="https://www.instagram.com/formant4udio/" target="_blank">
-        <div class="iconBox3 smallShadows" id="iconBox3"></div>
-      </a>
-      <a href="https://www.youtube.com/@formantaudio" target="_blank">
-        <div class="iconBox4 smallShadows" id="iconBox4"></div>
-      </a>
-      <div class="showYear">
-        &copy
-        <span id="currentYear">2020</span>
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1717832175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <div style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          ">
+        <a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank"
+          style="color: #cccccc; text-decoration: none">Formant</a>
+        ·
+        <a href="https://soundcloud.com/formant4udio/formant-wild-original-mix" title="Formant - Wild (Original Mix)"
+          target="_blank" style="color: #cccccc; text-decoration: none">Formant - Wild (Original Mix)</a>
       </div>
     </div>
+    <div class="musicPlayerBox1 boxShadows">
+      <div class="introHeaderTextBox">Latest Music</div>
+      <br />
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1400550580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <div style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          ">
+        <a href="https://soundcloud.com/tytaniumarmourrecordings" title="Tytanium Armour Recordings / Tycaine"
+          target="_blank" style="color: #cccccc; text-decoration: none">Tytanium Armour Recordings / Tycaine</a>
 
-    <div id="bgimg" class="bg"></div>
+        <a href="https://soundcloud.com/tytaniumarmourrecordings/drugs" title="Formant - Drugs" target="_blank"
+          style="color: #cccccc; text-decoration: none">Formant - Drugs</a>
+      </div>
+    </div>
+  </div>
+  <div class="scrollBox">
+    <ul class="tag-list scroller_inner">
 
-    <!-- import the webpage's javascript file -->
-    <script src="/hash-router.js" defer></script>
-    <script src="/navigation-functions.js" defer></script>
-    <script src="/script.js" defer></script>
-    <script src="/index.js" defer></script>
-  </body>
+    </ul>
+
+  </div>
+
+  <!--The main textout box -->
+  <div class="bioAlignmentPointer" id="bio"></div>
+  <div class="textBoxBioCentre boxShadows">
+    <div class="bioHeaderTextBox">A little about myself</div>
+    <br />
+    Stagma Records // Intaface Audio // Boey Audio<br />
+
+    Tyler Johnston, AKA Formant is a new, <br />
+    up and coming drum and bass <br />
+    artist from Calgary, Alberta. <br />
+    DJing from an early age he <br />
+    has been rocking the sounds <br />
+    of jump-up, tech-step and nuerofunk <br />
+    from his earlier years in Winnipegs <br />
+    electronic scene, <br />
+    playing weekly at AM afterhours <br />
+    under the name, Spam as well <br />
+    as at Soundwave Entertainment <br />
+    events such as Tranceformers, <br />
+    Scream and Vinyl Fantasy IX. <br />
+    Now having his own music released on <br />
+    Canadian label Intaface Audio, <br />
+    Irish labels Stagma Records and Boey Audio, <br />
+    he now does so with his own productions in drum and bass. <br />
+  </div>
+
+  <!--start of contact form-->
+  <div class="javascriptProjectsBox" id="jsProjectBox">
+    wuddup
+    <div id="root">yo</div>
+  </div>
+  <!--end of contact form-->
+
+  <!--The footer section-->
+  <div class="bottomBox">
+    <a href="https://www.facebook.com/form4nt" target="_blank">
+      <div class="iconBox1 smallShadows" id="iconBox1"></div>
+    </a>
+    <a href="https://www.soundcloud.com/formant4udio" target="_blank">
+      <div class="iconBox2 smallShadows" id="iconBox2"></div>
+    </a>
+    <a href="https://www.instagram.com/formant4udio/" target="_blank">
+      <div class="iconBox3 smallShadows" id="iconBox3"></div>
+    </a>
+    <a href="https://www.youtube.com/@formantaudio" target="_blank">
+      <div class="iconBox4 smallShadows" id="iconBox4"></div>
+    </a>
+    <div class="showYear">
+      &copy
+      <span id="currentYear">2020</span>
+    </div>
+  </div>
+
+  <div id="bgimg" class="bg"></div>
+
+  <!-- Google tag (gtag.js) -->
+  <script 
+  async src="https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9"></script>
+  <script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag() { 
+    dataLayer.push(arguments); 
+    } 
+    gtag('js', new Date()); 
+    gtag('config', 'G-L499GQPJX9'); 
+  </script>
+</body>
+
 </html>
