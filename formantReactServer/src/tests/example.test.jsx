@@ -1,8 +1,6 @@
-import {describe, it} from "vitest;"
+import { expect, test } from 'vitest'
+import { sum } from './sum'
 
-describe("Example Suite", () => {
-    it("should pass", () =>{
-        const sum = 2+2
-        expect(sum).toEqual(4)
-    }) 
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3)
 })
