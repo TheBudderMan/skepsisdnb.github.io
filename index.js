@@ -5,6 +5,7 @@ function NavigationBar() {
   return <h1>Hello from React!</h1>;
 }
 
+<div />
 const domNode = document.getElementById('navigation');
 const root = createRoot(domNode);
 root.render(<NavigationBar />);
