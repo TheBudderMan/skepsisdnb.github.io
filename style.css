@@ -110,46 +110,10 @@ label {
   top: 35vh;
 }
 
-.homePageMusicBox {
-  display:flex;
-  flex-wrap: wrap;
-  z-index: 100;
-  margin: 0%;
-  position: absolute;
-  background-color: white;
-  float: top;
-  right: 5vw;
-  top: 25vh;
-  height: 50vh;
-  width: 40vw;
-}
-
-.introHeaderTextBox {
-  z-index: 100;
-  height: 2vh;
-  width: 8vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-}
-
-.musicPlayerBox1 {  
-  flex: 1;
-  z-index: 100;
-  margin: 5%;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 8vh;
-  width: 8vw;
-  float: top;
-  top: 3vh;
-  left: 0vw;
-  text-align: center;
-}
-
 .bioHeaderTextBox {
   z-index: 100;
   height: 2vh;
-  width: 60vw;
+  width: 40vw;
   background-color: rgba(0, 0, 0, 1);
   text-align: center;
 }
@@ -158,24 +122,22 @@ label {
   position: relative;
   width: 80vw;
   height: 6vh;
-  left: 10vw;
-  top: 80vh;
+  right: 5vw;
+  top: 90vh;
 }
 .textBoxBioCentre {
   z-index: 100;
   margin: 0%;
-  position: relative;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.1);
   background-size: 40vw 15vh;
   height: 50vh;
-  width: 60vw;
+  width: 40vw;
   float: top;
-  top: 90vh;
-  left: 20vw;
+  top: 110vh;
+  right: 5vw;
   text-align: center;
 }
-/*places the contact form 
-on the page*/
 
 .titleBox {
   z-index: 100;
@@ -190,12 +152,7 @@ on the page*/
   left: 30vw;
 }
 
-.boxShadows {
-  box-shadow: 2px 2px 15px black;
-}
-.smallShadows {
-  box-shadow: 2px 3px 9px black;
-}
+
 #div1 {
   z-index:9999;
   float: left;
@@ -292,22 +249,6 @@ on the page*/
   width: 3vw;
 }
 
-/*places the contact form 
-  on the page*/
-  .javascriptProjectsBox {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    font-size: 4vw;
-    left: 30vw;
-    top: 220vh;
-    z-index: 500;
-    margin: 0;
-    width: 40vw;
-    height: 40vh;
-    position: absolute;
-    float: top;
-    text-align: center;
-  }  
 
 
 .bar {
@@ -397,7 +338,7 @@ div.hamburgerButton2 {
   z-index: 100;
   position: relative;
   left: 43vw;
-  top: -0.4vh;
+  top: -0vh;
   background-repeat: no-repeat;
   background-position: left;
   background-size: 2vw 3vh;
@@ -405,20 +346,6 @@ div.hamburgerButton2 {
   height: 5vh;
 }
 
-
-/*Side Scroller Functions*/
-.scrollBox {
-  z-index: 99;
-  height: 10vh;
-  width: 10vw;
-  margin: 0;
-  background-color: red;
-  opacity: 1;
-  float: top;
-  position: absolute;
-  top: 15vh;
-  left: 10vw;
-}
 
 /** FX and stuff**/
 .bar:hover,
@@ -431,12 +358,15 @@ div.hamburgerButton2 {
 .bottomFirstBox:hover,
 .iconBox1:hover,
 .iconBox2:hover,
-.iconBox3:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+.iconBox3:hover,
+.iconBox4:hover {
+  background-color: rgba(0, 0, 0, 0);
   color: red;
   transition: 0.2s;
 }
-
-
-
-
+.boxShadows {
+  box-shadow: 2px 2px 15px black;
+}
+.smallShadows {
+  box-shadow: 2px 3px 9px black;
+}

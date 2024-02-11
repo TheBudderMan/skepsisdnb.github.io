@@ -9,6 +9,7 @@ function closeNav() {
   document.getElementById("hamburgerButton1").style.visibility='visible';
   document.getElementById("contact").style.visibility='visible';
 }
+
 //
 var overlayPage = document.getElementById('hamburgerButton1');
 function showDiv() {

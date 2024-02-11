@@ -32,13 +32,13 @@
         <div class="formantLogo"></div>
       </a>
       <div class="navigationTopBox">
-        <a href="/" onclick="closeNav()">
+        <a href="/">
           <div class="homeLabel">Home</div>
         </a>
-        <a href="#bio" onclick="closeNav()">
+        <a href="#bio">
           <div class="bioLabel">Bio</div>
         </a>
-        <a href="#jsProjectBox" onclick="closeNav()">
+        <a href="#jsProjectBox">
           <div class="jsLabel">Javascript Projects</div>
         </a>     
       </div>
@@ -85,13 +85,16 @@
   <!--The general body of the page after navigation starts here-->
 
   <!--The main textout box -->
-
-
+  
+  
   <div class="homePageMusicBox boxShadows" id="/">
+    <div class="musicHeaderTextBox">Latest Music</div>
+    <div class="musicNavLeft" onclick="moveMusicLeft()" ></div>
+    <div class="musicNavRight" onclick="moveMusicRight()"></div>
+    
+    
 
-    <div class="musicPlayerBox1 boxShadows" id="/">
-      <div class="introHeaderTextBox">Latest Music</div>
-      <br />
+    <div class="musicPlayerBox1 boxShadows tag-list scroller_inner" id="/">
       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1717832175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
       <div style="
@@ -114,8 +117,6 @@
       </div>
     </div>
     <div class="musicPlayerBox1 boxShadows">
-      <div class="introHeaderTextBox">Latest Music</div>
-      <br />
       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1400550580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
       <div style="
@@ -138,12 +139,7 @@
       </div>
     </div>
   </div>
-  <div class="scrollBox">
-    <ul class="tag-list scroller_inner">
-
-    </ul>
-
-  </div>
+  
 
   <!--The main textout box -->
   <div class="bioAlignmentPointer" id="bio"></div>
@@ -172,9 +168,9 @@
   </div>
 
   <!--start of contact form-->
-  <div class="javascriptProjectsBox" id="jsProjectBox">
-    wuddup
-    <div id="root">yo</div>
+  <div class="javascriptProjectsBox boxShadows" id="jsProjectBox">
+    
+    <div id="root"></div>
   </div>
   <!--end of contact form-->
 
