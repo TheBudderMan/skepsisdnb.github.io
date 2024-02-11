@@ -1,24 +1,16 @@
 /*Hamburger Glitch FX*/
 
-.content {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  background-image: url(Resources/Website\ Background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .text {
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color:white;
   text-transform: uppercase;
 }
+
 .glitch {
   position: relative;
-  color: white;
+  color: rgb(252, 252, 252);
   mix-blend-mode: lighten;
 }
 .glitch:before,
@@ -26,25 +18,68 @@
   content: attr(data-text);
   position: absolute;
   top: 0;
-  width: 100%;
-  background: black;
+  width: 0%;
+  background: rgb(255, 255, 255);
   clip: rect(0, 0, 0, 0);
 }
 .glitch:before {
-  left: -1px;
-  text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
+  left: -0.1em;
+  text-shadow: 1px 0 rgb(255, 255, 255);
 }
 .glitch:after {
-  left: 1px;
-  text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+  left: 0.1em;
+  text-shadow: -1px 0 rgba(205, 205, 206, 0.7);
 }
 .glitch:hover:before {
-  text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
-  animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+  text-shadow: 0.1em 0 rgba(255, 255, 255, 0.7);
+  animation: glitch-anim 0.8s infinite ease-in-out alternate-reverse;
 }
 .glitch:hover:after {
-  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
-  animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+  text-shadow: 0.2em 0 rgba(223, 223, 223, 0.7);
+  animation: glitch-anim2 0.8s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes glitch {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  25% {
+    transform: skew(0.5deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+    opacity: 0.5;
+  }
+  75% {
+    transform: skew(-0.5deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.glitch-effect {
+  position: relative;
+  color: rgb(252, 252, 252);
+  mix-blend-mode: lighten;
+}
+.glitch-effect:before {
+  left: -1px;
+  text-shadow: 1px 0 rgb(255, 255, 255);
+}
+.glitch-effect:after {
+  left: 0.1em;
+  text-shadow: -1px 0 rgba(205, 205, 206, 0.7);
+}
+.glitch-effect:hover:before {
+  animation: glitch-anim 0.8s infinite ease-in-out alternate-reverse;
+}
+.glitch-effect:hover:after {
+  animation: glitch-anim2 0.8s infinite ease-in-out alternate-reverse;
 }
   @keyframes glitch-anim {
     0% {

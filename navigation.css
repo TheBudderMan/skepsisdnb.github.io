@@ -27,7 +27,7 @@
   margin: 0%;
   font-size: 1em;
   color: white;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgb(6, 168, 46,0);
   border-width:1px;
   border-color: aliceblue;
   float: left;
@@ -51,7 +51,7 @@ div.navigationTopBox {
   display: flex;
   flex-direction: row;
   left: 30vw;
-  top:2vh;
+  top:0vh;
   width: 40vw;
   height:5vh;
   background-color: rgb(163, 117, 117,0);
@@ -146,12 +146,12 @@ div.navigationTopBox {
 .hamburgerButton1 {
   z-index: 500;
   top: 1vh;
-  position: fixed;
+  position: absolute;
   height: 4vh;
   width: 3vw;
   margin: 0;
   padding: 0;
-  right: 7vw;
+  right: 70vw;
   background-color: black;
 }
 
@@ -275,3 +275,15 @@ div.navigationTopBox {
     float: top;
     text-align: center;
   }
+
+  .homeLabel:hover,
+.bioLabel:hover,.text:hover {
+  background-color: rgb(0, 0, 0,0);
+  color: rgb(255, 255, 255,0);
+  font-size: 2em;
+}
+.jsLabel:hover,.text:hover {
+  background-color: rgb(0, 0, 0,0);
+  color: rgb(255, 255, 255,0);
+  font-size: 1.2em;
+}

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/navigation.css" />
   <link rel="stylesheet" href="/mobileStyle.css" />
   <link rel="stylesheet" href="/ticTacToe.css" />
+  <link rel="stylesheet" href="/Hamburger_Glitch.css" />
   <!-- import the webpage's javascript file -->
   <script src="/hash-router.js" defer></script>
   <script src="/navigation-functions.js" defer></script>
@@ -33,22 +34,32 @@
       </a>
       <div class="navigationTopBox">
         <a href="/">
-          <div class="homeLabel">Home</div>
+          <div class="homeLabel">
+            <div class="text glitch is-glitching" data-text="Home">Home</div>
+          </div>
         </a>
         <a href="#bio">
-          <div class="bioLabel">Bio</div>
+          <div class="bioLabel">
+            <div class="text glitch is-glitching" data-text="Bio">Bio</div>
+          </div>
         </a>
         <a href="#jsProjectBox">
-          <div class="jsLabel">Javascript Projects</div>
+          <div class="jsLabel">
+            <div class="text glitch is-glitching" data-text="Javascript Projects">
+              Javascript Projects
+            </div>
+          </div>
         </a>     
       </div>
-
+        
+      
       <div class="hamburgerButton1" id="hamburgerButton1" onclick="openNav()">
+        <div class="glitch-effect">
         <div class="hamburger-menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="shortBar"></div>
-        </div>
+        </div></div>
       </div>
 
       <!--hamburger navigation-->
