@@ -336,9 +336,10 @@ function animateInvaderGrid() {
           //if top side of projectile touches an invaders top 
           projectile.position.y - projectile.radius <= 
           invader.position.y + invader.height && 
-          //and the left side touches 
+          //and the right side touches 
           projectile.position.x + projectile.radius >= 
           invader.position.x - invader.height&& 
+          //and the left side touches 
           projectile.position.x - projectile.radius <= 
           invader.position.x + invader.width &&
           projectile.position.y + projectile.radius >= 
@@ -374,7 +375,7 @@ function animateInvaderGrid() {
                   grid.position.x = firstInvader.position.x
                 }
               } else  {
-                grids.splice(gridIndex, 1)
+                //grids.splice(gridIndex, 1)
               }             
             }, 0)//end setTimeout
         }
@@ -440,7 +441,6 @@ function animateStars() {
     }, 0); 
   }     
 }
-
 function animateParticles() {
   particles.forEach(((particle, i) => {
     if(particle.position.y - particle.radius >=
@@ -485,8 +485,8 @@ animateStars()
  * Event listeners used for keyboard inputs
  */
 addEventListener('keydown', ({key}) => {
-  if (game.over) return
-  switch (key) {
+  //if (game.over) return
+  switch (key) {    
     case 'a': //left
     keys.a.pressed = true
     console.log('leftdown')
