@@ -17,9 +17,8 @@
     display: flex;
     z-index: 990;
     color: rgb(255, 255, 255);
-    top:210vh; 
-    left: 45vw;
-    align-items: center;
+    top:5vh; 
+    justify-content: center;
     height:5vh;
     width: 12vw;
   }  
@@ -33,7 +32,7 @@
     border-width: 2px;
     margin:0;
     background-color: black;
-    top: 210vh;
+    top: 10vh;
     z-index: -10;
     position: fixed;
     display: flex;
@@ -52,7 +51,7 @@
     display: flex;
     justify-content: center;
     z-index: 20;
-    top:220vh;
+    top:10vh;
     height: 100vh;
     width: 80vw;
   }
