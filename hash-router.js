@@ -7,8 +7,6 @@ document.addEventListener("click", (e) => {
     e.preventDefault();
     route();
 });
-
-
 const route = (event) => {
     event = event || window.event; // get window.event if event argument not provided
     event.preventDefault();

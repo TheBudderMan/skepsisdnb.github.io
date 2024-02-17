@@ -86,13 +86,11 @@
     height: 10vw;
   }  
 .hamburger-menu {
-  position: relative;
+  position: absolute;
   display: flex;
   float: top;
   flex-direction: column;
   justify-content: space-around;
-  top: -0.5vh;
-  left: 0vw;
   height: 4vh;
   width: 5vw;
 }  

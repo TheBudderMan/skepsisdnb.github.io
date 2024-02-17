@@ -12,6 +12,7 @@
   width: 100vw;
   height: 6vh;
   position: fixed;
+  display: flex;
   align-items: center;
   float: top;
   right: 0vw;
@@ -35,7 +36,7 @@
   float: left;
   left: 5vw;
   text-align: left;
-  top: 1.5vh;
+  top: 2.50-vh;
 }
 .homeLabel{
   left: 5vw;
@@ -51,19 +52,18 @@ div.navigationTopBox {
   float: top;
   margin:0;
   display: flex;
+  align-items: center;
   flex-direction: row;
   left: 30vw;
-  top:0vh;
   width: 40vw;
   height:5vh;
   background-color: rgb(163, 117, 117,0);
-
 }
 .formantLogo {
   z-index: 100;
-  position: relative;
+  position: fixed;
   left: 0vw;
-  top: -8vh;
+  top: 0vh;
   background-image: url(Resources/logo2.png);
   background-repeat: no-repeat;
   background-position: left;
@@ -150,14 +150,13 @@ div.navigationTopBox {
 }
 .hamburgerButton1 {
   z-index: 500;
-  top: 1vh;
-  position: absolute;
+  top: 1.5vh;
+  right: 1vw;
   height: 4vh;
   width: 3vw;
   margin: 0;
   padding: 0;
-  right: 70vw;
-  background-color: black;
+  background-color: rgb(189, 3, 3);
 }
 
 .musicNavLeft{
@@ -293,5 +292,5 @@ div.navigationTopBox {
   background-color: rgb(0, 0, 0,0);
   
   color: rgb(255, 255, 255,0);
-  font-size: 1.2em;
+  font-size: 1.8em;
 }

@@ -54,9 +54,10 @@ table th {
   padding: 0%;
   margin: 0;
   text-align: center;
-  position: relative;
-  float: left;
-  top:0.5vh;
+  position: fixed;
+  float: bottom;
+  right: 0vw;
+  bottom:2vh;
 }
 div.headerBox {
   z-index: 999;
@@ -165,17 +166,6 @@ label {
   width: 100vw;
   z-index: 1;
 }
-#bgimg {
-  background-image: url(Resources/Website\ Background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  top: 0%;
-  height: 110vh;
-  width: 100vw;
-  z-index: 1;
-}
 
 #focal {
   display: flex;
@@ -262,12 +252,12 @@ label {
 }
 /*Javascript boxes for menu*/
 .hamburger-menu {
+  position: fixed;
   display: flex;
   float: top;
   flex-direction: column;
   justify-content: space-around;
   height: 4vh;
-  left: 0vw;
   cursor: pointer;
 }
 .hamburger-menu2 {
@@ -278,16 +268,15 @@ label {
 }
 div.hamburgerButton1 {
   position: absolute;
-  right: 2vw;
+  right: 1vw;
   width: 3vw;
   height: 4vh;
   background-color: rgb(209, 11, 11, 0);
   transition: 0.1s;
 }
-
 div.hamburgerButton2 {
   position: absolute;
-  right: 2vw;
+  right: 1vw;
   top: -11vh;
   height: 5vh;
   width: 3vw;
