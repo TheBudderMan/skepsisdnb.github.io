@@ -21,12 +21,14 @@
   <script src="hash-router.js" defer></script>
   <script src="navigation-functions.js" defer></script>
   <script src="time.js" defer></script>
-  <script src="spaceInvaders.js" defer></script>
+  <script src="/spacePlayers.js" defer></script>
+  <script src="/spaceInvaders.js" defer></script>
   <!-- Swiper JS -->
 <script src="swiper.min.js"></script>
 </head>
 
 <body>
+  <div class="bgOv"></div>
   <!--This here is muh' navigation bar.-->
   <header>
     <div class="headerBox">
@@ -45,7 +47,7 @@
             <div class="text glitch is-glitching" data-text="Bio">Bio</div>
           </div>
         </a>
-        <a href="javascript.html">
+        <a href="#javascript">
           <div class="jsLabel">
             <div class="text glitch is-glitching" data-text="Javascript Projects">
               Javascript Projects
@@ -103,13 +105,13 @@
 
 
 
-  <div class="homePageMusicBox boxShadows" id="/">
+  <div class="homePageMusicBox" id="/">
     <h1>Latest Music</h1>
     <div class="netflix-slider">
       <div class="swiper-container">
           <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <div class="musicPlayerBox1 boxShadows tag-list scroller_inner" id="/">
+                  <div class="musicPlayerBox1 " id="/">
                       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1717832175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                       <div style="
@@ -135,7 +137,7 @@
                   <!--end of first box-->
               </div>
               <div class="swiper-slide">
-                  <div class="musicPlayerBox1 boxShadows">
+                  <div class="musicPlayerBox1">
                       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1400550580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                       <div style="
@@ -161,7 +163,7 @@
                   <!--end of second box-->
               </div>
               <div class="swiper-slide">
-                  <div class="musicPlayerBox1 boxShadows">
+                  <div class="musicPlayerBox1">
                       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1116646420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                       <div style="font-size: 10px; color:
@@ -184,7 +186,7 @@
                   <!--end of third box-->
               </div>
               <div class="swiper-slide">
-                  <div class="musicPlayerBox1 boxShadows">
+                  <div class="musicPlayerBox1">
                       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/922245769&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                       <div
@@ -213,7 +215,7 @@
                   <!--end of fifth box-->
               </div>
               <div class="swiper-slide">
-                  <div class="musicPlayerBox1 boxShadows">
+                  <div class="musicPlayerBox1">
                       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/411838791&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                       <div
@@ -239,8 +241,10 @@
   <!--The main textout box -->
   <div class="bioAlignmentPointer" id="bio"></div>
   <div class="textBoxBioCentre boxShadows">
-    <div class="bioHeaderTextBox">A little about myself</div>
-    <br />
+    <div class ="bioHeaderTextBox"><h1>A little about myself</h1></div>
+    
+    <p>
+      <br />
     Stagma Records // Intaface Audio // Boey Audio<br />
 
     Tyler Johnston, AKA Formant is a new, <br />
@@ -260,11 +264,20 @@
     Canadian label Intaface Audio, <br />
     Irish labels Stagma Records and Boey Audio, <br />
     he now does so with his own productions in drum and bass. <br />
+    </p>
+    
   </div>
 
-  <!--start of contact form-->
-
-  <!--end of contact form-->
+  <!--start of javascript box-->     
+  <div class="jsAlignmentPointer" id="javascript"></div>    
+  <div class="javascriptProjectsBox boxShadows" id="javascript">
+    <div class="scoreBox">Score: 
+        <div class="scoreCounter" id="scoreCounter">0
+        </div>   
+    </div>    
+    <div class="gamebox"><canvas></canvas></div>    
+  </div>   
+  <!--end of javascript box-->
 
   <!--The footer section-->
   <div class="bottomBox">

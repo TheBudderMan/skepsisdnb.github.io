@@ -1,9 +1,9 @@
 /* CSS files add styling rules to your content */
 html {
-  height: 300vh;
+  height: 100vh;
   margin: auto;
-  width: 100vw;
-  overflow: hidden;
+  width: 350vw;
+  overflow:hidden;
 }
 
 h1 {
@@ -83,34 +83,7 @@ div.headerBox {
   float: top;
   top: 35vh;
 }
-.bioHeaderTextBox {
-  z-index: 100;
-  height: 2vh;
-  width: 40vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-}
-.bioAlignmentPointer {
-  background-color: rgba(0, 0, 0, 0);
-  position: relative;
-  width: 80vw;
-  height: 6vh;
-  right: 5vw;
-  top: 90vh;
-}
-.textBoxBioCentre {
-  z-index: 100;
-  margin: 0%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-size: 40vw 15vh;
-  height: 50vh;
-  width: 40vw;
-  float: top;
-  top: 110vh;
-  right: 5vw;
-  text-align: center;
-}
+
 .titleBox {
   z-index: 100;
   text-align: center;
@@ -128,13 +101,19 @@ div.headerBox {
   float: left;
   color: skyblue;
 }
-#bgOv {
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 90vh;
+.bgOv {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+  top: 0%;
+  height: 100vh;
   width: 100vw;
-  z-index: 50;
+  z-index: 10;
 }
 .bg {
+  background-color: rgba(0, 0, 0, 0.9);
   background-image: url(Resources/Website\ Background.png);
   background-repeat: no-repeat;
   background-position: center;
