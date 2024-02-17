@@ -16,8 +16,6 @@ const route = (event) => {
     window.history.pushState({}, "", event.target.href);
     locationHandler();
 };
-
-
 const routes = {
     404: {
         template: "/templates/404.html",
@@ -34,10 +32,10 @@ const routes = {
         title: "About Us",
         description: "This is the bio page",
     },
-    contact: {
-        template: "/templates/contact.html",
-        title: "Contact Us",
-        description: "This is the contact page",
+    javascript: {
+        template: "/templates/javascript.html",
+        title: "Javascript Projects",
+        description: "These are my Javascript Projects",
     },
 };
 const locationHandler = async () => {

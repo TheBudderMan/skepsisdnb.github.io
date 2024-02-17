@@ -249,34 +249,6 @@ const keys = {
   d: {pressed:false},  
   space: {pressed:false}} 
 
-//if statement that allows user to move player left or right
-function moveLeftOrRight() {
-  if (keys.a.pressed && player.position.x >= 0) {
-    player.velocity.x = -7 
-    player.rotation = -0.15
-  }
-  else if (
-    keys.d.pressed && 
-    player.position.x +player.width <= canvas.width
-  ) {
-    player.velocity.x = 7 
-    player.rotation = 0.15
-  }
-  else {player.velocity.x = 0, player.rotation = 0}
-}
-
-//refreshes the player projectile sprite so it moves across the screen
-function shootProjectile() {  
-  projectiles.forEach((projectile, index) => {
-    if(projectile.position.y + projectile.radius <= 0){
-      setTimeout(() => {
-        projectiles.splice(index, 1)
-      }, 0)      
-    } else {
-      projectile.update()
-    }    
-  })
-}
 
 function enemyShoot(grid) {
   invaderProjectiles.forEach((invaderProjectile, index) => {
@@ -325,7 +297,7 @@ function animateInvaderGrid() {
     grid.updateLocation()         
     //enemie projectiles
     enemyShoot(grid)
-    shootProjectile()
+    projectileAnimation()
     // I imagine enemy collision detection is next    
     grid.invaders.forEach((invader, i) => {
       //updates the invaders location in a grid across screen
@@ -464,17 +436,11 @@ function animate() {
   requestAnimationFrame(animate);
   c.fillStyle = 'black'
   c.fillRect(0,0, canvas.width, canvas.height)  
-  player.updateLocation()
-  
-  
+  //functions for gameplay 
+  player.updateLocation()  
   animateInvaderGrid()
-  animateParticles()
-  
-  //console.log(particles)
-  //functions for gameplay  
-  
-  moveLeftOrRight()
-  //console.log(frames) 
+  animateParticles()     
+  moveLeftOrRight() 
   spawnEnemy()  
   frames++
 }
@@ -485,7 +451,7 @@ animateStars()
  * Event listeners used for keyboard inputs
  */
 addEventListener('keydown', ({key}) => {
-  //if (game.over) return
+  if (game.over) return
   switch (key) {    
     case 'a': //left
     keys.a.pressed = true
@@ -524,3 +490,30 @@ addEventListener('keyup', ({key}) => {
     keys.space.pressed = false    
       break;      
   }})
+  //if statement that allows user to move player left or right
+function moveLeftOrRight() {
+  if (keys.a.pressed && player.position.x >= 0) {
+    player.velocity.x = -7 
+    player.rotation = -0.15
+  }
+  else if (
+    keys.d.pressed && 
+    player.position.x +player.width <= canvas.width
+  ) {
+    player.velocity.x = 7 
+    player.rotation = 0.15
+  }
+  else {player.velocity.x = 0, player.rotation = 0}
+}
+//refreshes the player projectile sprite so it moves across the screen
+function projectileAnimation() {  
+  projectiles.forEach((projectile, index) => {
+    if(projectile.position.y + projectile.radius <= 0){
+      setTimeout(() => {
+        projectiles.splice(index, 1)
+      }, 0)      
+    } else {
+      projectile.update()
+    }    
+  })
+}//end of projectileAnimation

@@ -262,19 +262,7 @@
 }
 }
 
-.showYear {
-  background-color: rgba(0, 0, 0, 1);
-  height: 3vh;
-  width: 20vw;
-  font-size: 0.8em;
-  padding: 0%;
-  margin: 0;
-  text-align: left;
-  position: relative;
-  float: right;
-  right: 10vw;
-  top:3vh;
-}
+
 @media screen and (max-height: 400px) {
   div.titleBox {
     height: 8vh;

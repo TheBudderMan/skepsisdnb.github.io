@@ -47,17 +47,16 @@ table th {
   border-bottom: 1px solid;
 }
 .showYear {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgb(180, 0, 0,);
   height: 3vh;
-  width: 20vw;
-  font-size: 0.8em;
+  width: 5vw;
+  font-size: 1em;
   padding: 0%;
   margin: 0;
-  text-align: left;
+  text-align: center;
   position: relative;
   float: left;
-  left: 10vw;
-  top: 5vh;
+  top:0.5vh;
 }
 div.headerBox {
   z-index: 999;
@@ -67,7 +66,6 @@ div.headerBox {
   width: 100vw;
   height: 8vh;
 }
-
 legend {
   font-size: 2vw;
 }
@@ -77,7 +75,6 @@ label {
 /**********************************
 *******BODY BOXES FOR PAGE*********
 ***********************************/
-
 .leftBoxTitle,
 .rightBoxTitle {
   height: 3vh;
@@ -87,16 +84,13 @@ label {
   background-color: black;
   text-align: center;
 }
-
 .textBoxLeft {
   float: left;
   left: 10vw;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40vw 8vh;
 }
-
 .textBoxLeft,
 .textBoxRight {
   text-align: center;
@@ -109,7 +103,6 @@ label {
   float: top;
   top: 35vh;
 }
-
 .bioHeaderTextBox {
   z-index: 100;
   height: 2vh;
@@ -138,7 +131,6 @@ label {
   right: 5vw;
   text-align: center;
 }
-
 .titleBox {
   z-index: 100;
   text-align: center;
@@ -151,21 +143,17 @@ label {
   width: 60vw;
   left: 30vw;
 }
-
-
 #div1 {
   z-index:9999;
   float: left;
   color: skyblue;
 }
-
 #bgOv {
   background-color: rgba(255, 255, 255, 0.9);
   height: 90vh;
   width: 100vw;
   z-index: 50;
 }
-
 .bg {
   background-image: url(Resources/Website\ Background.png);
   background-repeat: no-repeat;
@@ -177,7 +165,6 @@ label {
   width: 100vw;
   z-index: 1;
 }
-
 #bgimg {
   background-image: url(Resources/Website\ Background.png);
   background-repeat: no-repeat;
