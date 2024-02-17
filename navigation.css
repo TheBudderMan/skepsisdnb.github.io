@@ -264,13 +264,15 @@ div.navigationTopBox {
   .javascriptProjectsBox {
     background-color: rgb(0, 0, 0,0);
     color: black;
-    font-size: 4vw;
-    right: 5vw;
-    top: 220vh;
+    display:flex;
+    align-items: center;    
+    justify-content: center;
+    left: 20vw;
+    top: 10vh;
     z-index: 500;
     margin: 0;
-    width: 40vw;
-    height: 40vh;
+    width: 60vw;
+    height: 80vh;
     position: absolute;
     float: top;
     text-align: center;

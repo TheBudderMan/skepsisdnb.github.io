@@ -1,0 +1,56 @@
+
+  canvas {
+    z-index: -10;
+    margin:0;
+    overflow:hidden;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+  }  
+  .scoreBox{
+    font-size: 2em;
+    font-family: sans-serif;
+    float: top;
+    padding: 0%;;
+    margin: 0%;
+    position: fixed;
+    display: flex;
+    z-index: -10;
+    color: rgb(255, 255, 255);
+    top:12vh; 
+    height:5vh;
+    width: 12vw;
+  }  
+  .scoreCounter{    
+    height:3vh;
+    color: rgb(168, 168, 168);
+  }
+  .interfaceBox{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin:0;
+    background-color: black;
+    top: 220vh;
+    z-index: -10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    height: 80vh;
+    width: 70vw;
+  }
+  .gameBox{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    z-index: -10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    height: 100vh;
+    width: 80vw;
+  }
+  
