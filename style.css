@@ -30,7 +30,8 @@ caption {
 }
 
 .showYear {
-  background-color: rgb(180, 0, 0,);
+  background-color: rgb(180, 0, 0,0);
+  color:white;
   height: 3vh;
   width: 5vw;
   font-size: 1em;
