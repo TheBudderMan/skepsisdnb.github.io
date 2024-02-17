@@ -11,6 +11,9 @@
 
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/swiper.min.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/navigation.css" />
   <link rel="stylesheet" href="/mobileStyle.css" />
   <link rel="stylesheet" href="/invaderStyle.css" />
@@ -20,6 +23,8 @@
   <script src="/navigation-functions.js" defer></script>
   <script src="/time.js" defer></script>
   <script src="/spaceInvaders.js" defer></script>
+  <!-- Swiper JS -->
+<script src="swiper.min.js"></script>
 </head>
 
 <body>
@@ -47,17 +52,18 @@
               Javascript Projects
             </div>
           </div>
-        </a>     
+        </a>
       </div>
-        
-      
+
+
       <div class="hamburgerButton1" id="hamburgerButton1" onclick="openNav()">
         <div class="glitch-effect">
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="shortBar"></div>
-        </div></div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="shortBar"></div>
+          </div>
+        </div>
       </div>
 
       <!--hamburger navigation-->
@@ -94,61 +100,142 @@
   <!--The general body of the page after navigation starts here-->
 
   <!--The main textout box -->
-  
-  
+
+
+
+
   <div class="homePageMusicBox boxShadows" id="/">
-    <div class="musicHeaderTextBox">Latest Music</div>
-    <div class="musicNavLeft" onclick="moveMusicLeft()" ></div>
-    <div class="musicNavRight" onclick="moveMusicRight()"></div>
-    
-    
-
-    <div class="musicPlayerBox1 boxShadows tag-list scroller_inner" id="/">
-      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1717832175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <div style="
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-          ">
-        <a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank"
-          style="color: #cccccc; text-decoration: none">Formant</a>
-        ·
-        <a href="https://soundcloud.com/formant4udio/formant-wild-original-mix" title="Formant - Wild (Original Mix)"
-          target="_blank" style="color: #cccccc; text-decoration: none">Formant - Wild (Original Mix)</a>
-      </div>
-    </div>
-    <div class="musicPlayerBox1 boxShadows">
-      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1400550580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <div style="
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-          ">
-        <a href="https://soundcloud.com/tytaniumarmourrecordings" title="Tytanium Armour Recordings / Tycaine"
-          target="_blank" style="color: #cccccc; text-decoration: none">Tytanium Armour Recordings / Tycaine</a>
-
-        <a href="https://soundcloud.com/tytaniumarmourrecordings/drugs" title="Formant - Drugs" target="_blank"
-          style="color: #cccccc; text-decoration: none">Formant - Drugs</a>
-      </div>
-    </div>
-  </div>
+    <h1>Latest Music</h1>
+    <div class="netflix-slider">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="musicPlayerBox1 boxShadows tag-list scroller_inner" id="/">
+                      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1717832175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                      <div style="
+                            font-size: 10px;
+                            color: #cccccc;
+                            line-break: anywhere;
+                            word-break: normal;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                            font-weight: 100;
+                          ">
+                          <a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank"
+                              style="color: #cccccc; text-decoration: none">Formant</a>
+                          ·
+                          <a href="https://soundcloud.com/formant4udio/formant-wild-original-mix"
+                              title="Formant - Wild (Original Mix)" target="_blank"
+                              style="color: #cccccc; text-decoration: none">Formant - Wild (Original Mix)</a>
+                      </div>
+                  </div>
+                  <!--end of first box-->
+              </div>
+              <div class="swiper-slide">
+                  <div class="musicPlayerBox1 boxShadows">
+                      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1400550580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                      <div style="
+                            font-size: 10px;
+                            color: #cccccc;
+                            line-break: anywhere;
+                            word-break: normal;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                            font-weight: 100;
+                          ">
+                          <a href="https://soundcloud.com/tytaniumarmourrecordings"
+                              title="Tytanium Armour Recordings / Tycaine" target="_blank"
+                              style="color: #cccccc; text-decoration: none">Tytanium Armour Recordings / Tycaine</a>
   
+                          <a href="https://soundcloud.com/tytaniumarmourrecordings/drugs" title="Formant - Drugs"
+                              target="_blank" style="color: #cccccc; text-decoration: none">Formant - Drugs</a>
+                      </div>
+                  </div>
+                  <!--end of second box-->
+              </div>
+              <div class="swiper-slide">
+                  <div class="musicPlayerBox1 boxShadows">
+                      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1116646420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                      <div style="font-size: 10px; color:
+                                   #cccccc;line-break: 
+                                  anywhere;word-break: 
+                                  normal;overflow: 
+                                  hidden;white-space: 
+                                  nowrap;text-overflow: 
+                                  ellipsis; font-family: 
+                                  Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+                                  font-weight: 100;
+                                  ">
+                          <a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank"
+                              style="color: #cccccc; text-decoration: none;">Formant</a> · <a
+                              href="https://soundcloud.com/formant4udio/cutlet-supreme-original-mix"
+                              title="Cutlet Supreme (Original Mix)" target="_blank"
+                              style="color: #cccccc; text-decoration: none;">Cutlet Supreme (Original Mix)</a>
+                      </div>
+                  </div>
+                  <!--end of third box-->
+              </div>
+              <div class="swiper-slide">
+                  <div class="musicPlayerBox1 boxShadows">
+                      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/922245769&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                      <div
+                          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                          <a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank"
+                              style="color: #cccccc; text-decoration: none;">Formant</a> · <a
+                              href="https://soundcloud.com/formant4udio/formant-purge-error-original-mix"
+                              title="Purge Error (Original Mix)" target="_blank"
+                              style="color: #cccccc; text-decoration: none;">Purge Error (Original Mix)</a></div>
+                  </div>
+                  <!--end of fourth box-->
+              </div>
+              <div class="swiper-slide">
+                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740607196&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+              </iframe>
+              <div style="font-size: 10px; 
+              color: #cccccc;
+              line-break: anywhere;
+              word-break: normal;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; 
+              font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank" style="color: #cccccc; text-decoration: none;">Formant</a> · <a href="https://soundcloud.com/formant4udio/formant-wasted-time-original-mix-free-download" title="Formant - Wasted Time (Original Mix) [Free Download]" target="_blank" style="color: #cccccc; text-decoration: none;">Formant - Wasted Time (Original Mix) [Free Download]</a>
+                  </div>
+                  <!--end of fifth box-->
+              </div>
+              <div class="swiper-slide">
+                  <div class="musicPlayerBox1 boxShadows">
+                      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/411838791&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                      <div
+                          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                          <a href="https://soundcloud.com/formant4udio" title="Formant" target="_blank"
+                              style="color: #cccccc; text-decoration: none;">Formant</a> · <a
+                              href="https://soundcloud.com/formant4udio/inconscient" title="Inconscient (Original Mix)"
+                              target="_blank" style="color: #cccccc; text-decoration: none;">Inconscient (Original
+                              Mix)</a></div>
+                  </div>
+                  <!--end of 6th box-->
+              </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  </div><!--End of netflix Slider-->    
+  </div>
+  <!--end of outer big box-->
 
   <!--The main textout box -->
   <div class="bioAlignmentPointer" id="bio"></div>
@@ -177,9 +264,9 @@
   </div>
 
   <!--start of contact form-->
-  
+
   <!--end of contact form-->
-  
+
   <!--The footer section-->
   <div class="bottomBox">
     <a href="https://www.facebook.com/form4nt" target="_blank">
@@ -203,16 +290,30 @@
   <div id="bgimg" class="bg"></div>
 
   <!-- Google tag (gtag.js) -->
-  <script 
-  async src="https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9"></script>
-  <script> 
-  window.dataLayer = window.dataLayer || []; 
-  function gtag() { 
-    dataLayer.push(arguments); 
-    } 
-    gtag('js', new Date()); 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
     gtag('config', 'G-L499GQPJX9'); 
   </script>
 </body>
-
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
+</script>
 </html>

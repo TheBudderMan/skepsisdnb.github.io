@@ -5,18 +5,10 @@ html {
   width: 100vw;
   overflow: hidden;
 }
-body {
-  font-family: helvetica, arial, sans-serif;
-  font-size: 1em;
-  margin: 0em;
-  height: 100vh;
-  width: 100vw;
-  color: white;
-}
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: #37ff52;
 }
 form {
   display: inline-block;
@@ -36,16 +28,7 @@ caption {
   border-left: 1px solid;
   border-right: 1px solid;
 }
-table td,
-table th {
-  font-size: 2vw;
-  height: 3vh;
-  text-align: center;
-  width: 100%;
-  font-size: 1vw;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
-}
+
 .showYear {
   background-color: rgb(180, 0, 0,);
   height: 3vh;
@@ -67,12 +50,7 @@ div.headerBox {
   width: 100vw;
   height: 8vh;
 }
-legend {
-  font-size: 2vw;
-}
-label {
-  font-size: 2vw;
-}
+
 /**********************************
 *******BODY BOXES FOR PAGE*********
 ***********************************/
@@ -319,8 +297,6 @@ div.hamburgerButton2 {
   width: 5vw;
   height: 5vh;
 }
-
-
 /** FX and stuff**/
 .bar:hover,
 .shortBar:hover,
