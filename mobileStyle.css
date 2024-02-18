@@ -2,17 +2,25 @@
   body {
     font-size: 1em;
   }
+
   html {
+    overflow-x: hidden;
     height: 330vh;
     margin: none;
     width: 100vw;
+
+    overflow: hidden;
   }
-  h1{
+
+  h1 {
     font-size: 1em;
   }
-  .netflix-slider{
+
+  .netflix-slider {
     position: absolute;
-  }.swiper-container {
+  }
+
+  .swiper-container {
     position: absolute;
     float: top;
     top: -20vh;
@@ -20,6 +28,7 @@
     width: 80%;
     height: 80vh;
   }
+
   .swiper-wrapper {
     float: top;
     top: 1vh;
@@ -27,9 +36,10 @@
     width: 100%;
     height: 20vh;
   }
+
   .showYear {
-    background-color: rgb(180, 0, 0,0);
-    color:white;
+    background-color: rgb(180, 0, 0, 0);
+    color: white;
     height: 3vh;
     width: 5vw;
     font-size: 1em;
@@ -39,68 +49,78 @@
     position: fixed;
     float: bottom;
     right: 5vw;
-    bottom:4vh;
+    bottom: 4vh;
   }
-  
+
   /*******NAVIGATION AREA********/
-.homeLabel,
-.jsLabel,
-.bioLabel {
-  /*Home label for navigation bar*/
-  position: relative;
-  padding:0;
-  margin: 0%;
-  font-size: 1em;
-  color: white;
-  background-color: black;
-  float: left;
-  height: 2vh;
-  width: 5vw;
-  left: 7vw;
-  text-align: center;
-  top: 0vh;
-}
-.homeLabel {
-  left: 3vw;
-}
-.bioLabel {
-  left: 15vw;
-}
-.jsLabel {
-  left: 20vw;
-}
-.homeLabel:hover,
-.bioLabel:hover,.text:hover {
-  background-color: rgb(0, 0, 0,0);
-  color: rgb(255, 255, 255,0);
-  font-size: 1.5em;
-}
-.jsLabel:hover,.text:hover {
-  background-color: rgb(0, 0, 0,0);
-  color: rgb(255, 255, 255,0);
-  font-size: 1.1em;
-}
-.headerBox {
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 1);
-  margin: 0%;
-  padding: 0%;
-  width: 100vw;
-  height: 9vh;
-}
-.bgOv {
-  background-color: rgba(0, 0, 0, 0);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  top: 0%;
-  height: 100vh;
-  width: 100vw;
-  z-index: 10;
-}
+  .homeLabel,
+  .jsLabel,
+  .bioLabel {
+    /*Home label for navigation bar*/
+    position: relative;
+    padding: 0;
+    margin: 0%;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    float: left;
+    height: 2vh;
+    width: 5vw;
+    left: 7vw;
+    text-align: center;
+    top: 0vh;
+  }
+
+  .homeLabel {
+    left: 3vw;
+  }
+
+  .bioLabel {
+    left: 15vw;
+  }
+
+  .jsLabel {
+    left: 20vw;
+  }
+
+  .homeLabel:hover,
+  .bioLabel:hover,
+  .text:hover {
+    background-color: rgb(0, 0, 0, 0);
+    color: rgb(255, 255, 255, 0);
+    font-size: 1.5em;
+  }
+
+  .jsLabel:hover,
+  .text:hover {
+    background-color: rgb(0, 0, 0, 0);
+    color: rgb(255, 255, 255, 0);
+    font-size: 1.1em;
+  }
+
+  .headerBox {
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 9vh;
+  }
+
+  .bgOv {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    background-size: cover;
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+  }
+
   #bgimg {
-    background-color: (0,0,0,0);
+    background-color: (0, 0, 0, 0);
     background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
     background-repeat: no-repeat;
     background-position: center;
@@ -111,48 +131,51 @@
     width: 100vw;
     z-index: -100;
   }
+
   .titleBox {
-  z-index: 100;
-  text-align: center;
-  font-size: 5vh;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  float: top;
-  top: -2vh;
-  height: 8vh;
-  width: 60vw;
-  left: 30vw;
-}
-.formantLogo {
-  z-index: 100;
-  position: fixed;
-  left: 0vw;
-  top:0vh;
-  background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 30vw 6vh;
-  width: 30vw;
-  height: 6vh;
-}
-  
-.musicHeaderTextBox {
-  position:absolute;
-  display: flex;
-  z-index: 100;
-  height: 4vh;
-  float:top;
-  width: 20vw;
-  top:13vh;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-}
-.homePageMusicBox {
-  border-color: wheat;
-  border-width: 2px;
-  border-style: solid;
-  display:flex;
-  -webkit-box-pack: center;
+    z-index: 100;
+    text-align: center;
+    font-size: 5vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    float: top;
+    top: -2vh;
+    height: 8vh;
+    width: 60vw;
+    left: 30vw;
+  }
+
+  .formantLogo {
+    z-index: 100;
+    position: fixed;
+    left: 0vw;
+    top: 0vh;
+    background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30vw 6vh;
+    width: 30vw;
+    height: 6vh;
+  }
+
+  .musicHeaderTextBox {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    height: 4vh;
+    float: top;
+    width: 20vw;
+    top: 13vh;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+  }
+
+  .homePageMusicBox {
+    border-color: wheat;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -160,33 +183,36 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  flex-wrap: wrap;
-  z-index: 100;
-  margin: 0%;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0);
-  float: top;
-  top: 10vh;
-  height: 70vh;
-  width: 90vw;
-}
-.musicPlayerBox1 {  
-  flex: 1;
-  z-index: 100;
-  margin: 3%;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 8vh;
-  width: 8vw;  
-  text-align: center;
-  transition: 0.5s;
-}
-.bioHeaderTextBox {
-  z-index: 100;
-  height: 6vh;
-  width: 80vw;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  }  
+    flex-wrap: wrap;
+    z-index: 100;
+    margin: 0%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    float: top;
+    top: 10vh;
+    height: 70vh;
+    width: 90vw;
+  }
+
+  .musicPlayerBox1 {
+    flex: 1;
+    z-index: 100;
+    margin: 3%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 8vh;
+    width: 8vw;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .bioHeaderTextBox {
+    z-index: 100;
+    height: 6vh;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+  }
+
   div.bioAlignmentPointer {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
@@ -195,6 +221,7 @@
     left: 5vw;
     top: 130vh;
   }
+
   div.textBoxBioCentre {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -203,30 +230,33 @@
     left: 5vw;
     top: 150vh;
   }
+
   /*Javascript boxes for menu*/
   div.hamburgerButton1,
   div.hamburgerButton2 {
     width: 5vw;
     height: 3vh;
-    background-color:black;
+    background-color: black;
   }
 
   div.hamburgerButton2 {
     left: 90vw;
     top: -12vh;
-    background-color:black;
+    background-color: black;
   }
+
   .hamburger-menu {
     position: absolute;
     display: flex;
     float: top;
-    left:-1vw;
+    left: -1vw;
     top: 1vh;
     flex-direction: column;
     justify-content: space-around;
     height: 4vh;
     width: 5vw;
-  }  
+  }
+
   .hamburger-menu2 {
     position: absolute;
     display: flex;
@@ -237,43 +267,51 @@
     left: 2vw;
     height: 4vh;
     width: 7vw;
-  }  
+  }
+
   .bar {
     width: 6vw;
     height: 0.4vh;
-    background-color:white;
+    background-color: white;
     margin: 0;
   }
-    .shortBar {
+
+  .shortBar {
     width: 4vw;
     height: 0.3vh;
-    background-color:white;
+    background-color: white;
     margin: 0;
   }
+
   .vertBar {
     width: 0.7vw;
     height: 3vh;
     background-color: white;
     margin: 0;
   }
+
   .vertShortBar {
     width: 0.7vw;
     height: 2vh;
     background-color: white;
     margin: 0;
   }
+
   div.centreBoxTitle {
     background-color: rgba(0, 0, 0, 0.1);
     width: 30vw;
   }
-  .iframe{
-    width: 20vw; 
+
+  .iframe {
+    width: 20vw;
     height: 20vh;
   }
-  canvas{
-    width:90vw;
+
+  canvas {
+    width: 90vw;
     height: 40vh;
   }
+
   /*places the contact form 
   on the page*/
   .jsAlignmentPointer {
@@ -284,6 +322,7 @@
     left: 0vw;
     top: 250vh;
   }
+
   div.javascriptProjectsBox {
     font-size: 4vw;
     width: 100vw;
@@ -297,38 +336,40 @@
     color: white;
     text-align: center;
   }
-  
+
   .bottomBox {
     /*footer area*/
     width: 100vw;
     height: 10vh;
-  }  
+  }
+
   .iconBox1,
-.iconBox2,
-.iconBox3,
-.iconBox4 {
-  padding: 2em;
-  margin: 1;
-  text-align: center;
-  position: relative;
-  float: left;
-  left: 0%;
-  z-index: 100;
-  position: relative;
-  left: 10vw;
-  top: -0.5vh;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 5vw 5vh;
-  width: 6vw;
-  height: 6vh;
-}
-.iconBox1,
-.iconBox4 {  
-  background-size: 4vw 4vh;
-  width: 8vw;
-  height: 8vh;
-}
+  .iconBox2,
+  .iconBox3,
+  .iconBox4 {
+    padding: 2em;
+    margin: 1;
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 0%;
+    z-index: 100;
+    position: relative;
+    left: 10vw;
+    top: -0.5vh;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 5vw 5vh;
+    width: 6vw;
+    height: 6vh;
+  }
+
+  .iconBox1,
+  .iconBox4 {
+    background-size: 4vw 4vh;
+    width: 8vw;
+    height: 8vh;
+  }
 
 }
 
@@ -344,6 +385,7 @@
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
