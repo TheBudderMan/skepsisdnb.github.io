@@ -8,7 +8,6 @@
     height: 330vh;
     margin: none;
     width: 100vw;
-
     overflow: hidden;
   }
 
@@ -108,7 +107,7 @@
   }
 
   .bgOv {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
@@ -127,7 +126,7 @@
     position: fixed;
     background-size: cover;
     top: 0%;
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
     z-index: -100;
   }
