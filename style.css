@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 html {
   height: 100vh;
-  margin: auto;
+  margin: none;
   width: 350vw;
   overflow: hidden;
 }
