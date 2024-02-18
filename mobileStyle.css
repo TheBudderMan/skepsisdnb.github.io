@@ -2,6 +2,46 @@
   body {
     font-size: 1em;
   }
+  html {
+    height: 330vh;
+    margin: auto;
+    width: 100vw;
+  }
+  h1{
+    font-size: 1em;
+  }
+  .netflix-slider{
+    position: absolute;
+  }.swiper-container {
+    position: absolute;
+    float: top;
+    top: -20vh;
+    left: 10vw;
+    width: 80%;
+    height: 80vh;
+  }
+  .swiper-wrapper {
+    float: top;
+    top: 1vh;
+    left: 10vw;
+    width: 100%;
+    height: 20vh;
+  }
+  .showYear {
+    background-color: rgb(180, 0, 0,0);
+    color:white;
+    height: 3vh;
+    width: 5vw;
+    font-size: 1em;
+    padding: 0%;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    float: bottom;
+    right: 5vw;
+    bottom:4vh;
+  }
+  
   /*******NAVIGATION AREA********/
 .homeLabel,
 .jsLabel,
@@ -24,10 +64,10 @@
   left: 3vw;
 }
 .bioLabel {
-  left: 18vw;
+  left: 15vw;
 }
 .jsLabel {
-  left: 27vw;
+  left: 20vw;
 }
 .homeLabel:hover,
 .bioLabel:hover,.text:hover {
@@ -40,7 +80,27 @@
   color: rgb(255, 255, 255,0);
   font-size: 1.1em;
 }
+.headerBox {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0%;
+  padding: 0%;
+  width: 100vw;
+  height: 9vh;
+}
+.bgOv {
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+  top: 0%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
   #bgimg {
+    background-color: (0,0,0,0);
     background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
     background-repeat: no-repeat;
     background-position: center;
@@ -65,9 +125,9 @@
 }
 .formantLogo {
   z-index: 100;
-  position: relative;
+  position: fixed;
   left: 0vw;
-  top: -8.5vh;
+  top:0vh;
   background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
   background-repeat: no-repeat;
   background-position: left;
@@ -76,98 +136,73 @@
   height: 6vh;
 }
   
-
-  div.headerBox {
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 1);
-    margin: 0%;
-    padding: 0%;
-    width: 100vw;
-    height: 10vw;
-  }  
-.hamburger-menu {
-  position: absolute;
-  display: flex;
-  float: top;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 4vh;
-  width: 5vw;
-}  
-.hamburger-menu2 {
-  position: absolute;
-  display: flex;
-  float: top;
-  flex-direction: row;
-  justify-content: space-around;
-  top: -0vh;
-  left: 2vw;
-  height: 4vh;
-  width: 7vw;
-}  
-.bar {
-  width: 6vw;
-  height: 0.4vh;
-  background-color:white;
-  margin: 0;
-}
-  .shortBar {
-  width: 4vw;
-  height: 0.3vh;
-  background-color:white;
-  margin: 0;
-}
-.vertBar {
-  width: 0.7vw;
-  height: 3vh;
-  background-color: white;
-  margin: 0;
-}
-.vertShortBar {
-  width: 0.7vw;
-  height: 2vh;
-  background-color: white;
-  margin: 0;
-}
 .musicHeaderTextBox {
-  position:relative;
+  position:absolute;
+  display: flex;
   z-index: 100;
-  height: 2vh;
+  height: 4vh;
   float:top;
-  width: 8vw;
-  padding: 1;
-  left:35vw;
-  top:1vh;
+  width: 20vw;
+  top:13vh;
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
 }
 .homePageMusicBox {
+  border-color: wheat;
+  border-width: 2px;
+  border-style: solid;
   display:flex;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   flex-wrap: wrap;
   z-index: 100;
   margin: 0%;
   position: absolute;
   background-color: rgba(255, 255, 255, 0);
   float: top;
-  left: 10vw;
-  top: 15vh;
-  height: 60vh;
-  width: 80vw;
+  top: 10vh;
+  height: 70vh;
+  width: 90vw;
 }
 .musicPlayerBox1 {  
   flex: 1;
   z-index: 100;
   margin: 3%;
-  position: relative;
   background-color: rgba(0, 0, 0, 0.5);
   height: 8vh;
-  width: 8vw;
-  float: top;
-  top: 8vh;
-  right: 5vw;
+  width: 8vw;  
   text-align: center;
   transition: 0.5s;
 }
+.bioHeaderTextBox {
+  z-index: 100;
+  height: 6vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  }  
+  div.bioAlignmentPointer {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 80vw;
+    height: 6vh;
+    left: 5vw;
+    top: 130vh;
+  }
+  div.textBoxBioCentre {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 80vw;
+    height: 60vh;
+    left: 5vw;
+    top: 150vh;
+  }
   /*Javascript boxes for menu*/
   div.hamburgerButton1,
   div.hamburgerButton2 {
@@ -181,46 +216,81 @@
     top: -12vh;
     background-color:black;
   }
-
+  .hamburger-menu {
+    position: absolute;
+    display: flex;
+    float: top;
+    left:-1vw;
+    top: 1vh;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 4vh;
+    width: 5vw;
+  }  
+  .hamburger-menu2 {
+    position: absolute;
+    display: flex;
+    float: top;
+    flex-direction: row;
+    justify-content: space-around;
+    top: -0vh;
+    left: 2vw;
+    height: 4vh;
+    width: 7vw;
+  }  
+  .bar {
+    width: 6vw;
+    height: 0.4vh;
+    background-color:white;
+    margin: 0;
+  }
+    .shortBar {
+    width: 4vw;
+    height: 0.3vh;
+    background-color:white;
+    margin: 0;
+  }
+  .vertBar {
+    width: 0.7vw;
+    height: 3vh;
+    background-color: white;
+    margin: 0;
+  }
+  .vertShortBar {
+    width: 0.7vw;
+    height: 2vh;
+    background-color: white;
+    margin: 0;
+  }
   div.centreBoxTitle {
     background-color: rgba(0, 0, 0, 0.1);
     width: 30vw;
   }
-  
-  .bioHeaderTextBox {
-  z-index: 100;
-  height: 3vh;
-  width: 80vw;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
+  .iframe{
+    width: 20vw; 
+    height: 20vh;
   }
-
-  
-  div.bioAlignmentPointer {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    width: 80vw;
-    height: 6vh;
-    left: 10vw;
-    top: 100vh;
-  }
-  div.textBoxBioCentre {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    width: 80vw;
-    height: 58vh;
-    left: 10vw;
-    top: 120vh;
+  canvas{
+    width:90vw;
+    height: 40vh;
   }
   /*places the contact form 
   on the page*/
-  .javascriptProjectsBox {
+  .jsAlignmentPointer {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    width: 80vw;
+    height: 6vh;
+    left: 0vw;
+    top: 250vh;
+  }
+  div.javascriptProjectsBox {
     font-size: 4vw;
-    left: 10vw;
-    top: 220vh;
+    width: 100vw;
+    left: 0vw;
+    top: 240vh;
     z-index: 5500;
     margin: 0;
-    width: 80vw;
     height: 60vh;
     position: absolute;
     float: top;
@@ -231,6 +301,7 @@
   .bottomBox {
     /*footer area*/
     width: 100vw;
+    height: 10vh;
   }  
   .iconBox1,
 .iconBox2,
@@ -244,20 +315,21 @@
   left: 0%;
   z-index: 100;
   position: relative;
-  left: 25vw;
+  left: 10vw;
   top: -0.5vh;
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 6vw 6vh;
-  width: 8vw;
-  height: 8vh;
+  background-size: 5vw 5vh;
+  width: 6vw;
+  height: 6vh;
 }
 .iconBox1,
 .iconBox4 {  
-  background-size: 5vw 5vh;
+  background-size: 4vw 4vh;
   width: 8vw;
   height: 8vh;
 }
+
 }
 
 
