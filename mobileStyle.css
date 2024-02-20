@@ -240,7 +240,7 @@
     background-size: cover;
     position: absolute;
     width: 80vw;
-    height: 80vh;
+    height: 100vh;
     left: 5vw;
     top: 180vh;
   }
@@ -258,7 +258,7 @@
     width: 80vw;
     height: 60vh;
     left: 5vw;
-    top: 280vh;
+    top: 260vh;
   }
 
   /*Javascript boxes for menu*/
