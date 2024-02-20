@@ -390,12 +390,12 @@
     top: -0.5vh;
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 3vw 4vh;
+    background-size: 3vw 3vh;
   }
 
   .iconBox1,
   .iconBox4 {
-    background-size: 3vw 4vh;
+    background-size: 3vw 3vh;
   }
 
 }
