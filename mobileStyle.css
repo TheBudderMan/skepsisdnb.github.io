@@ -225,6 +225,7 @@
   .pictureBox1 {
     background-image: url("Resources/melol.jpg");
     background-size: cover;
+    background-position: center;
     background-color: rgba(255, 255, 255, 1);
     position: absolute;
     width: 80vw;
@@ -236,6 +237,7 @@
     background-image: url("Resources/melol2.jpg");
     background-color: rgba(255, 255, 255, 1);
     background-position: center;
+    background-size: cover;
     position: absolute;
     width: 80vw;
     height: 80vh;
