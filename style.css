@@ -1,8 +1,8 @@
 /* CSS files add styling rules to your content */
 html {
-  height: 100vh;
+  height: 350vh;
   margin: none;
-  width: 350vw;
+  width: 100vw;  
   overflow: hidden;
 }
 .iframe{
@@ -124,8 +124,9 @@ div.headerBox {
   position: fixed;
   background-size: cover;
   top: 0%;
-  height: 110vh;
-  width: 100vw;
+  left:-1vw;
+  height: 100vh;
+  width: 105vw;
   z-index: 1;
 }
 
@@ -277,7 +278,7 @@ div.hamburgerButton2 {
   top: -0vh;
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 2vw 3vh;
+  background-size: 1vw 2vh;
   width: 5vw;
   height: 5vh;
 }
@@ -293,6 +294,7 @@ div.hamburgerButton2 {
 .iconBox4:hover {
   background-color: rgba(0, 0, 0, 0);
   color: red;
+  background-size: 2vw 3vh;
   transition: 0.2s;
 }
 .boxShadows {

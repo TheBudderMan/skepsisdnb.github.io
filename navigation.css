@@ -86,7 +86,39 @@ div.navigationTopBox {
   background-color: rgb(255, 255, 255, 0);
   text-align: center;
 }
-
+.pictureBox1 {
+  background-image: url("Resources/melol.jpg");
+  background-color: rgba(255, 255, 255, 1);
+  background-position: center;
+  position: absolute;
+  display: flex;
+  float:top;
+  width: 50vw;
+  height: 80vh;
+  left: 5vw;
+  top: 15vh;
+}
+.pictureBox2 {
+  background-image: url("Resources/melol2.jpg");
+  background-color: rgba(255, 255, 255, 1);
+  background-position: center;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  float:top;
+  width: 50vw;
+  height: 80vh;
+  left: 5vw;
+  top: 15vh;
+}
 .bioAlignmentPointer {
   background-color: rgba(0, 0, 0, 0);
   position: relative;
@@ -95,8 +127,16 @@ div.navigationTopBox {
   left: 120vw;
   top: 15vh;
 }
-
-.textBoxBioCentre {
+.textBoxBioCentre2{
+  left: 150vw;
+  
+  top: 15vh;
+}.textBoxBioCentre{
+  left: 175vw;
+  top: 15vh;
+}
+.textBoxBioCentre2,
+  .textBoxBioCentre {
   z-index: 100;
   margin: 0%;
   position: absolute;
@@ -113,10 +153,8 @@ div.navigationTopBox {
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   height: 50vh;
-  width: 40vw;
+  width: 20vw;
   float: top;
-  top: 15vh;
-  left: 160vw;
   text-align: top;
 }
 

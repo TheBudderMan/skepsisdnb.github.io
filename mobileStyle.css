@@ -4,13 +4,14 @@
   }
 
   html {
-    overflow-x: hidden;
-    height: 330vh;
+    height: 350vh;
     margin: none;
     width: 100vw;
-    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-color: rgb(0, 0, 0) rgb(61, 61, 61);
+    scrollbar-width: thin;
   }
-
+  
   h1 {
     font-size: 1em;
   }
@@ -79,6 +80,7 @@
   }
 
   .jsLabel {
+    visibility: hidden;
     left: 20vw;
   }
 
@@ -127,7 +129,7 @@
     background-size: cover;
     top: 0%;
     height: 100vh;
-    width: 100vw;
+    width: 105vw;
     z-index: -100;
   }
 
@@ -218,16 +220,43 @@
     width: 80vw;
     height: 6vh;
     left: 5vw;
-    top: 130vh;
+    top: 140vh;
   }
+  .pictureBox1 {
+    background-image: url("Resources/melol.jpg");
 
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    left: 5vw;
+    top: 80vh;
+  }
+  div.pictureBox2 {
+    background-image: url("Resources/melol2.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    left: 5vw;
+    top: 180vh;
+  }
+  div.textBoxBioCentre2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    left: 5vw;
+    top: 120vh;
+  }
   div.textBoxBioCentre {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     width: 80vw;
     height: 60vh;
     left: 5vw;
-    top: 150vh;
+    top: 280vh;
   }
 
   /*Javascript boxes for menu*/
@@ -319,14 +348,14 @@
     width: 80vw;
     height: 6vh;
     left: 0vw;
-    top: 250vh;
+    top: 120vh;
   }
 
   div.javascriptProjectsBox {
     font-size: 4vw;
     width: 100vw;
     left: 0vw;
-    top: 240vh;
+    top: 120vh;
     z-index: 5500;
     margin: 0;
     height: 60vh;
@@ -334,6 +363,7 @@
     float: top;
     color: white;
     text-align: center;
+    visibility: hidden;
   }
 
   .bottomBox {
@@ -346,28 +376,24 @@
   .iconBox2,
   .iconBox3,
   .iconBox4 {
-    padding: 2em;
-    margin: 1;
+    padding: 1em;
+    margin: 0;
     text-align: center;
     position: relative;
     float: left;
     left: 0%;
     z-index: 100;
     position: relative;
-    left: 10vw;
+    left:25vw;
     top: -0.5vh;
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 5vw 5vh;
-    width: 6vw;
-    height: 6vh;
+    background-size: 3vw 4vh;
   }
 
   .iconBox1,
   .iconBox4 {
-    background-size: 4vw 4vh;
-    width: 8vw;
-    height: 8vh;
+    background-size: 3vw 4vh;
   }
 
 }
