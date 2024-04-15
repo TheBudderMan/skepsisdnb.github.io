@@ -65,7 +65,7 @@ div.headerBox {
 *******BODY BOXES FOR PAGE*********
 ***********************************/
 div.pictureBox1 {
-	z-index: 999;
+	z-index: 100;
 	background-image: url("Resources/melol.jpg");
 	background-size: cover;
 	background-position: center;
@@ -77,7 +77,7 @@ div.pictureBox1 {
 	top: 15vh;
 }
 div.pictureBox2 {
-	z-index: 999;
+	z-index: 100;
 	background-image: url("Resources/melol2.jpg");
 	background-color: rgba(255, 255, 255, 1);
 	background-position: center;
