@@ -1,58 +1,64 @@
 /* CSS files add styling rules to your content */
 html {
-  height: 350vh;
-  margin: none;
-  width: 100vw;  
-  overflow: hidden;
+	height: 350vh;
+	margin: none;
+	width: 100vw;
+	overflow: hidden;
 }
-.iframe{
-  width: 60vw; 
-  height: 40vh;
+
+.iframe {
+	width: 60vw;
+	height: 40vh;
 }
 
 h1 {
-  font-style: italic;
-  color: #37ff52;
+	font-style: italic;
+	color: #37ff52;
 }
+
 form {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  height: 40vh;
-  width: 70vw;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 40vh;
+	width: 70vw;
 }
+
 label,
 button {
-  margin: 0%;
-  height: 15px;
+	margin: 0%;
+	height: 15px;
 }
+
 caption {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-left: 1px solid;
-  border-right: 1px solid;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
 }
+
 .showYear {
-  background-color: rgb(180, 0, 0,0);
-  color:white;
-  height: 3vh;
-  width: 5vw;
-  font-size: 1em;
-  padding: 0%;
-  margin: 0;
-  text-align: center;
-  position: fixed;
-  float: bottom;
-  right: 0vw;
-  bottom:2vh;
+	background-color: rgb(180, 0, 0, 0);
+	color: white;
+	height: 3vh;
+	width: 5vw;
+	font-size: 1em;
+	padding: 0%;
+	margin: 0;
+	text-align: center;
+	position: fixed;
+	float: bottom;
+	right: 0vw;
+	bottom: 2vh;
 }
+
 div.headerBox {
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 1);
-  margin: 0%;
-  padding: 0%;
-  width: 100vw;
-  height: 8vh;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 1);
+	margin: 0%;
+	padding: 0%;
+	width: 100vw;
+	height: 8vh;
 }
 
 /**********************************
@@ -60,228 +66,246 @@ div.headerBox {
 ***********************************/
 .leftBoxTitle,
 .rightBoxTitle {
-  height: 3vh;
-  width: 50vw;
-  color: white;
-  left: 25vw;
-  background-color: black;
-  text-align: center;
+	height: 3vh;
+	width: 50vw;
+	color: white;
+	left: 25vw;
+	background-color: black;
+	text-align: center;
 }
+
 .textBoxLeft {
-  float: left;
-  left: 10vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40vw 8vh;
+	float: left;
+	left: 10vw;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40vw 8vh;
 }
+
 .textBoxLeft,
 .textBoxRight {
-  text-align: center;
-  margin: 2%;
-  height: 15vh;
-  position: relative;
-  background-color: rgba(5, 0, 0, 0.3);
-  color: white;
-  width: 50vw;
-  float: top;
-  top: 35vh;
+	text-align: center;
+	margin: 2%;
+	height: 15vh;
+	position: relative;
+	background-color: rgba(5, 0, 0, 0.3);
+	color: white;
+	width: 50vw;
+	float: top;
+	top: 35vh;
 }
 
 .titleBox {
-  z-index: 100;
-  text-align: center;
-  font-size: 5vh;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  float: top;
-  top: -2vh;
-  height: 8vh;
-  width: 60vw;
-  left: 30vw;
+	z-index: 100;
+	text-align: center;
+	font-size: 5vh;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	float: top;
+	top: -2vh;
+	height: 8vh;
+	width: 60vw;
+	left: 30vw;
 }
+
 #div1 {
-  z-index:9999;
-  float: left;
-  color: skyblue;
+	z-index: 9999;
+	float: left;
+	color: skyblue;
 }
+
 .bgOv {
-  background-color: rgba(0, 0, 0, 0.9);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  left: 0;
-  top: 0%;
-  height: 100vh;
-  width: 100vw;
-  z-index: 10;
+	background-color: rgba(0, 0, 0, 0.9);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	background-size: cover;
+	left: 0;
+	top: 0%;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10;
 }
+
 .bg {
-  background-color: rgba(0, 0, 0, 0.9);
-  background-image: url(Resources/Website\ Background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  background-size: cover;
-  top: 0%;
-  left:-1vw;
-  height: 100vh;
-  width: 105vw;
-  z-index: 1;
+	background-color: rgba(0, 0, 0, 0.9);
+	background-image: url(Resources/Website\ Background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	background-size: cover;
+	top: 0%;
+	left: -1vw;
+	height: 100vh;
+	width: 105vw;
+	z-index: 1;
 }
 
 #focal {
-  display: flex;
-  height: 500px;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	height: 500px;
+	flex-direction: column;
+	align-items: center;
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  /*background-color: #206a80;*/
-  background-color: rgba(0, 0, 0, 1);
-  overflow-x: hidden;
-  transition: 0.8s;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	/*background-color: #206a80;*/
+	background-color: rgba(0, 0, 0, 1);
+	overflow-x: hidden;
+	transition: 0.8s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 10%;
-  width: 100%;
-  text-align: right;
-  margin-top: 25px;
+	position: relative;
+	top: 10%;
+	width: 100%;
+	text-align: right;
+	margin-top: 25px;
 }
 
 .overlay a {
-  padding: 20px;
-  text-decoration: none;
-  font-size: 12px;
-  color: white;
-  display: block;
-  transition: 0.6s;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 12px;
+	color: white;
+	display: block;
+	transition: 0.6s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: grey;
+	color: grey;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  font-size: 50px;
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	font-size: 50px;
 }
 
 #header {
-  float: top;
-  left: 92vw;
-  top: 1vh;
-  position: relative;
-  z-index: 1;
-  height: 3vh;
-  width: 3vw;
+	float: top;
+	left: 92vw;
+	top: 1vh;
+	position: relative;
+	z-index: 1;
+	height: 3vh;
+	width: 3vw;
 }
 
 .bar {
-  width: 3vw;
-  height: 4px;
-  background-color: white;
-  margin: 0;
+	width: 3vw;
+	height: 4px;
+	background-color: white;
+	margin: 0;
 }
+
 .shortBar {
-  width: 2vw;
-  height: 4px;
-  background-color: white;
-  margin: 0;
+	width: 2vw;
+	height: 4px;
+	background-color: white;
+	margin: 0;
 }
+
 .vertBar {
-  width: 0.3vw;
-  height: 5vh;
-  background-color: white;
-  margin: 0;
+	width: 0.3vw;
+	height: 5vh;
+	background-color: white;
+	margin: 0;
 }
+
 .vertShortBar {
-  width: 0.3vw;
-  height: 3vh;
-  background-color: white;
-  margin: 0;
+	width: 0.3vw;
+	height: 3vh;
+	background-color: white;
+	margin: 0;
 }
+
 /*Javascript boxes for menu*/
 .hamburger-menu {
-  position: fixed;
-  display: flex;
-  float: top;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 4vh;
-  cursor: pointer;
+	position: fixed;
+	display: flex;
+	float: top;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 4vh;
+	cursor: pointer;
 }
+
 .hamburger-menu2 {
-  display: flex;
-  float: top;
-  flex-direction: row;
-  justify-content: space-around;
+	display: flex;
+	float: top;
+	flex-direction: row;
+	justify-content: space-around;
 }
+
 div.hamburgerButton1 {
-  position: absolute;
-  right: 1vw;
-  width: 3vw;
-  height: 4vh;
-  background-color: rgb(209, 11, 11, 0);
-  transition: 0.1s;
+	position: absolute;
+	right: 1vw;
+	width: 3vw;
+	height: 4vh;
+	background-color: rgb(209, 11, 11, 0);
+	transition: 0.1s;
 }
+
 div.hamburgerButton2 {
-  position: absolute;
-  right: 1vw;
-  top: -11vh;
-  height: 5vh;
-  width: 3vw;
-  background-color: rgb(187, 25, 25, 0);
-  transition: 0.5s;
+	position: absolute;
+	right: 1vw;
+	top: -11vh;
+	height: 5vh;
+	width: 3vw;
+	background-color: rgb(187, 25, 25, 0);
+	transition: 0.5s;
 }
+
 .iconBox1 {
-  background-color: rgba(5, 100, 250, 0);
-  background-image: url(Resources/whitefbicon.png);
+	background-color: rgba(5, 100, 250, 0);
+	background-image: url(Resources/whitefbicon.png);
 }
+
 .iconBox2 {
-  background-color: rgba(155, 100, 50, 0);
-  background-image: url(Resources/whitesoundcloudlogo.png);
+	background-color: rgba(155, 100, 50, 0);
+	background-image: url(Resources/whitesoundcloudlogo.png);
 }
+
 .iconBox3 {
-  background-color: rgba(125, 10, 10, 0);
-  background-image: url(Resources/whiteinstalogo.png);
+	background-color: rgba(125, 10, 10, 0);
+	background-image: url(Resources/whiteinstalogo.png);
 }
+
 .iconBox4 {
-  background-color: rgba(125, 10, 10, 0);
-  background-image: url(Resources/white_youtube_icon.png);
+	background-color: rgba(125, 10, 10, 0);
+	background-image: url(Resources/white_youtube_icon.png);
 }
+
 .iconBox1,
 .iconBox2,
 .iconBox3,
 .iconBox4 {
-  padding: 0%;
-  margin: 0%;
-  text-align: center;
-  position: relative;
-  float: left;
-  left: 0%;
-  z-index: 100;
-  position: relative;
-  left: 43vw;
-  top: -0vh;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 1vw 2vh;
-  width: 5vw;
-  height: 5vh;
+	padding: 0%;
+	margin: 0%;
+	text-align: center;
+	position: relative;
+	float: left;
+	left: 0%;
+	z-index: 100;
+	position: relative;
+	left: 43vw;
+	top: -0vh;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 1vw 2vh;
+	width: 5vw;
+	height: 5vh;
 }
+
 /** FX and stuff**/
 .bar:hover,
 .shortBar:hover,
@@ -292,14 +316,16 @@ div.hamburgerButton2 {
 .iconBox2:hover,
 .iconBox3:hover,
 .iconBox4:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: red;
-  background-size: 2vw 3vh;
-  transition: 0.2s;
+	background-color: rgba(0, 0, 0, 0);
+	color: red;
+	background-size: 2vw 3vh;
+	transition: 0.2s;
 }
+
 .boxShadows {
-  box-shadow: 2px 2px 15px black;
+	box-shadow: 2px 2px 15px black;
 }
+
 .smallShadows {
-  box-shadow: 2px 3px 9px black;
+	box-shadow: 2px 3px 9px black;
 }
