@@ -64,6 +64,30 @@ div.headerBox {
 /**********************************
 *******BODY BOXES FOR PAGE*********
 ***********************************/
+div.pictureBox1 {
+	z-index: 999;
+	background-image: url("Resources/melol.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(255, 255, 255, 1);
+	position: absolute;
+	width: 30vw;
+	height: 70vh;
+	left: 110vw;
+	top: 15vh;
+}
+div.pictureBox2 {
+	z-index: 999;
+	background-image: url("Resources/melol2.jpg");
+	background-color: rgba(255, 255, 255, 1);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	width: 20vw;
+	height: 80vh;
+	left: 70vw;
+	top: 10vh;
+}
 .leftBoxTitle,
 .rightBoxTitle {
 	height: 3vh;

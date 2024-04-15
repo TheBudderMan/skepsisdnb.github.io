@@ -5,185 +5,192 @@
 */
 /*header area*/
 .headerBox {
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin: 0%;
-  padding: 0%;
-  width: 100vw;
-  height: 6vh;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  float: top;
-  right: 0vw;
-  top: -1vh;
-  text-align: left;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: 0%;
+	padding: 0%;
+	width: 100vw;
+	height: 6vh;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	float: top;
+	right: 0vw;
+	top: -1vh;
+	text-align: left;
 }
 
 /*******NAVIGATION AREA********/
 .homeLabel,
 .bioLabel,
 .jsLabel {
-  /*Home label for navigation bar*/
-  z-index: 9999;
-  position: relative;
-  display: flex;
-  padding: 0;
-  margin: 0%;
-  font-size: 1em;
-  color: white;
-  background-color: rgb(6, 168, 46, 0);
-  border-width: 1px;
-  border-color: aliceblue;
-  float: left;
-  left: 5vw;
-  text-align: left;
-  top: 2.50-vh;
+	/*Home label for navigation bar*/
+	z-index: 9999;
+	position: relative;
+	display: flex;
+	padding: 0;
+	margin: 0%;
+	font-size: 1em;
+	color: white;
+	background-color: rgb(6, 168, 46, 0);
+	border-width: 1px;
+	border-color: aliceblue;
+	float: left;
+	left: 5vw;
+	text-align: left;
+	top: 2.50-vh;
 }
 
 .homeLabel {
-  left: 5vw;
+	left: 5vw;
 }
 
 .bioLabel {
-  left: 15vw;
+	left: 15vw;
 }
 
 .jsLabel {
-  left: 25vw;
+	left: 25vw;
 }
 
 div.navigationTopBox {
-  position: absolute;
-  float: top;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  left: 30vw;
-  width: 40vw;
-  height: 5vh;
-  background-color: rgb(163, 117, 117, 0);
+	position: absolute;
+	float: top;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	left: 30vw;
+	width: 40vw;
+	height: 5vh;
+	background-color: rgb(163, 117, 117, 0);
 }
 
 .formantLogo {
-  z-index: 100;
-  position: fixed;
-  left: 0vw;
-  top: 0vh;
-  background-image: url(Resources/logo2.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 16vw 8vh;
-  width: 16vw;
-  height: 8vh;
+	z-index: 100;
+	position: fixed;
+	left: 0vw;
+	top: 0vh;
+	background-image: url(Resources/logo2.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 16vw 8vh;
+	width: 16vw;
+	height: 8vh;
 }
 
 .bioHeaderTextBox {
-  z-index: 100;
-  height: 2vh;
-  width: 40vw;
-  background-color: rgb(255, 255, 255, 0);
-  text-align: center;
+	z-index: 100;
+	height: 2vh;
+	width: 40vw;
+	background-color: rgb(255, 255, 255, 0);
+	text-align: center;
 }
+
 .pictureBox1 {
-  background-image: url("Resources/melol.jpg");
-  background-color: rgba(255, 255, 255, 1);
-  background-position: center;
-  position: absolute;
-  display: flex;
-  float:top;
-  width: 50vw;
-  height: 80vh;
-  left: 5vw;
-  top: 15vh;
+	background-image: url("Resources/melol.jpg");
+	background-color: rgba(255, 255, 255, 1);
+	background-position: center;
+	position: absolute;
+	display: flex;
+	float: top;
+	width: 50vw;
+	height: 80vh;
+	left: 5vw;
+	top: 15vh;
 }
+
 .pictureBox2 {
-  background-image: url("Resources/melol2.jpg");
-  background-color: rgba(255, 255, 255, 1);
-  background-position: center;
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  float:top;
-  width: 50vw;
-  height: 80vh;
-  left: 5vw;
-  top: 15vh;
+	background-image: url("Resources/melol2.jpg");
+	background-color: rgba(255, 255, 255, 1);
+	background-position: center;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	float: top;
+	width: 50vw;
+	height: 80vh;
+	left: 5vw;
+	top: 15vh;
 }
+
 .bioAlignmentPointer {
-  background-color: rgba(0, 0, 0, 0);
-  position: relative;
-  width: 80vw;
-  height: 6vh;
-  left: 120vw;
-  top: 15vh;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	width: 80vw;
+	height: 6vh;
+	left: 120vw;
+	top: 15vh;
 }
-.textBoxBioCentre2{
-  left: 150vw;
-  
-  top: 15vh;
-}.textBoxBioCentre{
-  left: 175vw;
-  top: 15vh;
+
+.textBoxBioCentre2 {
+	left: 150vw;
+
+	top: 15vh;
 }
+
+.textBoxBioCentre {
+	left: 175vw;
+	top: 15vh;
+}
+
 .textBoxBioCentre2,
-  .textBoxBioCentre {
-  z-index: 100;
-  margin: 0%;
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: white;
-  height: 50vh;
-  width: 20vw;
-  float: top;
-  text-align: top;
+.textBoxBioCentre {
+	z-index: 100;
+	margin: 0%;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: white;
+	height: 50vh;
+	width: 20vw;
+	float: top;
+	text-align: top;
 }
 
 .jsAlignmentPointer {
-  background-color: rgba(0, 0, 0, 0);
-  position: relative;
-  width: 80vw;
-  height: 6vh;
-  left: 250vw;
-  top: 15vh;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	width: 80vw;
+	height: 6vh;
+	left: 250vw;
+	top: 15vh;
 }
 
 /*places the contact form 
   on the page*/
 .javascriptProjectsBox {
-  background-color: rgb(0, 0, 0, 0);
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 250vw;
-  top: 10vh;
-  z-index: 500;
-  margin: 0;
-  width: 60vw;
-  height: 80vh;
-  position: absolute;
-  float: top;
-  text-align: center;
+	background-color: rgb(0, 0, 0, 0);
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 250vw;
+	top: 10vh;
+	z-index: 500;
+	margin: 0;
+	width: 60vw;
+	height: 80vh;
+	position: absolute;
+	float: top;
+	text-align: center;
 }
 
 /******END OF NAVIGATION AREA*****/
@@ -191,122 +198,122 @@ div.navigationTopBox {
 ***********FOOTER AREA*************
 */
 .bottomBox {
-  /*footer area*/
-  margin: 0;
-  z-index: 9999;
-  background-color: rgba(0, 0, 0, 1);
-  width: 100vw;
-  height: 8vh;
-  position: fixed;
-  display: flex;
+	/*footer area*/
+	margin: 0;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 1);
+	width: 100vw;
+	height: 8vh;
+	position: fixed;
+	display: flex;
 
-  align-items: center;
-  float: right;
-  right: 0%;
-  bottom: 0%;
+	align-items: center;
+	float: right;
+	right: 0%;
+	bottom: 0%;
 }
 
 .bottomFirstBox {
-  /*text on the footer*/
-  font-size: 0.8em;
-  margin: 0%;
-  position: fixed;
-  background-color: rgba(200, 10, 10, 0.3);
-  float: right;
-  height: 2.5vh;
-  width: 40vw;
-  left: 55vw;
-  text-align: center;
-  bottom: 3%;
+	/*text on the footer*/
+	font-size: 0.8em;
+	margin: 0%;
+	position: fixed;
+	background-color: rgba(200, 10, 10, 0.3);
+	float: right;
+	height: 2.5vh;
+	width: 40vw;
+	left: 55vw;
+	text-align: center;
+	bottom: 3%;
 }
 
 /* Dropdown button on hover & focus */
 .hamburgerButton2 {
-  z-index: 9999;
-  float: top;
-  top: -11.5vh;
-  right: 6vw;
-  position: relative;
-  height: 6vh;
-  width: 3vw;
-  margin: 0;
-  padding: 0;
-  background-color: black;
+	z-index: 9999;
+	float: top;
+	top: -11.5vh;
+	right: 6vw;
+	position: relative;
+	height: 6vh;
+	width: 3vw;
+	margin: 0;
+	padding: 0;
+	background-color: black;
 }
 
 .hamburgerButton1:hover,
 .hamburgerButton2:hover {
-  background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
 }
 
 .hamburgerButton1 {
-  z-index: 500;
-  top: 1.5vh;
-  right: 1vw;
-  height: 4vh;
-  width: 3vw;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(189, 3, 3);
+	z-index: 500;
+	top: 1.5vh;
+	right: 1vw;
+	height: 4vh;
+	width: 3vw;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(189, 3, 3);
 }
 
 
 .homePageMusicBox {
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  z-index: 100;
-  margin: 0%;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0);
-  float: top;
-  left: 0vw;
-  top: 10vh;
-  height: 50vh;
-  width: 40vw;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	z-index: 100;
+	margin: 0%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	float: top;
+	left: 0vw;
+	top: 10vh;
+	height: 50vh;
+	width: 40vw;
 }
 
 .musicPlayerBox1 {
-  flex: 1;
-  z-index: 100;
-  margin: 3%;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: auto;
-  width: 100%;
-  float: top;
-  align-items: center;
-  text-align: center;
-  transition: 0.5s;
+	flex: 1;
+	z-index: 100;
+	margin: 3%;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: auto;
+	width: 100%;
+	float: top;
+	align-items: center;
+	text-align: center;
+	transition: 0.5s;
 }
 
 .moveLeft:hover,
 .moveRight:hover,
 .spaceShoot:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgb(204, 196, 196);
-  transition: 0.2s;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(204, 196, 196);
+	transition: 0.2s;
 }
 
 .homeLabel:hover,
 .bioLabel:hover,
 .text:hover {
-  background-color: rgb(0, 0, 0, 0);
-  color: rgb(255, 255, 255, 0);
-  font-size: 2em;
+	background-color: rgb(0, 0, 0, 0);
+	color: rgb(255, 255, 255, 0);
+	font-size: 2em;
 }
 
 .jsLabel:hover,
 .text:hover {
-  background-color: rgb(0, 0, 0, 0);
+	background-color: rgb(0, 0, 0, 0);
 
-  color: rgb(255, 255, 255, 0);
-  font-size: 1.2em;
+	color: rgb(255, 255, 255, 0);
+	font-size: 1.2em;
 }

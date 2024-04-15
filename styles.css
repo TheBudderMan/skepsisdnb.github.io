@@ -1,83 +1,83 @@
 html,
 body {
-  overflow-x: hidden;
-  position: relative;
-  height: 100%;
+	overflow-x: hidden;
+	position: relative;
+	height: 100%;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(90, 90, 90);
-  text-align: center;
-  margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(90, 90, 90);
+	text-align: center;
+	margin: 0;
 }
 
 .swiper-container {
-  width: 30vw;
-  height: 30vh;
-  float: top;
+	width: 30vw;
+	height: 30vh;
+	float: top;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: (0, 0, 0, 0);
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+	text-align: center;
+	font-size: 18px;
+	background: (0, 0, 0, 0);
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(212, 212, 212);
-  text-align: center;
-  float: top;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(212, 212, 212);
+	text-align: center;
+	float: top;
 }
 
 :root {
-  --swiper-theme-color: #1d10cf;
+	--swiper-theme-color: #1d10cf;
 }
 
 .netflix-slider {
-  width: 90vw;
+	width: 90vw;
 
-  .swiper-wrapper {
-    padding: 20px 0;
-  }
+	.swiper-wrapper {
+		padding: 20px 0;
+	}
 
-  .swiper-slide {
-    transition: 250ms all;
+	.swiper-slide {
+		transition: 250ms all;
 
-    &:hover {
-      transform: scale(1.2);
-      z-index: 1;
-    }
+		&:hover {
+			transform: scale(1.2);
+			z-index: 1;
+		}
 
-    &:first-child:hover {
-      margin: 0 40px;
-    }
+		&:first-child:hover {
+			margin: 0 40px;
+		}
 
-    &:last-child:hover {
-      margin: 0 -40px;
-    }
+		&:last-child:hover {
+			margin: 0 -40px;
+		}
 
-  }
+	}
 
 
 }

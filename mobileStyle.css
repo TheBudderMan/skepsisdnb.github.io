@@ -1,421 +1,425 @@
 @media screen and (max-width: 900px) {
-  body {
-    font-size: 1em;
-  }
+	body {
+		font-size: 1em;
+	}
 
-  html {
-    height: 350vh;
-    margin: none;
-    width: 100vw;
-    overflow-y: scroll;
-    scrollbar-color: rgb(0, 0, 0) rgb(61, 61, 61);
-    scrollbar-width: thin;
-  }
-  
-  h1 {
-    font-size: 1em;
-  }
+	html {
+		height: 350vh;
+		margin: none;
+		width: 100vw;
+		overflow-y: scroll;
+		scrollbar-color: rgb(0, 0, 0) rgb(61, 61, 61);
+		scrollbar-width: thin;
+	}
 
-  .netflix-slider {
-    position: absolute;
-  }
+	h1 {
+		font-size: 1em;
+	}
 
-  .swiper-container {
-    position: absolute;
-    float: top;
-    top: -20vh;
-    left: 10vw;
-    width: 80%;
-    height: 80vh;
-  }
+	.netflix-slider {
+		position: absolute;
+	}
 
-  .swiper-wrapper {
-    float: top;
-    top: 1vh;
-    left: 10vw;
-    width: 100%;
-    height: 20vh;
-  }
+	.swiper-container {
+		position: absolute;
+		float: top;
+		top: -20vh;
+		left: 10vw;
+		width: 80%;
+		height: 80vh;
+	}
 
-  .showYear {
-    background-color: rgb(180, 0, 0, 0);
-    color: white;
-    height: 3vh;
-    width: 5vw;
-    font-size: 1em;
-    padding: 0%;
-    margin: 0;
-    text-align: center;
-    position: fixed;
-    float: bottom;
-    right: 5vw;
-    bottom: 4vh;
-  }
+	.swiper-wrapper {
+		float: top;
+		top: 1vh;
+		left: 10vw;
+		width: 100%;
+		height: 20vh;
+	}
 
-  /*******NAVIGATION AREA********/
-  .homeLabel,
-  .jsLabel,
-  .bioLabel {
-    /*Home label for navigation bar*/
-    position: relative;
-    padding: 0;
-    margin: 0%;
-    font-size: 1em;
-    color: white;
-    background-color: black;
-    float: left;
-    height: 2vh;
-    width: 5vw;
-    left: 7vw;
-    text-align: center;
-    top: 0vh;
-  }
+	.showYear {
+		background-color: rgb(180, 0, 0, 0);
+		color: white;
+		height: 3vh;
+		width: 5vw;
+		font-size: 1em;
+		padding: 0%;
+		margin: 0;
+		text-align: center;
+		position: fixed;
+		float: bottom;
+		right: 5vw;
+		bottom: 4vh;
+	}
 
-  .homeLabel {
-    left: 3vw;
-  }
+	/*******NAVIGATION AREA********/
+	.homeLabel,
+	.jsLabel,
+	.bioLabel {
+		/*Home label for navigation bar*/
+		position: relative;
+		padding: 0;
+		margin: 0%;
+		font-size: 1em;
+		color: white;
+		background-color: black;
+		float: left;
+		height: 2vh;
+		width: 5vw;
+		left: 7vw;
+		text-align: center;
+		top: 0vh;
+	}
 
-  .bioLabel {
-    left: 15vw;
-  }
+	.homeLabel {
+		left: 3vw;
+	}
 
-  .jsLabel {
-    visibility: hidden;
-    left: 20vw;
-  }
+	.bioLabel {
+		left: 15vw;
+	}
 
-  .homeLabel:hover,
-  .bioLabel:hover,
-  .text:hover {
-    background-color: rgb(0, 0, 0, 0);
-    color: rgb(255, 255, 255, 0);
-    font-size: 1.5em;
-  }
+	.jsLabel {
+		visibility: hidden;
+		left: 20vw;
+	}
 
-  .jsLabel:hover,
-  .text:hover {
-    background-color: rgb(0, 0, 0, 0);
-    color: rgb(255, 255, 255, 0);
-    font-size: 1.1em;
-  }
+	.homeLabel:hover,
+	.bioLabel:hover,
+	.text:hover {
+		background-color: rgb(0, 0, 0, 0);
+		color: rgb(255, 255, 255, 0);
+		font-size: 1.5em;
+	}
 
-  .headerBox {
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 1);
-    margin: 0%;
-    padding: 0%;
-    width: 100vw;
-    height: 9vh;
-  }
+	.jsLabel:hover,
+	.text:hover {
+		background-color: rgb(0, 0, 0, 0);
+		color: rgb(255, 255, 255, 0);
+		font-size: 1.1em;
+	}
 
-  .bgOv {
-    background-color: rgba(0, 0, 0, 0.7);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: fixed;
-    background-size: cover;
-    top: 0%;
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-  }
+	.headerBox {
+		z-index: 999;
+		background-color: rgba(0, 0, 0, 1);
+		margin: 0%;
+		padding: 0%;
+		width: 100vw;
+		height: 9vh;
+	}
 
-  #bgimg {
-    background-color: (0, 0, 0, 0);
-    background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: fixed;
-    background-size: cover;
-    top: 0%;
-    height: 100vh;
-    width: 105vw;
-    z-index: -100;
-  }
+	.bgOv {
+		background-color: rgba(0, 0, 0, 0.7);
+		background-repeat: no-repeat;
+		background-position: center;
+		position: fixed;
+		background-size: cover;
+		top: 0%;
+		height: 100vh;
+		width: 100vw;
+		z-index: 10;
+	}
 
-  .titleBox {
-    z-index: 100;
-    text-align: center;
-    font-size: 5vh;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    float: top;
-    top: -2vh;
-    height: 8vh;
-    width: 60vw;
-    left: 30vw;
-  }
+	#bgimg {
+		background-color: (0, 0, 0, 0);
+		background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
+		background-repeat: no-repeat;
+		background-position: center;
+		position: fixed;
+		background-size: cover;
+		top: 0%;
+		height: 100vh;
+		width: 105vw;
+		z-index: -100;
+	}
 
-  .formantLogo {
-    z-index: 100;
-    position: fixed;
-    left: 0vw;
-    top: 0vh;
-    background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 30vw 6vh;
-    width: 30vw;
-    height: 6vh;
-  }
+	.titleBox {
+		z-index: 100;
+		text-align: center;
+		font-size: 5vh;
+		position: relative;
+		background-color: rgba(0, 0, 0, 0);
+		float: top;
+		top: -2vh;
+		height: 8vh;
+		width: 60vw;
+		left: 30vw;
+	}
 
-  .musicHeaderTextBox {
-    position: absolute;
-    display: flex;
-    z-index: 100;
-    height: 4vh;
-    float: top;
-    width: 20vw;
-    top: 13vh;
-    background-color: rgba(0, 0, 0, 0);
-    text-align: center;
-  }
+	.formantLogo {
+		z-index: 100;
+		position: fixed;
+		left: 0vw;
+		top: 0vh;
+		background-image: url(https://cdn.glitch.com/69d13e27-a78f-439b-98ce-b2986f1db339%2Flogo2.png?v=1579552576552);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 30vw 6vh;
+		width: 30vw;
+		height: 6vh;
+	}
 
-  .homePageMusicBox {
-    border-color: wheat;
-    border-width: 2px;
-    border-style: solid;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 100;
-    margin: 0%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-    float: top;
-    top: 10vh;
-    height: 70vh;
-    width: 90vw;
-  }
+	.musicHeaderTextBox {
+		position: absolute;
+		display: flex;
+		z-index: 100;
+		height: 4vh;
+		float: top;
+		width: 20vw;
+		top: 13vh;
+		background-color: rgba(0, 0, 0, 0);
+		text-align: center;
+	}
 
-  .musicPlayerBox1 {
-    flex: 1;
-    z-index: 100;
-    margin: 3%;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 8vh;
-    width: 8vw;
-    text-align: center;
-    transition: 0.5s;
-  }
+	.homePageMusicBox {
+		border-color: wheat;
+		border-width: 2px;
+		border-style: solid;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		flex-wrap: wrap;
+		z-index: 100;
+		margin: 0%;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0);
+		float: top;
+		top: 10vh;
+		height: 70vh;
+		width: 90vw;
+	}
 
-  .bioHeaderTextBox {
-    z-index: 100;
-    height: 6vh;
-    width: 80vw;
-    background-color: rgba(0, 0, 0, 0);
-    text-align: center;
-  }
+	.musicPlayerBox1 {
+		flex: 1;
+		z-index: 100;
+		margin: 3%;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 8vh;
+		width: 8vw;
+		text-align: center;
+		transition: 0.5s;
+	}
 
-  div.bioAlignmentPointer {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    width: 80vw;
-    height: 6vh;
-    left: 5vw;
-    top: 90vh;
-  }
-  .pictureBox1 {
-    background-image: url("Resources/melol.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(255, 255, 255, 1);
-    position: absolute;
-    width: 80vw;
-    height: 40vh;
-    left: 5vw;
-    top: 80vh;
-  }
-  div.pictureBox2 {
-    background-image: url("Resources/melol2.jpg");
-    background-color: rgba(255, 255, 255, 1);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    width: 80vw;
-    height: 100vh;
-    left: 5vw;
-    top: 180vh;
-  }
-  div.textBoxBioCentre2 {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 80vw;
-    height: 40vh;
-    left: 5vw;
-    top: 120vh;
-  }
-  div.textBoxBioCentre {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 80vw;
-    height: 60vh;
-    left: 5vw;
-    top: 260vh;
-  }
+	.bioHeaderTextBox {
+		z-index: 100;
+		height: 6vh;
+		width: 80vw;
+		background-color: rgba(0, 0, 0, 0);
+		text-align: center;
+	}
 
-  /*Javascript boxes for menu*/
-  div.hamburgerButton1,
-  div.hamburgerButton2 {
-    width: 5vw;
-    height: 3vh;
-    background-color: black;
-  }
+	div.bioAlignmentPointer {
+		background-color: rgba(0, 0, 0, 0);
+		position: absolute;
+		width: 80vw;
+		height: 6vh;
+		left: 5vw;
+		top: 90vh;
+	}
 
-  div.hamburgerButton2 {
-    left: 90vw;
-    top: -12vh;
-    background-color: black;
-  }
+	.pictureBox1 {
+		background-image: url("Resources/melol.jpg");
+		background-size: cover;
+		background-position: center;
+		background-color: rgba(255, 255, 255, 1);
+		position: absolute;
+		width: 80vw;
+		height: 40vh;
+		left: 5vw;
+		top: 80vh;
+	}
 
-  .hamburger-menu {
-    position: absolute;
-    display: flex;
-    float: top;
-    left: -1vw;
-    top: 1vh;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 4vh;
-    width: 5vw;
-  }
+	.pictureBox2 {
+		background-image: url("Resources/melol2.jpg");
+		background-color: rgba(255, 255, 255, 1);
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		width: 80vw;
+		height: 100vh;
+		left: 5vw;
+		top: 180vh;
+	}
 
-  .hamburger-menu2 {
-    position: absolute;
-    display: flex;
-    float: top;
-    flex-direction: row;
-    justify-content: space-around;
-    top: -0vh;
-    left: 2vw;
-    height: 4vh;
-    width: 7vw;
-  }
+	div.textBoxBioCentre2 {
+		background-color: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		width: 80vw;
+		height: 40vh;
+		left: 5vw;
+		top: 120vh;
+	}
 
-  .bar {
-    width: 6vw;
-    height: 0.4vh;
-    background-color: white;
-    margin: 0;
-  }
+	div.textBoxBioCentre {
+		background-color: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		width: 80vw;
+		height: 60vh;
+		left: 5vw;
+		top: 260vh;
+	}
 
-  .shortBar {
-    width: 4vw;
-    height: 0.3vh;
-    background-color: white;
-    margin: 0;
-  }
+	/*Javascript boxes for menu*/
+	div.hamburgerButton1,
+	div.hamburgerButton2 {
+		width: 5vw;
+		height: 3vh;
+		background-color: black;
+	}
 
-  .vertBar {
-    width: 0.7vw;
-    height: 3vh;
-    background-color: white;
-    margin: 0;
-  }
+	div.hamburgerButton2 {
+		left: 90vw;
+		top: -12vh;
+		background-color: black;
+	}
 
-  .vertShortBar {
-    width: 0.7vw;
-    height: 2vh;
-    background-color: white;
-    margin: 0;
-  }
+	.hamburger-menu {
+		position: absolute;
+		display: flex;
+		float: top;
+		left: -1vw;
+		top: 1vh;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 4vh;
+		width: 5vw;
+	}
 
-  div.centreBoxTitle {
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 30vw;
-  }
+	.hamburger-menu2 {
+		position: absolute;
+		display: flex;
+		float: top;
+		flex-direction: row;
+		justify-content: space-around;
+		top: -0vh;
+		left: 2vw;
+		height: 4vh;
+		width: 7vw;
+	}
 
-  .iframe {
-    width: 20vw;
-    height: 20vh;
-  }
+	.bar {
+		width: 6vw;
+		height: 0.4vh;
+		background-color: white;
+		margin: 0;
+	}
 
-  canvas {
-    width: 90vw;
-    height: 40vh;
-  }
+	.shortBar {
+		width: 4vw;
+		height: 0.3vh;
+		background-color: white;
+		margin: 0;
+	}
 
-  /*places the contact form 
+	.vertBar {
+		width: 0.7vw;
+		height: 3vh;
+		background-color: white;
+		margin: 0;
+	}
+
+	.vertShortBar {
+		width: 0.7vw;
+		height: 2vh;
+		background-color: white;
+		margin: 0;
+	}
+
+	div.centreBoxTitle {
+		background-color: rgba(0, 0, 0, 0.1);
+		width: 30vw;
+	}
+
+	.iframe {
+		width: 20vw;
+		height: 20vh;
+	}
+
+	canvas {
+		width: 90vw;
+		height: 40vh;
+	}
+
+	/*places the contact form 
   on the page*/
-  .jsAlignmentPointer {
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
-    width: 80vw;
-    height: 6vh;
-    left: 0vw;
-    top: 120vh;
-  }
+	.jsAlignmentPointer {
+		background-color: rgba(0, 0, 0, 0);
+		position: relative;
+		width: 80vw;
+		height: 6vh;
+		left: 0vw;
+		top: 120vh;
+	}
 
-  div.javascriptProjectsBox {
-    font-size: 4vw;
-    width: 100vw;
-    left: 0vw;
-    top: 120vh;
-    z-index: 5500;
-    margin: 0;
-    height: 60vh;
-    position: absolute;
-    float: top;
-    color: white;
-    text-align: center;
-    visibility: hidden;
-  }
+	div.javascriptProjectsBox {
+		font-size: 4vw;
+		width: 100vw;
+		left: 0vw;
+		top: 120vh;
+		z-index: 5500;
+		margin: 0;
+		height: 60vh;
+		position: absolute;
+		float: top;
+		color: white;
+		text-align: center;
+		visibility: hidden;
+	}
 
-  .bottomBox {
-    /*footer area*/
-    width: 100vw;
-    height: 10vh;
-  }
+	.bottomBox {
+		/*footer area*/
+		width: 100vw;
+		height: 10vh;
+	}
 
-  .iconBox1,
-  .iconBox2,
-  .iconBox3,
-  .iconBox4 {
-    padding: 1em;
-    margin: 0;
-    text-align: center;
-    position: relative;
-    float: left;
-    left: 0%;
-    z-index: 100;
-    position: relative;
-    left:25vw;
-    top: -0.5vh;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 4vw 3vh;
-  }
+	.iconBox1,
+	.iconBox2,
+	.iconBox3,
+	.iconBox4 {
+		padding: 1em;
+		margin: 0;
+		text-align: center;
+		position: relative;
+		float: left;
+		left: 0%;
+		z-index: 100;
+		position: relative;
+		left: 25vw;
+		top: -0.5vh;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 4vw 3vh;
+	}
 
-  .iconBox1,
-  .iconBox4 {
-    background-size: 4vw 3vh;
-  }
+	.iconBox1,
+	.iconBox4 {
+		background-size: 4vw 3vh;
+	}
 
 }
 
 
 @media screen and (max-height: 400px) {
-  div.titleBox {
-    height: 8vh;
-    font-size: 9vw;
-  }
+	div.titleBox {
+		height: 8vh;
+		font-size: 9vw;
+	}
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
+	.overlay a {
+		font-size: 20px;
+	}
 
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
 }
