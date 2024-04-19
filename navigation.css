@@ -125,9 +125,9 @@ div.navigationTopBox {
 .bioAlignmentPointer {
 	background-color: rgba(0, 0, 0, 0);
 	position: relative;
-	width: 80vw;
+	width: 100vw;
 	height: 6vh;
-	left: 120vw;
+	left: 100vw;
 	top: 15vh;
 }
 

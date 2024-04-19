@@ -17,12 +17,12 @@
     display: flex;
     z-index: 990;
     color: rgb(255, 255, 255);
-    top:5vh; 
+    top:2vh; 
     justify-content: center;
     height:5vh;
     width: 12vw;
   }  
-  .gameInfoBox{
+  .controlInfoBox{
     font-size: 2em;
     font-family: sans-serif;
     float: bottom;
@@ -33,6 +33,21 @@
     z-index: 990;
     color: rgb(255, 255, 255);
     bottom:5vh; 
+    justify-content: center;
+    height:5vh;
+    width: 8vw;
+  } 
+  .gameInfoBox{
+    font-size: 2em;
+    font-family: sans-serif;
+    float: bottom;
+    padding: 0%;;
+    margin: 0%;
+    position: absolute;
+    display: flex;
+    z-index: 990;
+    color: rgb(255, 255, 255);
+    bottom:0vh; 
     justify-content: center;
     height:5vh;
     width: 12vw;
