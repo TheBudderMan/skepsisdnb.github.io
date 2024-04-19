@@ -76,7 +76,7 @@ div.navigationTopBox {
 	background-position: left;
 	background-size: 16vw 8vh;
 	width: 16vw;
-	height: 8vh;
+	height: 7vh;
 }
 
 .bioHeaderTextBox {
@@ -248,7 +248,7 @@ div.navigationTopBox {
 
 .hamburgerButton1 {
 	z-index: 500;
-	top: 1.5vh;
+	top: 2vh;
 	right: 1vw;
 	height: 4vh;
 	width: 3vw;
