@@ -36,20 +36,23 @@
 		width: 100%;
 		height: 20vh;
 	}
-
 	.showYear {
+		visibility: hidden;
+	}
+	.showYearMobile {
+		visibility:visible;
 		background-color: rgb(180, 0, 0, 0);
 		color: white;
-		height: 3vh;
-		width: 5vw;
+		height: 2vh;
+		width: 3vw;
 		font-size: 1em;
 		padding: 0%;
 		margin: 0;
 		text-align: center;
-		position: fixed;
-		float: bottom;
-		right: 5vw;
-		bottom: 4vh;
+		position: absolute;
+		float: top;
+		right: 15vw;
+		bottom: 5vh;
 	}
 
 	/*******NAVIGATION AREA********/
@@ -120,18 +123,7 @@
 		z-index: 10;
 	}
 
-	#bgimg {
-		background-color: (0, 0, 0, 0);
-		background-image: url(https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/Website%20Background.png?v=1707259026948);
-		background-repeat: no-repeat;
-		background-position: center;
-		position: fixed;
-		background-size: cover;
-		top: 0%;
-		height: 100vh;
-		width: 105vw;
-		z-index: -100;
-	}
+	
 
 	.titleBox {
 		z-index: 100;
@@ -158,23 +150,61 @@
 		width: 30vw;
 		height: 6vh;
 	}
-
-	.musicHeaderTextBox {
+	.musicHeaderTextBoxMobile {
 		position: absolute;
 		display: flex;
 		z-index: 100;
-		height: 4vh;
+		height: 8vh;
 		float: top;
-		width: 20vw;
-		top: 13vh;
+		width: 100vw;
+		top: 40vh;
+		left: 5vw;
+		font-size: 4em;;
 		background-color: rgba(0, 0, 0, 0);
 		text-align: center;
 	}
-
 	.homePageMusicBox {
+		visibility: hidden;
+	}
+	.homePageMusicBoxMobile {
+		visibility: visible;
 		border-color: wheat;
-		border-width: 2px;
+		border-width: 5px;
 		border-style: solid;
+		flex-wrap: wrap;
+		z-index: 100;
+		margin: 0%;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0);
+		top: 50vh;
+		height: 50vh;
+		float: top;
+		left: 5vw;
+		width: 80vw;
+	}
+	.musicPlayerBox2 {
+		flex: 1;
+		z-index: 100;
+		margin: 3%;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 12vh;
+		width: 10vw;
+		text-align: center;
+		transition: 0.5s;
+	}
+	.swiper-container-mobile {
+		width: 80vw;
+		height: 20vh;
+		float: top;
+	}
+	.swiper-slide-mobile {
+		text-align: center;
+		font-size: 18px;
+		background: (0, 0, 0, 0);
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
@@ -184,27 +214,35 @@
 		-ms-flex-align: center;
 		-webkit-align-items: center;
 		align-items: center;
-		flex-wrap: wrap;
-		z-index: 100;
-		margin: 0%;
-		position: absolute;
-		background-color: rgba(255, 255, 255, 0);
-		float: top;
-		top: 10vh;
-		height: 70vh;
-		width: 90vw;
 	}
-
-	.musicPlayerBox1 {
-		flex: 1;
-		z-index: 100;
-		margin: 3%;
-		background-color: rgba(0, 0, 0, 0.5);
-		height: 8vh;
-		width: 8vw;
-		text-align: center;
-		transition: 0.5s;
+	.netflix-slider-mobile {
+		width: 80vw;
+	
+		.swiper-wrapper-mobile {
+			height: 20vh;
+		}
+	
+		.swiper-slide-mobile {
+			transition: 250ms all;
+	
+			&:hover {
+				transform: scale(1.2);
+				z-index: 1;
+			}
+	
+			&:first-child:hover {
+				margin: 0 40px;
+			}
+	
+			&:last-child:hover {
+				margin: 0 -40px;
+			}
+	
+		}
+	
+	
 	}
+	
 
 	.bioHeaderTextBox {
 		z-index: 100;
@@ -222,49 +260,79 @@
 		left: 5vw;
 		top: 90vh;
 	}
-
+	div.tubeBox1 {
+		visibility: visible;
+		z-index: 100;
+		background-size: cover;
+		background-position: center;
+		background-color: rgba(255, 255, 255, 1);
+		position: absolute;
+		width: 100vw;
+		height: 30vh;
+		left: vw;
+		top: 5vh;
+	}
 	.pictureBox1 {
+		visibility: hidden;
+	}
+
+	.pictureBox2 {
+		visibility: hidden;
+	}
+	div.pictureBox3 {
+		visibility: visible;
+		z-index: 100;
 		background-image: url("Resources/melol.jpg");
 		background-size: cover;
 		background-position: center;
 		background-color: rgba(255, 255, 255, 1);
 		position: absolute;
-		width: 80vw;
-		height: 40vh;
-		left: 5vw;
-		top: 80vh;
+		width: 60vw;
+		height: 50vh;
+		left: 10vw;
+		top: 182vh;
 	}
-
-	.pictureBox2 {
+	div.pictureBox4 {
+		visibility: visible;
+		z-index: 100;
 		background-image: url("Resources/melol2.jpg");
 		background-color: rgba(255, 255, 255, 1);
 		background-position: center;
 		background-size: cover;
 		position: absolute;
 		width: 80vw;
-		height: 100vh;
-		left: 5vw;
-		top: 180vh;
+		height: 60vh;
+		left: 10vw;
+		top: 290vh;
 	}
-
+	div.textBoxBioCentre {
+		visibility: hidden;
+	}
 	div.textBoxBioCentre2 {
+		visibility: hidden;
+	}
+	.textBoxBioCentreM {
+		color: white;
+		z-index: 9999;
+		visibility: visible;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		width: 80vw;
+		height: 50vh;
+		left: 5vw;
+		top: 233vh;
+	}
+	.textBoxBioCentre2M {
+		color: white;
+		z-index: 9999;
+		visibility: visible;
 		background-color: rgba(0, 0, 0, 0.5);
 		position: absolute;
 		width: 80vw;
 		height: 40vh;
 		left: 5vw;
-		top: 120vh;
+		top: 142vh;
 	}
-
-	div.textBoxBioCentre {
-		background-color: rgba(0, 0, 0, 0.5);
-		position: absolute;
-		width: 80vw;
-		height: 60vh;
-		left: 5vw;
-		top: 260vh;
-	}
-
 	/*Javascript boxes for menu*/
 	div.hamburgerButton1,
 	div.hamburgerButton2 {
