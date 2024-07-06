@@ -168,8 +168,6 @@
 	}
 	.homePageMusicBoxMobile {
 		visibility: visible;
-		border-color: wheat;
-		border-width: 5px;
 		border-style: solid;
 		flex-wrap: wrap;
 		z-index: 100;
