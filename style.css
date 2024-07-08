@@ -80,8 +80,8 @@ div.pictureBox1 {
 	position: absolute;
 	width: 30vw;
 	height: 70vh;
-	left: 110vw;
-	top: 15vh;
+	left: 100vw;
+	top: 50vh;
 }
 
 div.pictureBox2 {
@@ -151,7 +151,7 @@ div.pictureBox2 {
 
 div.jsAlignmentPointer {
 	background-color: rgba(0, 0, 0, 0);
-	position: relative;
+	position: absolute;
 	width: 80vw;
 	height: 6vh;
 	left: 120vw;
@@ -164,18 +164,18 @@ div.textBoxBioCentre {
 	position: absolute;
 	width: 40vw;
 	height: 60vh;
-	left: 35vw;
-	top: 10vh;
+	left: 170vw;
+	top: 50vh;
 }
 
 div.textBoxBioCentre2 {
 	visibility: visible;
 	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	width: 40vw;
+	width: 30vw;
 	height: 40vh;
 	left: 140vw;
-	top: 30vh;
+	top: 50vh;
 }
 
 #div1 {
