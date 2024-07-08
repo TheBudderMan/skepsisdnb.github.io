@@ -382,9 +382,6 @@ div.hamburgerButton2 {
 
 .homePageMusicBox {
 	visibility: visible;
-	border-color: wheat;
-	border-width: 5px;
-	border-style: solid;
 	flex-wrap: wrap;
 	z-index: 100;
 	margin: 0%;
@@ -394,7 +391,39 @@ div.hamburgerButton2 {
 	height: 60vh;
 	width: 50vw;
 }
-
+.homePageYoutubeBox {
+	visibility: visible;
+	flex-wrap: wrap;
+	z-index: 100;
+	margin: 0%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	top: 50vh;
+	height: 30vh;
+	width: 30vw;
+}
+.homePageSpotifyBox {
+	visibility: visible;
+	flex-wrap: wrap;
+	z-index: 100;
+	margin: 0%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	top: 50vh;
+	height: 30vh;
+	width: 40vw;
+}
+.homePageSpotifyBox2 {
+	visibility: visible;
+	flex-wrap: wrap;
+	z-index: 100;
+	margin: 0%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	top: 50vh;
+	height: 30vh;
+	width: 40vw;
+}
 .musicPlayerBox1 {
 	flex: 1;
 	z-index: 100;
@@ -413,7 +442,7 @@ div.hamburgerButton2 {
 	height: 4vh;
 	float: top;
 	width: 20vw;
-	top: 13vh;
+	top: 10vh;
 	background-color: rgba(0, 0, 0, 0);
 	text-align: center;
 }

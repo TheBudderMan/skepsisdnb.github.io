@@ -2,7 +2,10 @@
 	body {
 		font-size: 1em;
 	}
-
+	.iframe {
+		width: 30vw;
+		height: 20vh;
+	}
 	html {
 		height: 350vh;
 		margin: none;
@@ -61,7 +64,15 @@
 		right: 15vw;
 		bottom: 5vh;
 	}
-
+	.homePageYoutubeBox {
+		visibility: hidden;
+	}
+	.homePageSpotifyBox {
+		visibility: hidden;
+	}
+	.homePageSpotifyBox2 {
+		visibility: hidden;
+	}
 	/*******NAVIGATION AREA********/
 	.homeLabel,
 	.jsLabel,

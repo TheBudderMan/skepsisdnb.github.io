@@ -55,8 +55,7 @@ h1 {
 }
 
 .netflix-slider {
-	width: 50vw;
-
+	width: 30vw;
 	.swiper-wrapper {
 		padding: 20px 0;
 	}
