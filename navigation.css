@@ -23,6 +23,7 @@
 /*******NAVIGATION AREA********/
 .homeLabel,
 .bioLabel,
+.bioLabelMobile,
 .jsLabel {
 	/*Home label for navigation bar*/
 	z-index: 9999;
@@ -46,6 +47,7 @@
 }
 
 .bioLabel {
+	top: 0vh;
 	left: 15vw;
 }
 
@@ -122,15 +124,22 @@ div.navigationTopBox {
 	top: 15vh;
 }
 
-.bioAlignmentPointer {
+div.bioAlignmentPointer {
 	background-color: rgba(0, 0, 0, 0);
 	position: relative;
 	width: 100vw;
 	height: 6vh;
 	left: 100vw;
-	top: 15vh;
+	top: 0vh;
 }
-
+.bioAlignmentPointerMobile {
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	width: 100vw;
+	height: 6vh;
+	left: 0vw;
+	top: 150vh;
+}
 .textBoxBioCentre2 {
 	left: 150vw;
 
@@ -165,13 +174,13 @@ div.navigationTopBox {
 	text-align: top;
 }
 
-.jsAlignmentPointer {
+div.jsAlignmentPointer {
 	background-color: rgba(0, 0, 0, 0);
 	position: relative;
 	width: 80vw;
 	height: 6vh;
 	left: 250vw;
-	top: 15vh;
+	top: 0vh;
 }
 
 /*places the contact form 

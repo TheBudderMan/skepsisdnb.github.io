@@ -11,7 +11,14 @@
 		scrollbar-color: rgb(0, 0, 0) rgb(61, 61, 61);
 		scrollbar-width: thin;
 	}
-
+	.bioLabelMobile {
+		visibility: visible;
+		top: 0.2vh;
+		left: 15vw;
+	}
+	.bioLabel {
+		visibility: hidden;
+	}
 	h1 {
 		font-size: 1em;
 	}
@@ -58,7 +65,8 @@
 	/*******NAVIGATION AREA********/
 	.homeLabel,
 	.jsLabel,
-	.bioLabel {
+	.bioLabel,
+	.bioLabelMobile {
 		/*Home label for navigation bar*/
 		position: relative;
 		padding: 0;
@@ -157,7 +165,7 @@
 		height: 8vh;
 		float: top;
 		width: 100vw;
-		top: 40vh;
+		top: 50vh;
 		left: 5vw;
 		font-size: 4em;;
 		background-color: rgba(0, 0, 0, 0);
@@ -169,13 +177,14 @@
 	.homePageMusicBoxMobile {
 		visibility: visible;
 		border-style: solid;
+		border-color: white;;
 		flex-wrap: wrap;
 		z-index: 100;
 		margin: 0%;
 		position: absolute;
 		background-color: rgba(255, 255, 255, 0);
-		top: 50vh;
-		height: 50vh;
+		top: 60vh;
+		height: 140vh;
 		float: top;
 		left: 5vw;
 		width: 80vw;
@@ -185,7 +194,7 @@
 		z-index: 100;
 		margin: 3%;
 		background-color: rgba(0, 0, 0, 0.5);
-		height: 12vh;
+		height: 20vh;
 		width: 10vw;
 		text-align: center;
 		transition: 0.5s;
@@ -239,8 +248,7 @@
 		}
 	
 	
-	}
-	
+	}	
 
 	.bioHeaderTextBox {
 		z-index: 100;
@@ -250,7 +258,7 @@
 		text-align: center;
 	}
 
-	div.bioAlignmentPointer {
+	.bioAlignmentPointerMobile {
 		background-color: rgba(0, 0, 0, 0);
 		position: absolute;
 		width: 80vw;
@@ -265,9 +273,9 @@
 		background-position: center;
 		background-color: rgba(255, 255, 255, 1);
 		position: absolute;
-		width: 100vw;
+		width: 50vw;
 		height: 30vh;
-		left: vw;
+		left: 0vw;
 		top: 5vh;
 	}
 	.pictureBox1 {
@@ -279,7 +287,7 @@
 	}
 	div.pictureBox3 {
 		visibility: visible;
-		z-index: 100;
+		z-index: 10;
 		background-image: url("Resources/melol.jpg");
 		background-size: cover;
 		background-position: center;
@@ -288,7 +296,7 @@
 		width: 60vw;
 		height: 50vh;
 		left: 10vw;
-		top: 182vh;
+		top: 250vh;
 	}
 	div.pictureBox4 {
 		visibility: visible;
@@ -301,7 +309,7 @@
 		width: 80vw;
 		height: 60vh;
 		left: 10vw;
-		top: 290vh;
+		top: 400vh;
 	}
 	div.textBoxBioCentre {
 		visibility: hidden;
@@ -311,25 +319,25 @@
 	}
 	.textBoxBioCentreM {
 		color: white;
-		z-index: 9999;
+		z-index: 60;
 		visibility: visible;
 		background-color: rgba(0, 0, 0, 0.5);
 		position: absolute;
 		width: 80vw;
 		height: 50vh;
 		left: 5vw;
-		top: 233vh;
+		top: 300vh;
 	}
 	.textBoxBioCentre2M {
 		color: white;
-		z-index: 9999;
+		z-index: 60;
 		visibility: visible;
 		background-color: rgba(0, 0, 0, 0.5);
 		position: absolute;
 		width: 80vw;
 		height: 40vh;
 		left: 5vw;
-		top: 142vh;
+		top: 205vh;
 	}
 	/*Javascript boxes for menu*/
 	div.hamburgerButton1,
@@ -414,14 +422,7 @@
 
 	/*places the contact form 
   on the page*/
-	.jsAlignmentPointer {
-		background-color: rgba(0, 0, 0, 0);
-		position: relative;
-		width: 80vw;
-		height: 6vh;
-		left: 0vw;
-		top: 120vh;
-	}
+	
 
 	div.javascriptProjectsBox {
 		font-size: 4vw;

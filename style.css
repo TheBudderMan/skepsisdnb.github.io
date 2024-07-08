@@ -24,7 +24,10 @@ form {
 	width: 70vw;
 }
 
-label,
+.bioLabelMobile {
+	visibility: hidden;
+}
+
 button {
 	margin: 0%;
 	height: 15px;
@@ -36,9 +39,11 @@ caption {
 	border-left: 1px solid;
 	border-right: 1px solid;
 }
+
 .showYearMobile {
 	visibility: hidden;
 }
+
 .showYear {
 	background-color: rgb(180, 0, 0, 0);
 	color: white;
@@ -78,6 +83,7 @@ div.pictureBox1 {
 	left: 110vw;
 	top: 15vh;
 }
+
 div.pictureBox2 {
 	z-index: 100;
 	background-image: url("Resources/melol2.jpg");
@@ -90,6 +96,7 @@ div.pictureBox2 {
 	left: 70vw;
 	top: 10vh;
 }
+
 .pictureBox3 {
 	visibility: hidden;
 }
@@ -97,6 +104,7 @@ div.pictureBox2 {
 .pictureBox4 {
 	visibility: hidden;
 }
+
 .leftBoxTitle,
 .rightBoxTitle {
 	height: 3vh;
@@ -141,6 +149,15 @@ div.pictureBox2 {
 	left: 30vw;
 }
 
+div.jsAlignmentPointer {
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	width: 80vw;
+	height: 6vh;
+	left: 120vw;
+	top: 0vh;
+}
+
 div.textBoxBioCentre {
 	visibility: visible;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -150,6 +167,7 @@ div.textBoxBioCentre {
 	left: 35vw;
 	top: 10vh;
 }
+
 div.textBoxBioCentre2 {
 	visibility: visible;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -159,6 +177,7 @@ div.textBoxBioCentre2 {
 	left: 140vw;
 	top: 30vh;
 }
+
 #div1 {
 	z-index: 9999;
 	float: left;
@@ -356,9 +375,11 @@ div.hamburgerButton2 {
 	width: 5vw;
 	height: 5vh;
 }
+
 .homePageMusicBoxMobile {
 	visibility: hidden;
 }
+
 .homePageMusicBox {
 	visibility: visible;
 	border-color: wheat;
@@ -373,6 +394,7 @@ div.hamburgerButton2 {
 	height: 60vh;
 	width: 50vw;
 }
+
 .musicPlayerBox1 {
 	flex: 1;
 	z-index: 100;
@@ -383,6 +405,7 @@ div.hamburgerButton2 {
 	text-align: center;
 	transition: 0.5s;
 }
+
 .musicHeaderTextBox {
 	position: absolute;
 	display: flex;
