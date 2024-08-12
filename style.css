@@ -9,6 +9,7 @@ html {
 .iframe {
 	width: 60vw;
 	height: 40vh;
+	overflow: hidden;
 }
 
 h1 {
@@ -73,7 +74,7 @@ div.headerBox {
 ***********************************/
 div.pictureBox1 {
 	z-index: 100;
-	background-image: url("Resources/melol.jpg");
+	background-image: url(Resources/promopic1.jpg);
 	background-size: cover;
 	background-position: center;
 	background-color: rgba(255, 255, 255, 1);
@@ -86,7 +87,7 @@ div.pictureBox1 {
 
 div.pictureBox2 {
 	z-index: 100;
-	background-image: url("Resources/melol2.jpg");
+	background-image: url(Resources/melol2.jpg);
 	background-color: rgba(255, 255, 255, 1);
 	background-position: center;
 	background-size: cover;
@@ -199,7 +200,7 @@ div.textBoxBioCentre2 {
 
 .bg {
 	background-color: rgba(0, 0, 0, 0.9);
-	background-image: url("Resources/wlp3.jpg");
+	background-image: url(Resources/wlp3.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	position: fixed;
