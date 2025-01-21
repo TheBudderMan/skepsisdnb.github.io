@@ -46,12 +46,8 @@
 		width: 100%;
 		height: 20vh;
 	}
+	
 	.showYear {
-		visibility: hidden;
-	}
-	.showYearMobile {
-		visibility:visible;
-		background-color: rgb(180, 0, 0, 0);
 		color: white;
 		height: 2vh;
 		width: 3vw;
@@ -62,7 +58,7 @@
 		position: absolute;
 		float: top;
 		right: 15vw;
-		bottom: 5vh;
+		bottom: 6.5vh;
 	}
 	.homePageYoutubeBox {
 		visibility: hidden;

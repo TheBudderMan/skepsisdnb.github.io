@@ -337,22 +337,23 @@ div.hamburgerButton2 {
 }
 
 .iconBox1 {
-	background-color: rgba(5, 100, 250, 0);
+	color: hsl(0, 0%, 100%);
+	background-color: rgba(5, 100, 250, 1);
 	background-image: url(Resources/whitefbicon.png);
 }
 
 .iconBox2 {
-	background-color: rgba(155, 100, 50, 0);
+	background-color: rgba(155, 100, 50, 1);
 	background-image: url(Resources/whitesoundcloudlogo.png);
 }
 
 .iconBox3 {
-	background-color: rgba(125, 10, 10, 0);
+	background-color: rgba(125, 10, 10, 1);
 	background-image: url(Resources/whiteinstalogo.png);
 }
 
 .iconBox4 {
-	background-color: rgba(125, 10, 10, 0);
+	background-color: rgba(125, 10, 10, 1);
 	background-image: url(Resources/white_youtube_icon.png);
 }
 
