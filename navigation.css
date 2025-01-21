@@ -23,6 +23,7 @@
 /*******NAVIGATION AREA********/
 .homeLabel,
 .bioLabel,
+.epkLabel,
 .bioLabelMobile,
 .jsLabel {
 	/*Home label for navigation bar*/
@@ -49,8 +50,12 @@
 .bioLabel {
 	top: 0vh;
 	left: 15vw;
+	text-align: top;
 }
-
+.epkLabel {
+	top: 0vh;
+	left: 20vw;
+}
 .jsLabel {
 	left: 25vw;
 }
