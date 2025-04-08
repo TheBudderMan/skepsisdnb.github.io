@@ -19,7 +19,9 @@
 	top: -1vh;
 	text-align: left;
 }
-
+.bar{
+	color: white;
+}
 /*******NAVIGATION AREA********/
 .homeLabel,
 .bioLabel,
@@ -34,7 +36,7 @@
 	margin: 0%;
 	font-size: 1em;
 	color: white;
-	background-color: rgb(6, 168, 46, 0);
+	background-color: rgb(255, 255, 255);
 	border-width: 1px;
 	border-color: aliceblue;
 	float: left;

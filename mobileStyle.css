@@ -456,6 +456,7 @@
 	.iconBox2,
 	.iconBox3,
 	.iconBox4 {
+		color: white;
 		padding: 1em;
 		margin: 0;
 		text-align: center;

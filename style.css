@@ -308,6 +308,7 @@ div.textBoxBioCentre2 {
 	justify-content: space-around;
 	height: 4vh;
 	cursor: pointer;
+	background-color: rgb(255, 255, 255,0);
 }
 
 .hamburger-menu2 {
@@ -322,7 +323,7 @@ div.hamburgerButton1 {
 	right: 1vw;
 	width: 3vw;
 	height: 4vh;
-	background-color: rgb(209, 11, 11, 0);
+	background-color: rgb(255, 255, 255,0);
 	transition: 0.1s;
 }
 
@@ -459,7 +460,7 @@ div.hamburgerButton2 {
 .iconBox2:hover,
 .iconBox3:hover,
 .iconBox4:hover {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgb(255, 255, 255);
 	color: red;
 	background-size: 5vw 3vh;
 	transition: 0.2s;
