@@ -1,5 +1,8 @@
 const yearSpan = document.querySelector('#currentYear');
 const currentYear = new Date();
+if (yearSpan) {
+  yearSpan.innerText = new Date().getFullYear();
+}
 console.log(currentYear);
 yearSpan.innerText = currentYear.getFullYear();
 
@@ -90,3 +93,4 @@ function injectDebugPanel() {
       panel.remove();
     });
   }
+
