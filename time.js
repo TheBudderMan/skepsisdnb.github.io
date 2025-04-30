@@ -30,6 +30,7 @@ function injectDebugPanel() {
     const panel = document.createElement('div');
     panel.id = 'debug-panel';
     panel.innerHTML = `
+      <button id="close-debug" title="Close Debug Panel">&times;</button>
       <h3>Debug Console</h3>
       <ul>
         <li>Status: <span class="ok">Loaded (without hydration)</span></li>
@@ -67,8 +68,25 @@ function injectDebugPanel() {
       .ok { color: #0f0; }
       .warn { color: #ff0; }
       .fail { color: #f33; }
+      #close-debug {
+        position: absolute;
+        top: 4px;
+        right: 8px;
+        background: none;
+        color: #f33;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      #close-debug:hover {
+        color: #fff;
+      }
     `;
   
     document.head.appendChild(style);
     document.body.appendChild(panel);
-}
+  
+    document.getElementById('close-debug').addEventListener('click', () => {
+      panel.remove();
+    });
+  }
