@@ -1,488 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-
-    <!-- 1) Preload the critical CSS immediately -->
-<link rel="preload"
-href="critical.css"
-as="style"
-onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-<link rel="stylesheet" href="critical.css">
-</noscript>
-
-<!-- 2) Then defer your full stylesheet for the rest of the page -->
-<link rel="preload"
-href="style.css"
-as="style"
-onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-<link rel="stylesheet" href="style.css">
-</noscript>
-
-
-
-    <!-- Google tag (gtag.js) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Tyler Johnston-Kent",
-        "url": "https://www.formant.ca",
-        "sameAs": [
-          "https://soundcloud.com/formant4udio",
-          "https://www.youtube.com/@formantaudio",
-          "https://www.instagram.com/formant_canada"
-        ],
-        "jobTitle": "Creative Developer & Sound Designer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Formant"
-        }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context":"https://schema.org",
-        "@type":"Organization",
-        "name":"Formant",
-        "url":"https://www.formant.ca",
-        "logo":"https://www.formant.ca/logo.png"
-      }
+   <head>
+      <meta charset="utf-8" />
+      <!-- 1) Preload the critical CSS immediately -->
+      <link rel="preload"
+         href="critical.css"
+         as="style"
+         onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+         <link rel="stylesheet" href="critical.css">
+      </noscript>
+      <!-- 2) Then defer your full stylesheet for the rest of the page -->
+      <link rel="preload"
+         href="style.css"
+         as="style"
+         onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+         <link rel="stylesheet" href="style.css">
+      </noscript>
+      <!-- Google tag (gtag.js) -->
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "Person",
+           "name": "Tyler Johnston-Kent",
+           "url": "https://www.formant.ca",
+           "sameAs": [
+             "https://soundcloud.com/formant4udio",
+             "https://www.youtube.com/@formantaudio",
+             "https://www.instagram.com/formant_canada"
+           ],
+           "jobTitle": "Creative Developer & Sound Designer",
+           "worksFor": {
+             "@type": "Organization",
+             "name": "Formant"
+           }
+         }
+      </script>
+      <script type="application/ld+json">
+         {
+           "@context":"https://schema.org",
+           "@type":"Organization",
+           "name":"Formant",
+           "url":"https://www.formant.ca",
+           "logo":"https://www.formant.ca/logo.png"
+         }
       </script>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <meta name="google-adsense-account" content="ca-pub-1246706747108680" />
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1246706747108680"
-      crossorigin="anonymous"
-    ></script>
-    <meta
-      name="description"
-      content="Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/logo2%20blobs%20separate.png?v=1707265137266"
-    />
-    <title>
-      Formant | Tyler Johnston-Kent – Developer, Sound Designer, Artist
-    </title>
-    
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta property="og:title" content="Formant | Tyler Johnston-Kent" />
-<meta property="og:description" content="Portfolio of Tyler Johnston-Kent — developer, music producer, sound designer, and digital artist based in Canada." />
-<meta property="og:url" content="https://formant.ca/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@formant4udio" />
-<meta name="theme-color" content="#000000">
-    <script src="time.js" defer></script>
-    <script src="hash-router.js" defer></script>
-    
-    
-    <link rel="canonical" href="https://www.formant.ca/">
-    <link rel="icon" href="logo.png" type="image/png" sizes="16x16" />
-
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <div class="main-circle"></div>
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="orb orb-4"></div>
+      <meta name="google-adsense-account" content="ca-pub-1246706747108680" />
+      <script
+         async
+         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1246706747108680"
+         crossorigin="anonymous"
+         ></script>
+      <meta
+         name="description"
+         content="Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada."
+         />
+      <meta
+         property="og:image"
+         content="https://cdn.glitch.global/e531c36a-998c-4bdf-93fa-897b76245bdd/logo2%20blobs%20separate.png?v=1707265137266"
+         />
+      <title>
+         Formant | Tyler Johnston-Kent – Developer, Sound Designer, Artist
+      </title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta property="og:title" content="Formant | Tyler Johnston-Kent" />
+      <meta property="og:description" content="Portfolio of Tyler Johnston-Kent — developer, music producer, sound designer, and digital artist based in Canada." />
+      <meta property="og:url" content="https://formant.ca/" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@formant4udio" />
+      <meta name="theme-color" content="#000000">
+      <script src="time.js" defer></script>
+      <script src="hash-router.js" defer></script>
+      <link rel="canonical" href="https://www.formant.ca/">
+      <link rel="icon" href="logo.png" type="image/png" sizes="16x16" />
+   </head>
+   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+      <nav>
+         <div class="logo" role="presentation" aria-label="Formant logo">
+            <div class="main-circle" role="presentation"></div>
+            <div class="orb orb-1" role="presentation"></div>
+            <div class="orb orb-2" role="presentation"></div>
+            <div class="orb orb-3" role="presentation"></div>
+            <div class="orb orb-4" role="presentation"></div>
+         </div>
+         <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#music">Music</a>
+            <a href="#contact">Contact</a>
+         </div>
+      </nav>
+      <main id="main">
+      <section id="home">
+         <h1 class="logo-text"><span>FORMANT</span></h1>
+         <p class="outlined">Creative Development by Tyler Johnston-Kent</p>
+      </section>
+      <div class="sine-line" role="presentation" aria-hidden="true">
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
+         <span class="dot" role="presentation"></span>
       </div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#music">Music</a>
-        <a href="#contact">Contact</a>
+      <section id="about">
+         <h2 class="logo-text2">About Me</h2>
+         <p class="outlined">
+            Hi, I'm Tyler Johnston-Kent, a creative developer, professional artist,
+            and electronic music producer based in Winnipeg, Canada. I specialize in
+            game development, animation, and sound design, blending technology and
+            artistry to craft immersive experiences.
+         </p>
+         <div class="about-subsection">
+            <h3 class="outlined">Skills & Focus</h3>
+            <ul>
+               <li class="outlined">🎮 Game Development – C#, Unity, Unreal</li>
+               <li class="outlined">
+                  🎨 Digital Art & Animation – 2D/3D design, Visual storytelling
+               </li>
+               <li class="outlined">
+                  🎵 Sound Design & Music Production – Electronic soundscapes,
+                  composition
+               </li>
+               <li class="outlined">
+                  🛠 Creative Technology – Interactive media, Rapid prototyping
+               </li>
+            </ul>
+         </div>
+         <div class="about-subsection">
+            <h3 class="outlined">Background</h3>
+            <p class="outlined">
+               I am currently completing the Game Development – Programming program
+               at Red River College Polytechnic. My hands-on experience ranges from
+               indie game projects to freelance multimedia work, all built with a
+               focus on creative problem-solving and high-quality execution under
+               pressure.
+            </p>
+         </div>
+         <div class="about-subsection">
+            <h3 class="outlined">Achievements</h3>
+            <p class="outlined">
+               Selected for Indigenous arts funding initiatives, I continue to
+               advocate for inclusive, independent development in games and digital
+               arts.
+            </p>
+         </div>
+      </section>
+      <div class="sine-line">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
       </div>
-    </nav>
-
-    <section id="home">
-      <h1 class="logo-text"><span>FORMANT</span></h1>
-      <p class="outlined">Creative Development by Tyler Johnston-Kent</p>
-    </section>
-    <div class="sine-line">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    <section id="about">
-      <h2 class="logo-text2">About Me</h2>
-      <p class="outlined">
-        Hi, I'm Tyler Johnston-Kent, a creative developer, professional artist,
-        and electronic music producer based in Winnipeg, Canada. I specialize in
-        game development, animation, and sound design, blending technology and
-        artistry to craft immersive experiences.
-      </p>
-
-      <div class="about-subsection">
-        <h3 class="outlined">Skills & Focus</h3>
-        <ul>
-          <li class="outlined">🎮 Game Development – C#, Unity, Unreal</li>
-          <li class="outlined">
-            🎨 Digital Art & Animation – 2D/3D design, Visual storytelling
-          </li>
-          <li class="outlined">
-            🎵 Sound Design & Music Production – Electronic soundscapes,
-            composition
-          </li>
-          <li class="outlined">
-            🛠 Creative Technology – Interactive media, Rapid prototyping
-          </li>
-        </ul>
-      </div>
-
-      <div class="about-subsection">
-        <h3 class="outlined">Background</h3>
-        <p class="outlined">
-          I am currently completing the Game Development – Programming program
-          at Red River College Polytechnic. My hands-on experience ranges from
-          indie game projects to freelance multimedia work, all built with a
-          focus on creative problem-solving and high-quality execution under
-          pressure.
-        </p>
-      </div>
-
-      <div class="about-subsection">
-        <h3 class="outlined">Achievements</h3>
-        <p class="outlined">
-          Selected for Indigenous arts funding initiatives, I continue to
-          advocate for inclusive, independent development in games and digital
-          arts.
-        </p>
-      </div>
-    </section>
-    <div class="sine-line">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    <section id="work">
-      <div class="section-header">
-        <h2 class="logo-text">My Work</h2>
-      </div>
-
-      <div class="work-carousel">
-        <button class="carousel-btn work-left">&#8592;</button>
-
-        <div class="work-selection-container">
-          <div class="work-selection-track">
-            <!-- Work Project 1 -->
-            <div class="work-slot">
-              <div class="work-card">
-                <h3>Project One</h3>
-                <p>Short description of your first project.</p>
-                <img src="project1.jpg" alt="Screenshot of Project One" loading="lazy" />
-
-              </div>
+      <section id="work">
+         <div class="section-header">
+            <h2 class="logo-text">My Work</h2>
+         </div>
+         <div class="work-carousel">
+            <button class="carousel-btn work-left" aria-label="Previous project item">&#8592;</button>
+            <div class="work-selection-container">
+               <div class="work-selection-track">
+                  <!-- Work Project 1 -->
+                  <div class="work-slot">
+                     <div class="work-card">
+                        <h3>Project One</h3>
+                        <p>Short description of your first project.</p>
+                        <img src="project1.jpg" alt="Screenshot of Project One" loading="lazy" />
+                     </div>
+                  </div>
+                  <!-- Work Project 2 -->
+                  <div class="work-slot">
+                     <div class="work-card">
+                        <h3>Project Two</h3>
+                        <p>Second project details go here.</p>
+                        <img src="project2.jpg" alt="Screenshot of Project Two" loading="lazy" />
+                     </div>
+                  </div>
+                  <!-- Work Project 3 -->
+                  <div class="work-slot">
+                     <div class="work-card">
+                        <h3>Project Three</h3>
+                        <p>A third highlight or prototype.</p>
+                        <img src="project3.jpg" alt="Screenshot of Project Three" loading="lazy" />
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <!-- Work Project 2 -->
-            <div class="work-slot">
-              <div class="work-card">
-                <h3>Project Two</h3>
-                <p>Second project details go here.</p>
-                <img src="project2.jpg" alt="Screenshot of Project Two" loading="lazy" />
-
-              </div>
-            </div>
-
-            <!-- Work Project 3 -->
-            <div class="work-slot">
-              <div class="work-card">
-                <h3>Project Three</h3>
-                <p>A third highlight or prototype.</p>
-                <img src="project3.jpg" alt="Screenshot of Project Three" loading="lazy" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-btn work-right">&#8594;</button>
+            <button class="carousel-btn work-right" aria-label="Next project item">&#8594;</button>
+         </div>
+      </section>
+      <div class="sine-line">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
       </div>
-    </section>
-    <div class="sine-line">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
-    <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
-    <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
-    <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
-    <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
-    <section id="music">
-      <h2 class="logo-text">Music</h2>
-      <div class="spectrum">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <p class="outlined">Selected tracks and platforms.</p>
-
-      <div class="music-carousel">
-        <button class="carousel-btn music-left">&#8592;</button>
-
-        <div class="selection-container">
-          <div class="selection-track">
-            <!-- YouTube Card -->
-            <div class="selection-slot">
-              <div class="music-card">
-                <h3>YouTube</h3>
-                <iframe
-                  loading="lazy"
-                  width="100%"
-                  height="166"
-                  src="https://www.youtube.com/embed/5G3Pqs883J0?si=i-dYhMm_7bt5mOoK"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
+      <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
+      <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
+      <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
+      <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
+      <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
+      <section id="music">
+         <h2 class="logo-text">Music</h2>
+         <div class="spectrum">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+         </div>
+         <p class="outlined">Selected tracks and platforms.</p>
+         <div class="music-carousel">
+            <button class="carousel-btn music-left" aria-label="Previous music item">&#8592;</button>
+            <div class="selection-container">
+               <div class="selection-track">
+                  <!-- YouTube Card -->
+                  <div class="selection-slot">
+                     <div class="music-card">
+                        <h3>YouTube</h3>
+                        <iframe
+                           title="YouTube video player: Formant"
+                           loading="lazy"
+                           width="100%"
+                           height="166"
+                           src="https://www.youtube.com/embed/5G3Pqs883J0?si=i-dYhMm_7bt5mOoK"
+                           frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                           referrerpolicy="strict-origin-when-cross-origin"
+                           allowfullscreen
+                           >
+                        </iframe>
+                     </div>
+                  </div>
+                  <!-- SoundCloud Card -->
+                  <div class="selection-slot">
+                     <div class="music-card">
+                        <h3>SoundCloud</h3>
+                        <iframe
+                           title="Soundcloud audio player: Formant"
+                           loading="lazy"
+                           width="100%"
+                           height="166"
+                           src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/formant4udio&color=%231db954&auto_play=false&show_user=true"
+                           >
+                        </iframe>
+                     </div>
+                  </div>
+                  <!-- Spotify Card -->
+                  <div class="selection-slot">
+                     <div class="music-card">
+                        <h3>Spotify</h3>
+                        <iframe
+                           title="Spotify audio player: Formant"
+                           loading="lazy"
+                           width="100%"
+                           height="166"
+                           src="https://open.spotify.com/embed/artist/3FAWzFpN3BcsDRldiS8iS3?utm_source=generator"
+                           >
+                        </iframe>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <!-- SoundCloud Card -->
-            <div class="selection-slot">
-              <div class="music-card">
-                <h3>SoundCloud</h3>
-                <iframe
-                  loading="lazy"
-                  width="100%"
-                  height="166"
-                  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/formant4udio&color=%231db954&auto_play=false&show_user=true"
-                >
-                </iframe>
-              </div>
-            </div>
-
-            <!-- Spotify Card -->
-            <div class="selection-slot">
-              <div class="music-card">
-                <h3>Spotify</h3>
-                <iframe
-                  loading="lazy"
-                  width="100%"
-                  height="166"
-                  src="https://open.spotify.com/embed/artist/3FAWzFpN3BcsDRldiS8iS3?utm_source=generator"
-                >
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-btn music-right">&#8594;</button>
+            <button class="carousel-btn music-right" aria-label="Next music item">&#8594;</button>
+         </div>
+      </section>
+      <div class="sine-line">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
       </div>
-    </section>
-    <div class="sine-line">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    <section id="contact">
-      <h2 class="logo-text2">Get in Touch</h2>
-      <!--the social bar-->
-      <div class="social-bar">
-        <!--fb box-->
-        <a
-          href="https://www.facebook.com/formantcanada"
-          target="_blank"
-          rel="noopener"
-          class="fb-wrapper"
-        >
-          <div class="fb-lens"></div>
-          <div class="fb-dot"></div>
-        </a>
-
-        <!--soundcloud-->
-        <a
-          href="https://soundcloud.com/formant4udio"
-          target="_blank"
-          rel="noopener"
-          class="sc-wrapper"
-        >
-          <div class="sc-cloud"></div>
-          <div class="sc-bar bar-1"></div>
-          <div class="sc-bar bar-2"></div>
-          <div class="sc-bar bar-3"></div>
-          <div class="sc-bar bar-4"></div>
-          <div class="sc-bar bar-5"></div>
-        </a>
-        <!--instagram-->
-        <a
-          href="https://www.instagram.com/formant_canada"
-          target="_blank"
-          rel="noopener"
-          class="ig-wrapper"
-        >
-          <div class="ig-lens"></div>
-          <div class="ig-dot"></div>
-        </a>
-        <!--youtube-->
-        <a
-          href="https://www.youtube.com/@formantaudio"
-          target="_blank"
-          rel="noopener"
-          class="yt-wrapper"
-        >
-          <div class="yt-button"></div>
-        </a>
-
-        <!--linkedin-->
-        <a
-          href="https://www.linkedin.com/in/tyler-johnston-kent"
-          target="_blank"
-          rel="noopener"
-          class="li-wrapper"
-        >
-          <div class="li-base">li</div>
-          <!-- Static lowercase li -->
-          <div class="li-line l-vert"></div>
-          <div class="li-line l-horiz"></div>
-          <div class="li-line i-bar"></div>
-          <div class="li-dot"></div>
-        </a>
-        <!--spotify-->
-        <a
-          href="https://open.spotify.com/artist/3FAWzFpN3BcsDRldiS8iS3"
-          target="_blank"
-          rel="noopener"
-          class="sp-wrapper"
-        >
-          <!-- Green default arcs -->
-          <div class="sp-wave green-wave wave-1"></div>
-          <div class="sp-wave green-wave wave-2"></div>
-          <div class="sp-wave green-wave wave-3"></div>
-
-          <!-- White animated arcs (same order, overlayed) -->
-          <div class="sp-wave white-wave wave-3"></div>
-          <div class="sp-wave white-wave wave-2"></div>
-          <div class="sp-wave white-wave wave-1"></div>
-        </a>
-
-        <!--end of social bar-->
-      </div>
-
-      <p class="outlined">
-        Email:
-        <a href="mailto:skepsisdrumandbass@gmail.com"
-          >skepsisdrumandbass@gmail.com</a
-        >
-      </p>
-    </section>
-
-    <footer>&copy; 2025 Formant. All rights reserved.</footer>
-
-    <script>
-      document.querySelectorAll("nav a").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute("href").substring(1);
-          const target = document.getElementById(targetId);
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-    </script>
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-L499GQPJX9'); 
-  </script>
-    <script src="musicCarousel.js" defer></script>
-  </body>
+      <section id="contact">
+         <h2 class="logo-text2">Get in Touch</h2>
+         <!--the social bar-->
+         <div class="social-bar">
+            <!--fb box-->
+            <a
+               href="https://www.facebook.com/formantcanada"
+               class="fb-wrapper"
+               aria-label="Facebook — Formant Canada" target="_blank" rel="noopener">
+               <!-- decorative shapes -->
+               
+               <div class="fb-lens"></div>
+               <div class="fb-dot"></div>
+            </a>
+            <!--soundcloud-->
+            <a
+               href="https://soundcloud.com/formant4udio"
+               class="sc-wrapper"
+               aria-label="Soundcloud — Formant Canada" target="_blank" rel="noopener">
+               <!-- decorative shapes -->
+               
+               <div class="sc-cloud"></div>
+               <div class="sc-bar bar-1"></div>
+               <div class="sc-bar bar-2"></div>
+               <div class="sc-bar bar-3"></div>
+               <div class="sc-bar bar-4"></div>
+               <div class="sc-bar bar-5"></div>
+            </a>
+            <!--instagram-->
+            <a
+               href="https://www.instagram.com/formant_canada"
+               class="ig-wrapper"
+               aria-label="Instagram — Formant_Canada" target="_blank" rel="noopener">
+               <!-- decorative shapes -->
+               
+               <div class="ig-lens"></div>
+               <div class="ig-dot"></div>
+            </a>
+            <!--youtube-->
+            <a
+               href="https://www.youtube.com/@formantaudio"
+               class="yt-wrapper"
+               aria-label="Youtube — Formant Canada" target="_blank" rel="noopener">
+               
+               <div class="yt-button"></div>
+            </a>
+            <!--linkedin-->
+            <a
+               href="https://www.linkedin.com/in/tyler-johnston-kent"
+               class="li-wrapper"
+               aria-label="LinkedIn — Formant Canada" target="_blank" rel="noopener">
+               
+               <div class="li-base">li</div>
+               <!-- Static lowercase li -->
+               <div class="li-line l-vert"></div>
+               <div class="li-line l-horiz"></div>
+               <div class="li-line i-bar"></div>
+               <div class="li-dot"></div>
+            </a>
+            <!--spotify-->
+            <a
+               href="https://open.spotify.com/artist/3FAWzFpN3BcsDRldiS8iS3"
+               class="sp-wrapper"
+               aria-label="Spotify— Formant Canada" target="_blank" rel="noopener">
+               
+               <!-- Green default arcs -->
+               <div class="sp-wave green-wave wave-1"></div>
+               <div class="sp-wave green-wave wave-2"></div>
+               <div class="sp-wave green-wave wave-3"></div>
+               <!-- White animated arcs (same order, overlayed) -->
+               <div class="sp-wave white-wave wave-3"></div>
+               <div class="sp-wave white-wave wave-2"></div>
+               <div class="sp-wave white-wave wave-1"></div>
+            </a>
+            <!--end of social bar-->
+         </div>
+         <p class="outlined">
+            Email:
+            <a href="mailto:skepsisdrumandbass@gmail.com"
+               >skepsisdrumandbass@gmail.com</a
+               >
+         </p>
+      </section>
+    </main>
+      <footer>&copy; 2025 Formant. All rights reserved.</footer>
+      <script>
+         document.querySelectorAll("nav a").forEach((link) => {
+           link.addEventListener("click", function (e) {
+             e.preventDefault();
+             const targetId = this.getAttribute("href").substring(1);
+             const target = document.getElementById(targetId);
+             if (target) {
+               target.scrollIntoView({ behavior: "smooth" });
+             }
+           });
+         });
+      </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+           dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'G-L499GQPJX9'); 
+      </script>
+      <script src="musicCarousel.js" defer></script>
+   </body>
 </html>
