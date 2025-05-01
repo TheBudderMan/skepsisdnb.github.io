@@ -34,17 +34,17 @@ banner.innerHTML = `
     document.body.appendChild(banner);
   
     // Accept
-    document.getElementById('accept-cookies').addEventListener('click', () => {
-      localStorage.setItem('cookieConsent', 'accepted');
-      loadThirdPartyScripts();
-      banner.remove();
-    });
+    banner.querySelector('#accept-cookies').addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'accepted');
+        loadThirdPartyScripts();
+        banner.remove();
+      });
   
     // Decline
-    document.getElementById('decline-cookies').addEventListener('click', () => {
-      localStorage.setItem('cookieConsent', 'declined');
-      banner.remove();
-    });
+    banner.querySelector('#decline-cookies').addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'declined');
+        banner.remove();
+      });
   });
   
   function loadThirdPartyScripts() {
