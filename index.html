@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <!-- Google tag (gtag.js) -->
     <script type="application/ld+json">
       {
@@ -20,6 +21,17 @@
         }
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"Formant",
+        "url":"https://www.formant.ca",
+        "logo":"https://www.formant.ca/logo.png"
+      }
+      </script>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta name="google-adsense-account" content="ca-pub-1246706747108680" />
     <script
       async
@@ -37,16 +49,25 @@
     <title>
       Formant | Tyler Johnston-Kent – Developer, Sound Designer, Artist
     </title>
-    <meta charset="utf-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:title" content="Formant | Tyler Johnston-Kent" />
+<meta property="og:description" content="Portfolio of Tyler Johnston-Kent — developer, music producer, sound designer, and digital artist based in Canada." />
+<meta property="og:url" content="https://formant.ca/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@formant4udio" />
+<meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="style.css" />
     <script src="time.js" defer></script>
+    <script src="hash-router.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="canonical" href="https://www.formant.ca/">
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16" />
+
   </head>
   <body>
     <nav>
@@ -177,7 +198,8 @@
               <div class="work-card">
                 <h3>Project One</h3>
                 <p>Short description of your first project.</p>
-                <img src="project1.jpg" alt="Screenshot of Project One" />
+                <img src="project1.jpg" alt="Screenshot of Project One" loading="lazy" />
+
               </div>
             </div>
 
@@ -186,7 +208,8 @@
               <div class="work-card">
                 <h3>Project Two</h3>
                 <p>Second project details go here.</p>
-                <img src="project2.jpg" alt="Screenshot of Project Two" />
+                <img src="project2.jpg" alt="Screenshot of Project Two" loading="lazy" />
+
               </div>
             </div>
 
@@ -195,7 +218,7 @@
               <div class="work-card">
                 <h3>Project Three</h3>
                 <p>A third highlight or prototype.</p>
-                <img src="project3.jpg" alt="Screenshot of Project Three" />
+                <img src="project3.jpg" alt="Screenshot of Project Three" loading="lazy" />
               </div>
             </div>
           </div>

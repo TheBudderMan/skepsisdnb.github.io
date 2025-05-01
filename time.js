@@ -1,38 +1,7 @@
-const yearSpan = document.querySelector('#currentYear');
-const currentYear = new Date();
-if (yearSpan) {
-  yearSpan.innerText = new Date().getFullYear();
-}
-console.log(currentYear);
-yearSpan.innerText = currentYear.getFullYear();
-
-
-/*
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-***********************************
-*/
-function currentYears() {
-    "use strict";
-    /*jslint browser:true */
-    const woah = new Date().getFullYear();
-    return woah;
-}
-
-function outputYear() {
-    "use strict";
-    /*jslint browser:true */
-    const builtWith = '"Formant \u00A9 Copyright ' + currentYear() + '"';
-    return builtWith;
-}
-
-function injectDebugPanel() {
-    const panel = document.createElement('div');
-    panel.id = 'debug-panel';
-    panel.innerHTML = `
+const yearSpan=document.querySelector('#currentYear');const currentYear=new Date();if(yearSpan){yearSpan.innerText=new Date().getFullYear()}
+console.log(currentYear);yearSpan.innerText=currentYear.getFullYear();function currentYears(){"use strict";const woah=new Date().getFullYear();return woah}
+function outputYear(){"use strict";const builtWith='"Formant \u00A9 Copyright '+currentYear()+'"';return builtWith}
+function injectDebugPanel(){const panel=document.createElement('div');panel.id='debug-panel';panel.innerHTML=`
       <button id="close-debug" title="Close Debug Panel">&times;</button>
       <h3>Debug Console</h3>
       <ul>
@@ -42,10 +11,7 @@ function injectDebugPanel() {
         <li>AI Scan Compatibility: <span class="fail">404</span></li>
         <li>Legacy Device Compatibility: <span class="ok">Moto Razr Certified</span></li>
       </ul>
-    `;
-  
-    const style = document.createElement('style');
-    style.textContent = `
+    `;const style=document.createElement('style');style.textContent=`
       #debug-panel {
         position: fixed;
         bottom: 0;
@@ -84,13 +50,4 @@ function injectDebugPanel() {
       #close-debug:hover {
         color: #fff;
       }
-    `;
-  
-    document.head.appendChild(style);
-    document.body.appendChild(panel);
-  
-    document.getElementById('close-debug').addEventListener('click', () => {
-      panel.remove();
-    });
-  }
-
+    `;document.head.appendChild(style);document.body.appendChild(panel);document.getElementById('close-debug').addEventListener('click',()=>{panel.remove()})}
