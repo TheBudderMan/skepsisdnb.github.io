@@ -2,7 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <style>
+      /* basic reset + font fallback */
+      html,body { margin:0; padding:0; background:#f9f9f9; font-family: system-ui, sans-serif; }
+      /* hero section full-screen centering */
+      #home { display:flex; align-items:center; justify-content:center; height:100vh; }
+      .logo-text span { font-size:4rem; /* adjust to your design */ }
+      /* nav bar basic positioning */
+      nav {
+  position: fixed; top: 0; width: 100%; background: white; 
+  display: flex; align-items: center; padding: 1rem 2rem; z-index: 1000;
+}
+    </style>
+  
+    <!-- 2b) Load the rest of your CSS non-blocking -->
+    <link rel="preload" href="style.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
     <!-- Google tag (gtag.js) -->
     <script type="application/ld+json">
@@ -353,9 +368,9 @@
     </div>
     <section id="contact">
       <h2 class="logo-text2">Get in Touch</h2>
-      <!-the social bar->
+      <!--the social bar-->
       <div class="social-bar">
-        <!-fb box->
+        <!--fb box-->
         <a
           href="https://www.facebook.com/formantcanada"
           target="_blank"
@@ -366,7 +381,7 @@
           <div class="fb-dot"></div>
         </a>
 
-        <!-soundcloud->
+        <!--soundcloud-->
         <a
           href="https://soundcloud.com/formant4udio"
           target="_blank"
@@ -380,7 +395,7 @@
           <div class="sc-bar bar-4"></div>
           <div class="sc-bar bar-5"></div>
         </a>
-        <!-instagram->
+        <!--instagram-->
         <a
           href="https://www.instagram.com/formant_canada"
           target="_blank"
@@ -390,7 +405,7 @@
           <div class="ig-lens"></div>
           <div class="ig-dot"></div>
         </a>
-        <!-youtube->
+        <!--youtube-->
         <a
           href="https://www.youtube.com/@formantaudio"
           target="_blank"
@@ -400,7 +415,7 @@
           <div class="yt-button"></div>
         </a>
 
-        <!-linkedin->
+        <!--linkedin-->
         <a
           href="https://www.linkedin.com/in/tyler-johnston-kent"
           target="_blank"
@@ -414,7 +429,7 @@
           <div class="li-line i-bar"></div>
           <div class="li-dot"></div>
         </a>
-        <!-spotify->
+        <!--spotify-->
         <a
           href="https://open.spotify.com/artist/3FAWzFpN3BcsDRldiS8iS3"
           target="_blank"
@@ -432,7 +447,7 @@
           <div class="sp-wave white-wave wave-1"></div>
         </a>
 
-        <!-end of social bar->
+        <!--end of social bar-->
       </div>
 
       <p class="outlined">
