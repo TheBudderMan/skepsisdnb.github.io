@@ -2,6 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <link rel="preload"
+      href="/fonts/Orbitron-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin>
+
+<!-- Define the font-face -->
+<style>
+  @font-face {
+    font-family: 'Orbitron';
+    src: url('/fonts/Orbitron-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
     <style>
       /* basic reset + font fallback */
       html,body { margin:0; padding:0; background:#f9f9f9; font-family: system-ui, sans-serif; }
@@ -9,10 +26,7 @@
       #home { display:flex; align-items:center; justify-content:center; height:100vh; }
       .logo-text span { font-size:4rem; /* adjust to your design */ }
       /* nav bar basic positioning */
-      nav {
-  position: fixed; top: 0; width: 100%; background: white; 
-  display: flex; align-items: center; padding: 1rem 2rem; z-index: 1000;
-}
+      
     </style>
   
     <!-- 2b) Load the rest of your CSS non-blocking -->
