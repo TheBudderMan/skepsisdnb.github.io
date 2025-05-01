@@ -1,13 +1,15 @@
 /* critical.css */
-@font-face {
+
+  @font-face {
     font-family: 'Orbitron';
     src: url('/fonts/Orbitron-Bold.woff2') format('woff2');
-    font-weight: 700; font-style: normal; font-display: swap;
-    font-display: optional;
-  /* … */
-
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    ascent-override: 90%;
+    descent-override: 10%;
+    line-gap-override: 0%;
   }
-  
 @font-face {
     font-family: 'Orbitron';
     src: url('/fonts/Orbitron-Regular.woff2') format('woff2');
