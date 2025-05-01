@@ -1,3 +1,43 @@
-document.addEventListener("click",(e)=>{const{target}=e;if(!target.matches("nav a")){return}
-e.preventDefault();route()});const route=(event)=>{event=event||window.event;event.preventDefault();window.history.pushState({},"",event.target.href);locationHandler()};const routes={404:{template:"/templates/404.html",title:"404",description:"Page not found",},"/":{template:"/templates/index.html",title:"Home",description:"Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.",},};const locationHandler=async()=>{var location=window.location.hash.replace("#","");if(location.length==0){location="/"}
-const route=routes[location]||routes["404"];const html=await fetch(route.template).then((response)=>response.text());document.getElementById("content").innerHTML=html;document.title=route.title;document.querySelector('meta[name="description"]').setAttribute("content",route.description)};window.addEventListener("hashchange",locationHandler);locationHandler()
+// hash-router.js
+document.addEventListener('DOMContentLoaded', () => {
+    // 1) Intercept your nav clicks and set the hash
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        window.location.hash = link.getAttribute('href');
+      });
+    });
+  
+    // 2) All your “routes” live here
+    const routes = {
+      '':    { template: '/templates/index.html', title: 'Home',    description: 'Portfolio of …' },
+      '404': { template: '/templates/404.html',   title: '404',     description: 'Page not found' },
+      // add other hashes: 'about', 'work', 'music', 'contact', etc.
+    };
+  
+    // 3) The workhorse that fetches & injects
+    async function locationHandler() {
+      const key = window.location.hash.replace(/^#/, '');
+      const route = routes[key] || routes['404'];
+  
+      const html = await fetch(route.template).then(r => r.text());
+      // pick whichever container you actually have:
+      const outlet = document.getElementById('content') 
+                  || document.getElementById('main');
+      if (!outlet) {
+        console.error('Router outlet (#content or #main) not found!');
+        return;
+      }
+  
+      outlet.innerHTML = html;
+      document.title = route.title;
+      document
+        .querySelector('meta[name="description"]')
+        .setAttribute('content', route.description);
+    }
+  
+    // 4) Listen for hash changes (and run once on load)
+    window.addEventListener('hashchange', locationHandler);
+    locationHandler();
+  });
+  
