@@ -22,10 +22,12 @@ p {
 .outlined {
   /* your fill color */
   color: white;
-  /* four shadows to simulate an outline */
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+  line-height: 1.2;
+  min-height: 1.5em; /* ensures space is reserved */
 }
+
 footer p {
   margin: 0;
 }
