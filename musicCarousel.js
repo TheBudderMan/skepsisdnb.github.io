@@ -28,4 +28,27 @@ document.addEventListener("DOMContentLoaded", () => {
     initCarousel('.selection-container', '.music-left', '.music-right');
     initCarousel('.work-selection-container', '.work-left', '.work-right');
   });
+
   
+  // js/embed.js
+document.addEventListener('DOMContentLoaded', () => {
+  // Generic loader for any card with a data-src
+  document.querySelectorAll('.embed-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const src   = card.dataset.src;
+      const w     = card.dataset.width  || '100%';
+      const h     = card.dataset.height || '8em';
+      const allow = card.dataset.allow   || 'autoplay; encrypted-media';
+      card.innerHTML = `
+  <div class="embed-thumb">
+    <iframe
+      src="${src}"
+      frameborder="0"
+      allow="${allow}"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="embed-title">${card.dataset.title || ''}</div>`;
+    }, { once: true });
+  });
+});
