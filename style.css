@@ -1221,7 +1221,37 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
   .not-found .btn:hover {
     background: #17a44a;
   }
-
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .cookie-banner p {
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+  
+  .cookie-buttons button {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #f1d600;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .cookie-buttons button:hover {
+    background-color: #e6c800;
+  }
+  
 /* === RESPONSIVE === */
 @media (max-width: 600px) {
   nav {

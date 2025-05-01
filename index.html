@@ -2,17 +2,17 @@
 <html lang="en">
    <head>
       <meta charset="utf-8" />
-      <meta http-equiv="Content-Security-Policy"
-  content="
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com;
-    style-src 'self' 'unsafe-inline';
-    font-src 'self';
-    img-src 'self' data: https://img.youtube.com https://cdn.glitch.global https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net;
-    connect-src 'self' https://analytics.google.com https://stats.g.doubleclick.net;
-    frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
-    child-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
-  ">
+      <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com;
+  style-src 'self' 'unsafe-inline';
+  font-src 'self';
+  img-src 'self' data: https://img.youtube.com https://cdn.glitch.global https://pagead2.googlesyndication.com;
+  connect-src 'self' https://analytics.google.com https://stats.g.doubleclick.net;
+  frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
+  child-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
+">
+
 
 
   <!-- … the rest of your head … -->
@@ -110,6 +110,18 @@
       <link rel="icon" href="Resources/logo.png" type="image/png" sizes="16x16" />
    </head>
    <body>
+      <div id="cookie-consent-banner" class="cookie-banner">
+         <p>
+           We use cookies to enhance your experience, analyze site usage, and assist in our marketing efforts. By clicking "Accept All", you consent to our use of cookies. 
+           <a href="/privacy-policy" target="_blank">Learn more</a>
+         </p>
+         <div class="cookie-buttons">
+           <button id="accept-cookies">Accept All</button>
+           <button id="reject-cookies">Reject All</button>
+           <button id="manage-cookies">Manage Preferences</button>
+         </div>
+       </div>
+       
     <a href="#main" class="skip-link">Skip to content</a>
       <nav>
          <div class="logo" role="presentation" aria-label="Formant logo">
@@ -120,7 +132,7 @@
             <div class="orb orb-4" role="presentation"></div>
          </div>
          <div class="nav-links">
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#music">Music</a>
@@ -130,7 +142,7 @@
       <main id="main">
         <!-- THIS is what your router is looking for: -->
     <div id="content"></div>
-      <section id="home">
+      <section id="#">
          <h1 class="logo-text"><span>FORMANT</span></h1>
          <p class="outlined">Creative Development by Tyler Johnston-Kent</p>
       </section>
@@ -520,6 +532,7 @@
          gtag('js', new Date());
          gtag('config', 'G-L499GQPJX9'); 
       </script>
+      <script src="cookieConsent.js" defer></script>
       <script src="musicCarousel.js" defer></script>
    </body>
 </html>
