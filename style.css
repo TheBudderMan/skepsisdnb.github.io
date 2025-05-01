@@ -1072,6 +1072,11 @@ section {
     display: none;
   }
 }
+/* Prevent #main from collapsing when you clear & re-inject its innerHTML */
+#main {
+  min-height: 100vh;           /* at least fill the viewport */
+  contain-intrinsic-size: 100vh; /* (for browsers that support CSS Containment) */
+}
 /* TEMPORARY BACKGROUNDS FOR VISUAL TESTING */
 #home {
 	background-image: url(Resources/Formant-BG1.webp);
