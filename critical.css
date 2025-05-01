@@ -1,0 +1,38 @@
+/* critical.css */
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/fonts/Orbitron-Bold.woff2') format('woff2');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/fonts/Orbitron-Regular.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .logo-text {
+    margin: 0;
+    font-family: 'Orbitron', system-ui, sans-serif;
+    text-transform: uppercase;
+    color: #222;
+  }
+  
+  .logo-text span {
+    font-size: 8vw;
+    letter-spacing: .2em;
+    line-height: 1;
+  }
+  

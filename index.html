@@ -3,36 +3,26 @@
   <head>
     <meta charset="utf-8" />
 
-    <link rel="preload"
-      href="/fonts/Orbitron-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin>
+    <!-- 1) Preload the critical CSS immediately -->
+<link rel="preload"
+href="critical.css"
+as="style"
+onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="critical.css">
+</noscript>
 
-<!-- Define the font-face -->
-<style>
-  @font-face {
-    font-family: 'Orbitron';
-    src: url('/fonts/Orbitron-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-</style>
-    <style>
-      /* basic reset + font fallback */
-      html,body { margin:0; padding:0; background:#f9f9f9; font-family: system-ui, sans-serif; }
-      /* hero section full-screen centering */
-      #home { display:flex; align-items:center; justify-content:center; height:100vh; }
-      .logo-text span { font-size:4rem; /* adjust to your design */ }
-      /* nav bar basic positioning */
-      
-    </style>
-  
-    <!-- 2b) Load the rest of your CSS non-blocking -->
-    <link rel="preload" href="style.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+<!-- 2) Then defer your full stylesheet for the rest of the page -->
+<link rel="preload"
+href="style.css"
+as="style"
+onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="style.css">
+</noscript>
+
+
+
     <!-- Google tag (gtag.js) -->
     <script type="application/ld+json">
       {
@@ -89,13 +79,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@formant4udio" />
 <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="style.css" />
     <script src="time.js" defer></script>
     <script src="hash-router.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    
+    
     <link rel="canonical" href="https://www.formant.ca/">
     <link rel="icon" href="logo.png" type="image/png" sizes="16x16" />
 
