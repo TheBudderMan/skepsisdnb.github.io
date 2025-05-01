@@ -8,11 +8,12 @@
     script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com;
     style-src 'self' 'unsafe-inline';
     font-src 'self';
-    img-src 'self' data: https://img.youtube.com https://cdn.glitch.global;
-    connect-src 'self';
-    frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com;
-    child-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com;
+    img-src 'self' data: https://img.youtube.com https://cdn.glitch.global https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net;
+    connect-src 'self' https://analytics.google.com https://stats.g.doubleclick.net;
+    frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
+    child-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
   ">
+
 
   <!-- … the rest of your head … -->
       <!-- 1) Kick off font download instantly -->
