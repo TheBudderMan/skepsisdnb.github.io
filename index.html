@@ -2,6 +2,24 @@
 <html lang="en">
    <head>
       <meta charset="utf-8" />
+      <!-- 1) Kick off font download instantly -->
+  <link rel="preload"
+  href="/fonts/Orbitron-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <!-- 2) Inline only the absolute minimum CSS (critical) -->
+  <style>
+   @font-face {
+     font-family: 'Orbitron';
+     src: url('/fonts/Orbitron-Bold.woff2') format('woff2');
+     font-weight: 700;
+     font-style: normal;
+     /* swap still, but download started already */
+     font-display: swap;
+   }
+   /* your nav, #home, .logo-text, layout sizing, etc. */
+ </style>
       <!-- 1) Preload the critical CSS immediately -->
        <!-- 1) testing branch -->
       <link rel="preload"
