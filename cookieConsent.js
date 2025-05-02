@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   let banner = document.getElementById('cookie-consent-banner');
 
-  // If banner doesn't exist in HTML, create it
   if (!banner) {
     banner = document.createElement('div');
     banner.id = 'cookie-consent-banner';
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Inject banner if no decision yet
   banner.className = 'cookie-banner';
   banner.innerHTML = `
     <p>This site uses cookies for ads and analytics. Do you accept?</p>
@@ -41,6 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('cookieConsent', 'declined');
     banner.remove();
   });
+
+  const resetBtn = document.getElementById('resetConsent');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      localStorage.removeItem('cookieConsent');
+      location.reload(); // Re-trigger banner logic cleanly
+    });
+  }
 });
 
 function loadThirdPartyScripts() {
@@ -62,18 +68,3 @@ function loadThirdPartyScripts() {
   adsScript.crossOrigin = 'anonymous';
   document.head.appendChild(adsScript);
 }
-
-document.getElementById('resetConsent')?.addEventListener('click', () => {
-  localStorage.removeItem('cookieConsent');
-  location.reload(); // or show banner again
-});
-document.addEventListener('DOMContentLoaded', () => {
-  const resetBtn = document.getElementById('resetConsent');
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      localStorage.removeItem('cookieConsent');
-      location.reload(); // Re-trigger banner logic cleanly
-    });
-  }
-});
-
