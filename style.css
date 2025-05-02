@@ -60,7 +60,21 @@ nav {
 .nav-links a:hover {
   color: #1db954;
 }
-
+.social-bar {
+  display: flex;
+  flex-wrap: wrap; /* optional: wraps on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 2em; /* controls space between icons */
+  margin: 2em 0;
+  padding: 0 1em;
+}
+.social-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em; /* size of the icons */
+  transition: color 0.3s;
+}
 /* === LOGO - TEXT === */
 
 .logo-text {

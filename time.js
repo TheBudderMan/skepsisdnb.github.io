@@ -7,8 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // 2) (Optional) inject your debug panel
-  injectDebugPanel();
+  // 2) Inject debug panel only if URL includes ?debug=true
+  const debugMode = new URLSearchParams(window.location.search).get('debug');
+  if (debugMode === 'true') {
+    injectDebugPanel();
+  }
 });
 
 function getCurrentYear() {
@@ -34,18 +37,36 @@ function injectDebugPanel() {
     </ul>
   `;
 
-  // styles
   const style = document.createElement('style');
   style.textContent = `
-    #debug-panel { position: fixed; bottom: 0; right: 0; background: #111; color: #0f0;
-      font-family: monospace; font-size: 0.85rem; padding: 1rem; border-top-left-radius: 8px;
-      box-shadow: 0 0 5px #0f0; z-index: 9999; max-width: 260px;
+    #debug-panel {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background: #111;
+      color: #0f0;
+      font-family: monospace;
+      font-size: 0.85rem;
+      padding: 1rem;
+      border-top-left-radius: 8px;
+      box-shadow: 0 0 5px #0f0;
+      z-index: 9999;
+      max-width: 260px;
     }
     #debug-panel h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #fff; }
     #debug-panel li { margin: 0.3rem 0; }
-    .ok { color: #0f0; } .warn { color: #ff0; } .fail { color: #f33; }
-    #close-debug { position: absolute; top: 4px; right: 8px; background: none; color: #f33;
-      border: none; font-size: 1.2rem; cursor: pointer;
+    .ok { color: #0f0; }
+    .warn { color: #ff0; }
+    .fail { color: #f33; }
+    #close-debug {
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      background: none;
+      color: #f33;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
     #close-debug:hover { color: #fff; }
   `;
@@ -53,6 +74,5 @@ function injectDebugPanel() {
   document.head.appendChild(style);
   document.body.appendChild(panel);
 
-  panel.querySelector('#close-debug')
-       .addEventListener('click', () => panel.remove());
+  panel.querySelector('#close-debug').addEventListener('click', () => panel.remove());
 }
