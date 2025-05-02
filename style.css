@@ -1202,6 +1202,38 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
     height: 100%;
     border: none;
   }
+  @media (max-width: 768px) {
+    .carousel-card.selection-slot {
+      flex: 0 0 100vw;
+      padding: 1rem;
+    }
+  
+    .music-card {
+      width: 90vw;
+      max-width: 90vw;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  
+    .embed-card {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+  
+    .embed-title {
+      font-size: 1rem;
+      margin-top: 0.5em;
+    }
+  
+    .music-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5em;
+    }
+  
+    .embed-play {
+      font-size: 2.5rem;
+    }
+  }
   
   
   /* === EMBED MODAL === */
