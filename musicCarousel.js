@@ -1,8 +1,8 @@
 function initCarousels() {
-  function initCarousel(containerSelector, leftBtnSelector, rightBtnSelector) {
-    const container = document.querySelector(containerSelector);
-    const leftBtn = document.querySelector(leftBtnSelector);
-    const rightBtn = document.querySelector(rightBtnSelector);
+  document.querySelectorAll('[data-carousel]').forEach(carouselWrapper => {
+    const container = carouselWrapper.querySelector('[data-carousel-track]');
+    const leftBtn = carouselWrapper.querySelector('[data-carousel-left]');
+    const rightBtn = carouselWrapper.querySelector('[data-carousel-right]');
 
     if (!container || !leftBtn || !rightBtn) return;
 
@@ -23,11 +23,7 @@ function initCarousels() {
 
     container.addEventListener('scroll', updateButtonStates);
     updateButtonStates();
-  }
-
-  initCarousel('.selection-container', '.music-left', '.music-right');
-  initCarousel('.work-selection-container', '.work-left', '.work-right');
+  });
 }
 
-// Initial call on page load
 document.addEventListener('DOMContentLoaded', initCarousels);

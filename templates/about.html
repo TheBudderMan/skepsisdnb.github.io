@@ -1,38 +1,54 @@
 <!-- /templates/about.html -->
-<section id="about">
-    <h2 class="logo-text2">About Me</h2>
-    <p class="outlined">
-      Hi, I'm Tyler Johnston-Kent, a creative developer, professional artist,
-      and electronic music producer based in Winnipeg, Canada. I specialize in
-      game development, animation, and sound design, blending technology and
-      artistry to craft immersive experiences.
-    </p>
-    <div class="about-subsection">
-      <h3 class="outlined">Skills & Focus</h3>
-      <ul>
-        <li class="outlined">🎮 Game Development – C#, Unity, Unreal</li>
-        <li class="outlined">🎨 Digital Art & Animation – 2D/3D design, Visual storytelling</li>
-        <li class="outlined">🎵 Sound Design & Music Production – Electronic soundscapes, composition</li>
-        <li class="outlined">🛠 Creative Technology – Interactive media, Rapid prototyping</li>
-      </ul>
-    </div>
-    <div class="about-subsection">
-      <h3 class="outlined">Background</h3>
+<section id="about" data-carousel>
+  <div class="sine-line">
+    <!-- (dots unchanged) -->
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="dot"></span>
+  </div> 
+  <button data-carousel-left aria-label="Previous">&#8592;</button>
+
+  <h2 class="logo-text">About Me</h2>
+  <div class="carousel" data-carousel-track>
+    
+    <!-- Card 1: Intro Text -->
+    <div class="carousel-card">
       <p class="outlined">
-        I am currently completing the Game Development – Programming program
-        at Red River College Polytechnic. My hands-on experience ranges from
-        indie game projects to freelance multimedia work, all built with a
-        focus on creative problem-solving and high-quality execution under
-        pressure.
+        Hi, I'm Tyler Johnston-Kent, a creative developer, professional artist,
+        and electronic music producer based in Winnipeg, Canada. I specialize in
+        game development, animation, and sound design, blending technology and
+        artistry to craft immersive experiences.
       </p>
     </div>
-    <div class="about-subsection">
-      <h3 class="outlined">Achievements</h3>
-      <p class="outlined">
-        Selected for Indigenous arts funding initiatives, I continue to
-        advocate for inclusive, independent development in games and digital
-        arts.
-      </p>
+
+    <!-- Card 2: Image Card -->
+    <div class="carousel-card">
+      <div class="about-image-frame">
+        <img src="/Resources/promopic1.jpg" alt="Photo of Tyler Johnston-Kent" />
+      </div>
     </div>
-  </section>
-  
+
+    <!-- Card 3: Subsection Card -->
+    <div class="carousel-card">
+      <h3 class="card-title">Game Development</h3>
+      <p>
+        From prototypes to polished games, I build interactive worlds using Unity and C# with a strong focus on narrative, systems design, and player experience.
+      </p>
+      <img src="/Resources/about/game-dev.jpg" alt="Game development visuals" class="card-image" />
+    </div>
+
+    <!-- Card 4: Subsection Card -->
+    <div class="carousel-card">
+      <h3 class="card-title">Sound & Animation</h3>
+      <p>
+        I create atmospheric soundscapes, produce electronic music, and animate characters and environments to bring ideas to life in engaging and expressive ways.
+      </p>
+      <img src="/Resources/about/sound-animation.jpg" alt="Sound and animation illustration" class="card-image" />
+    </div>
+
+  </div>
+
+  <button data-carousel-right aria-label="Next">&#8594;</button>
+</section>

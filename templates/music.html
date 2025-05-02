@@ -3,105 +3,97 @@
       <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
       <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
       <!-- MUSIC SECTION --><!-- MUSIC SECTION -->
-      <section id="music">
-        <div class="spectrum">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-       </div>
-         <h2 class="logo-text">Music</h2>
-         
-         <p class="outlined">Selected tracks and platforms.</p>
-         <div class="music-carousel">
-            <button class="carousel-btn music-left" aria-label="Previous music item">&#8592;</button>
-            <div class="selection-container">
-               <div class="selection-track">
-
-                
-                <!-- YouTube -->
-<div class="selection-slot">
-  <div class="music-card">
-    <h3>YouTube</h3>
-    <div class="embed-title">Side Effects VIP</div>
-    <div 
-      class="yt-embed-card embed-card" 
-      data-src="https://www.youtube.com/embed/5G3Pqs883J0?autoplay=1"
-      data-width="100%" 
-      data-height="8em"
-      data-allow="autoplay; encrypted-media"
-    >
-    <img 
-  src="https://img.youtube.com/vi/5G3Pqs883J0/hqdefault.jpg"
-  alt="Formant – Drum and Bass Discography"
-  width="480" height="360"
-  loading="lazy"
->
-
-      <span class="embed-play" aria-hidden="true">▶︎</span>
+      <section id="music" data-carousel>
+        <div class="music-header">
+          <h2 class="logo-text">Music</h2>
+          <p class="outlined">Selected tracks and platforms.</p>
+          <div class="spectrum">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
       
-    </div>
-  </div>
-</div>
-
-<!-- SoundCloud -->
-<div class="selection-slot">
-  <div class="music-card">
-    <h3>SoundCloud</h3>    
-    <div class="embed-title">Soundcloud Playlist</div>
-    <div 
-      class="sc-embed-card embed-card" 
-      data-src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/formant4udio&auto_play=true"
-      data-width="100%" 
-      data-height="8em"
-      data-allow="autoplay"
-    >
-      <div class="sc-wrapper" aria-hidden="true">
-        <div class="sc-cloud"></div>
-        <div class="sc-bar bar-1"></div>
-        <div class="sc-bar bar-2"></div>
-        <div class="sc-bar bar-3"></div>
-        <div class="sc-bar bar-4"></div>
-        <div class="sc-bar bar-5"></div>
-      </div>
-      <span class="embed-play" aria-hidden="true">▶︎</span>
-    </div>
-  </div>
-</div>
-
-<!-- Spotify -->
-<div class="selection-slot">
-  <div class="music-card">
-    <h3>Spotify</h3>
-    <div class="embed-title">Formant on Spotify</div>
-    <div 
-      class="sp-embed-card embed-card" 
-      data-src="https://open.spotify.com/embed/artist/3FAWzFpN3BcsDRldiS8iS3?autoplay=true"
-      data-width="100%" 
-      data-height="8em"
-      data-allow="autoplay; encrypted-media"
-    >
-      <div class="sp-wrapper" aria-hidden="true">
-        <div class="sp-wave green-wave wave-3"></div>
-        <div class="sp-wave green-wave wave-2"></div>
-        <div class="sp-wave green-wave wave-1"></div>
-      </div>
-      <span class="embed-play" aria-hidden="true">▶︎</span>
+        <button class="carousel-btn" data-carousel-left aria-label="Previous music item">&#8592;</button>
       
-    </div>
-  </div>
-</div>
-
-
-               </div>
+        <div class="carousel" data-carousel-track>
+          <!-- YouTube -->
+          <div class="carousel-card selection-slot">
+            <div class="music-card">
+              <h3>YouTube</h3>
+              <div class="embed-title">Side Effects VIP</div>
+              <div
+                class="yt-embed-card embed-card"
+                data-src="https://www.youtube.com/embed/5G3Pqs883J0?autoplay=1"
+                data-width="100%"
+                data-height="8em"
+                data-allow="autoplay; encrypted-media"
+              >
+                <img
+                  src="https://img.youtube.com/vi/5G3Pqs883J0/hqdefault.jpg"
+                  alt="Formant – Drum and Bass Discography"
+                  width="480" height="360"
+                  loading="lazy"
+                />
+                <span class="embed-play" aria-hidden="true">▶︎</span>
+              </div>
             </div>
-            <button class="carousel-btn music-right" aria-label="Next music item">&#8594;</button>
-         </div>
-
-
-
+          </div>
+      
+          <!-- SoundCloud -->
+          <div class="carousel-card selection-slot">
+            <div class="music-card">
+              <h3>SoundCloud</h3>
+              <div class="embed-title">Soundcloud Playlist</div>
+              <div
+                class="sc-embed-card embed-card"
+                data-src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/formant4udio&auto_play=true"
+                data-width="100%"
+                data-height="8em"
+                data-allow="autoplay"
+              >
+                <div class="sc-wrapper" aria-hidden="true">
+                  <div class="sc-cloud"></div>
+                  <div class="sc-bar bar-1"></div>
+                  <div class="sc-bar bar-2"></div>
+                  <div class="sc-bar bar-3"></div>
+                  <div class="sc-bar bar-4"></div>
+                  <div class="sc-bar bar-5"></div>
+                </div>
+                <span class="embed-play" aria-hidden="true">▶︎</span>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Spotify -->
+          <div class="carousel-card selection-slot">
+            <div class="music-card">
+              <h3>Spotify</h3>
+              <div class="embed-title">Formant on Spotify</div>
+              <div
+                class="sp-embed-card embed-card"
+                data-src="https://open.spotify.com/embed/artist/3FAWzFpN3BcsDRldiS8iS3?autoplay=true"
+                data-width="100%"
+                data-height="8em"
+                data-allow="autoplay; encrypted-media"
+              >
+                <div class="sp-wrapper" aria-hidden="true">
+                  <div class="sp-wave green-wave wave-3"></div>
+                  <div class="sp-wave green-wave wave-2"></div>
+                  <div class="sp-wave green-wave wave-1"></div>
+                </div>
+                <span class="embed-play" aria-hidden="true">▶︎</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <button class="carousel-btn" data-carousel-right aria-label="Next music item">&#8594;</button>
       </section>
+      
+      
