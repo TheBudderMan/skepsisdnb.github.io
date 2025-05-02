@@ -10,10 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // 2) All your “routes” live here
     const routes = {
-      '':    { template: '/templates/index.html', title: 'Home',    description: 'Portfolio of …' },
-      '404': { template: '/templates/404.html',   title: '404',     description: 'Page not found' },
-      // add other hashes: 'about', 'work', 'music', 'contact', etc.
+      '':      { template: '/templates/index.html', title: 'Home',    description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
+      'about': { template: '/templates/about.html', title: 'About',   description: 'Learn more about Tyler Johnston-Kent’s background, skills, and artistic focus.' },
+      'work':  { template: '/templates/work.html',  title: 'Work',    description: 'Explore creative projects by Tyler Johnston-Kent, including games, art, and interactive media.' },
+      'music': { template: '/templates/music.html', title: 'Music',   description: 'Listen to Formant’s sound design and original compositions across platforms.'},
+      'contact':{template: '/templates/contact.html',title: 'Contact',description: 'Contact Tyler Johnston-Kent — digital artist, developer, and music producer.'},
+
+      '404':   { template: '/templates/404.html',   title: '404',     description: 'Page not found' },
     };
+    
   
     // 3) The workhorse that fetches & injects
     async function locationHandler() {
