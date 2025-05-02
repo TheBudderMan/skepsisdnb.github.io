@@ -1451,6 +1451,29 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
 .carousel::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
 }
+.gear-reset-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.gear-reset-btn:hover {
+  opacity: 1;
+  transform: rotate(20deg) scale(1.1);
+}
+
+.gear-icon {
+  pointer-events: none;
+}
+
 
 /* === RESPONSIVE === */
 @media (max-width: 600px) {

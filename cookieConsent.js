@@ -67,3 +67,13 @@ document.getElementById('resetConsent')?.addEventListener('click', () => {
   localStorage.removeItem('cookieConsent');
   location.reload(); // or show banner again
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const resetBtn = document.getElementById('resetConsent');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      localStorage.removeItem('cookieConsent');
+      location.reload(); // Re-trigger banner logic cleanly
+    });
+  }
+});
+
