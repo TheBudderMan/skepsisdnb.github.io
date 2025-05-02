@@ -16,39 +16,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function locationHandler() {
     const key = window.location.hash.replace(/^#/, '');
-    const route = routes.hasOwnProperty(key) ? routes[key] : routes['404'];
-    const isGhost = key === '';  // ghost page (initial load)
+    const normalizedKey = key === 'home' ? '' : key;
+    const route = routes.hasOwnProperty(normalizedKey) ? routes[normalizedKey] : routes['404'];
+  
+    const isGhost = normalizedKey === ''; // ghost homepage
     const isHome = key === 'home';
-
+  
+    // Normalize #home → #
+    if (isHome && window.location.hash === '#home') {
+      history.replaceState(null, '', '#');
+    }
+  
+    // Scroll to top for ghost/home
     if (isGhost || isHome) {
       window.scrollTo(0, 0);
     }
-
-    if (isHome && window.location.hash !== '#') {
-      // If user visits #home, normalize to #
-      history.replaceState(null, '', '#');
-    }
-
+  
     const html = await fetch(route.template).then(r => r.text());
     const outlet = document.getElementById('content');
     if (!outlet) return console.error('Router outlet (#content) not found!');
     outlet.innerHTML = html;
-
+  
+    // Inject footer
     const section = outlet.querySelector('section');
     if (section) {
-      const footerHtml = await fetch('/templates/footer.html').then(r => r.text());
-      section.insertAdjacentHTML('beforeend', footerHtml);
+      try {
+        const footerHtml = await fetch('/templates/footer.html').then(r => r.text());
+        section.insertAdjacentHTML('beforeend', footerHtml);
+      } catch (err) {
+        console.warn('Footer load failed:', err);
+      }
     }
-
+  
     lockScroll(isGhost || isHome);
-
+  
     if (typeof initCarousels === 'function') initCarousels();
+  
+    // Set year
     const yearSpan = document.querySelector('#currentYear');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-
+  
+    // SEO metadata
     document.title = `Formant | ${route.title}`;
     document.querySelector('meta[name="description"]')?.setAttribute('content', route.description);
-
+  
     let canonical = document.querySelector("link[rel='canonical']");
     if (!canonical) {
       canonical = document.createElement('link');
@@ -56,40 +67,81 @@ document.addEventListener('DOMContentLoaded', () => {
       document.head.appendChild(canonical);
     }
     canonical.setAttribute('href', `https://www.formant.ca/#${key}`);
-
+  
     const setMeta = (sel, content) => document.querySelector(sel)?.setAttribute('content', content);
     setMeta("meta[property='og:title']", `Formant | ${route.title}`);
     setMeta("meta[property='og:description']", route.description);
     setMeta("meta[property='og:url']", `https://www.formant.ca/#${key}`);
     setMeta("meta[name='twitter:title']", `Formant | ${route.title}`);
     setMeta("meta[name='twitter:description']", route.description);
-
-    setupScrollSnapRouter();
+  
+    // Only scroll into view for hash navigation, not ghost load
+    const targetSection = document.querySelector('#content > section');
+    if (targetSection && !isGhost) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  
   }
+  
 
-  function setupScrollSnapRouter() {
+  function setupVerticalScrollRouting() {
     const sectionOrder = ['home', 'about', 'work', 'music', 'contact'];
-    const sections = document.querySelectorAll('#content > section');
-    if (!sections.length) return;
-
-    const observer = new IntersectionObserver(entries => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('data-route');
-          if (window.location.hash !== `#${id}` && id !== 'home') {
-            history.replaceState(null, '', `#${id}`);
-          } else if (id === 'home' && window.location.hash !== '#') {
-            history.replaceState(null, '', '#');
-          }
-        }
+    let scrollTimeout = null;
+    let touchStartY = 0;
+  
+    function getCurrentIndex() {
+      const current = window.location.hash.replace(/^#/, '') || 'home';
+      return sectionOrder.indexOf(current);
+    }
+  
+    function goToIndex(index) {
+      if (index >= 0 && index < sectionOrder.length) {
+        const target = sectionOrder[index];
+        const newHash = target === 'home' ? '#' : `#${target}`;
+        window.location.hash = newHash;
       }
-    }, { threshold: 0.6 });
-
-    sections.forEach((section, idx) => {
-      section.setAttribute('data-route', sectionOrder[idx]);
-      observer.observe(section);
-    });
+    }
+  
+    function nextPage() {
+      const currentIndex = getCurrentIndex();
+      goToIndex(currentIndex + 1);
+    }
+  
+    function previousPage() {
+      const currentIndex = getCurrentIndex();
+      goToIndex(currentIndex - 1);
+    }
+  
+    function onWheel(e) {
+      if (scrollTimeout) return;
+      e.deltaY > 0 ? nextPage() : previousPage();
+      scrollTimeout = setTimeout(() => scrollTimeout = null, 1000);
+    }
+  
+    function onTouchStart(e) {
+      touchStartY = e.touches[0].clientY;
+    }
+  
+    function onTouchEnd(e) {
+      const deltaY = touchStartY - e.changedTouches[0].clientY;
+      if (Math.abs(deltaY) < 30 || scrollTimeout) return;
+      deltaY > 0 ? nextPage() : previousPage();
+      scrollTimeout = setTimeout(() => scrollTimeout = null, 1000);
+    }
+  
+    // Attach listeners once
+    window.removeEventListener('wheel', onWheel);
+    window.removeEventListener('touchstart', onTouchStart);
+    window.removeEventListener('touchend', onTouchEnd);
+  
+    window.addEventListener('wheel', onWheel, { passive: true });
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchend', onTouchEnd, { passive: true });
   }
+  
+  
+  
+  
 
   document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', e => {
@@ -107,7 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('hashchange', locationHandler);
-
+  // Set up scroll/swipe routing ONCE
+setupVerticalScrollRouting();
   // Initial load: don't force any redirect — let '' stay as ghost
   locationHandler();
 });

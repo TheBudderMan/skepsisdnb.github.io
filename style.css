@@ -6,7 +6,6 @@ html,
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
-    overflow-y: scroll;
     scroll-snap-type: y mandatory;
     overflow: hidden;
   }
@@ -45,7 +44,17 @@ body.lock-scroll {
   overflow: hidden !important;
   height: 100vh;
 }
+/* Hide scrollbars completely (Webkit & Firefox) */
+body,
+#content {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
 
+body::-webkit-scrollbar,
+#content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 /* === NAVIGATION === */
 nav {
   position: fixed; top: 0; width: 100%; background: white; 
