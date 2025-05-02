@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Check if consent has already been given
     const consent = localStorage.getItem('cookieConsent');
+    const banner = document.getElementById('cookie-consent-banner');
+  
     if (consent === 'accepted') {
       loadThirdPartyScripts();
+      banner?.remove();
+      return;
+    }
+    if (consent === 'declined') {
+      banner?.remove();
       return;
     }
   
-    // Create banner
-    const banner = document.createElement('div');
 banner.className = 'cookie-banner';
 banner.innerHTML = `
   <p>This site uses cookies for ads and analytics. Do you accept?</p>
