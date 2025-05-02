@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const outlet = document.getElementById('content');
     if (!outlet) return console.error('Router outlet (#content) not found!');
     outlet.innerHTML = html;
-  
+    if (typeof initEmbeds === 'function') initEmbeds();
+
     // Inject footer
     const section = outlet.querySelector('section');
     if (section) {
@@ -139,9 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('touchend', onTouchEnd, { passive: true });
   }
   
-  
-  
-  
 
   document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', e => {
@@ -162,5 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set up scroll/swipe routing ONCE
 setupVerticalScrollRouting();
   // Initial load: don't force any redirect — let '' stay as ghost
+
   locationHandler();
 });
