@@ -1146,6 +1146,17 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
   overflow:hidden;clip:rect(0,0,0,0);
   white-space:nowrap;border:0;
 }
+#content {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+#content > section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
 /* ==========================================================================
    1) Base “embed‐card” sizing
    ========================================================================== */

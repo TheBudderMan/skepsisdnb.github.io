@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const routes = {
-    'home': { template: '/templates/home.html', title: 'Home', description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
-
-    'about':   { template: '/templates/about.html', title: 'About',   description: 'Learn more about Tyler Johnston-Kent’s background, skills, and artistic focus.' },
-    'work':    { template: '/templates/work.html',  title: 'Work',    description: 'Explore creative projects by Tyler Johnston-Kent, including games, art, and interactive media.' },
-    'music':   { template: '/templates/music.html', title: 'Music',   description: 'Listen to Formant’s sound design and original compositions across platforms.' },
-    'contact': { template: '/templates/contact.html', title: 'Contact', description: 'Contact Tyler Johnston-Kent — digital artist, developer, and music producer.' },
-    '404':     { template: '/templates/404.html',   title: '404',     description: 'Page not found' }
+    '':       { template: '/templates/home.html',   title: 'Home',    description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
+    'home':   { template: '/templates/home.html',   title: 'Home',    description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
+    'about':  { template: '/templates/about.html',  title: 'About',   description: 'Learn more about Tyler Johnston-Kent’s background, skills, and artistic focus.' },
+    'work':   { template: '/templates/work.html',   title: 'Work',    description: 'Explore creative projects by Tyler Johnston-Kent, including games, art, and interactive media.' },
+    'music':  { template: '/templates/music.html',  title: 'Music',   description: 'Listen to Formant’s sound design and original compositions across platforms.' },
+    'contact':{ template: '/templates/contact.html',title: 'Contact', description: 'Contact Tyler Johnston-Kent — digital artist, developer, and music producer.' },
+    '404':    { template: '/templates/404.html',    title: '404',     description: 'Page not found' }
   };
 
   function lockScroll(state = true) {
@@ -16,11 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function locationHandler() {
     const key = window.location.hash.replace(/^#/, '');
-    const route = routes[key] || routes['404'];
+    const route = routes.hasOwnProperty(key) ? routes[key] : routes['404'];
+    const isGhost = key === '';  // ghost page (initial load)
     const isHome = key === 'home';
 
+    if (isGhost || isHome) {
+      window.scrollTo(0, 0);
+    }
 
-    if (isHome) window.scrollTo(0, 0);
+    if (isHome && window.location.hash !== '#') {
+      // If user visits #home, normalize to #
+      history.replaceState(null, '', '#');
+    }
 
     const html = await fetch(route.template).then(r => r.text());
     const outlet = document.getElementById('content');
@@ -33,8 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       section.insertAdjacentHTML('beforeend', footerHtml);
     }
 
-    document.body.classList.toggle('lock-scroll', isHome);
-    outlet.classList.toggle('lock-scroll', isHome);
+    lockScroll(isGhost || isHome);
 
     if (typeof initCarousels === 'function') initCarousels();
     const yearSpan = document.querySelector('#currentYear');
@@ -51,34 +57,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     canonical.setAttribute('href', `https://www.formant.ca/#${key}`);
 
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', `Formant | ${route.title}`);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', route.description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://www.formant.ca/#${key}`);
+    const setMeta = (sel, content) => document.querySelector(sel)?.setAttribute('content', content);
+    setMeta("meta[property='og:title']", `Formant | ${route.title}`);
+    setMeta("meta[property='og:description']", route.description);
+    setMeta("meta[property='og:url']", `https://www.formant.ca/#${key}`);
+    setMeta("meta[name='twitter:title']", `Formant | ${route.title}`);
+    setMeta("meta[name='twitter:description']", route.description);
 
-    document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', `Formant | ${route.title}`);
-    document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', route.description);
+    setupScrollSnapRouter();
   }
 
-  // Fix nav clicking even if hash doesn’t change
+  function setupScrollSnapRouter() {
+    const sectionOrder = ['home', 'about', 'work', 'music', 'contact'];
+    const sections = document.querySelectorAll('#content > section');
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('data-route');
+          if (window.location.hash !== `#${id}` && id !== 'home') {
+            history.replaceState(null, '', `#${id}`);
+          } else if (id === 'home' && window.location.hash !== '#') {
+            history.replaceState(null, '', '#');
+          }
+        }
+      }
+    }, { threshold: 0.6 });
+
+    sections.forEach((section, idx) => {
+      section.setAttribute('data-route', sectionOrder[idx]);
+      observer.observe(section);
+    });
+  }
+
   document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       const target = link.getAttribute('href');
       const current = window.location.hash;
-
-      if (current === `#${target}` || (!target && !current)) {
-        locationHandler(); // force reload if hash is same
-      } else {
+  
+      if (target === '#' && current !== '#') {
+        history.pushState(null, '', '#');
+        locationHandler(); // force the router to update to ghost page
+      } else if (current !== target) {
         window.location.hash = target;
       }
     });
   });
 
-  if (!window.location.hash) {
-    window.location.hash = '#home';
-    return; // Let hashchange event handle the routing
-  }
-  
   window.addEventListener('hashchange', locationHandler);
+
+  // Initial load: don't force any redirect — let '' stay as ghost
   locationHandler();
 });
