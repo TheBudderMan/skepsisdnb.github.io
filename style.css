@@ -1628,6 +1628,70 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
 .gear-icon {
   pointer-events: none;
 }
+/* === PROJECT MODAL === */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.project-modal.hidden {
+  display: none;
+}
+
+.project-modal-content {
+  background: #111;
+  color: white;
+  max-width: 960px;
+  width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 0.5em;
+  padding: 2rem;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Modal inner sections */
+.modal-section {
+  width: 100%;
+  text-align: center;
+}
+
+/* Modal image styles */
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.3em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+}
+
+/* Modal close button */
+#close-project-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10001;
+  transition: opacity 0.2s ease;
+}
+
+#close-project-modal:hover {
+  opacity: 0.7;
+}
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
   nav {
