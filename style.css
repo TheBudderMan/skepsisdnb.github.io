@@ -1,17 +1,19 @@
 /* === GENERAL === */
 html,
   body {
-    scroll-behavior: smooth;
     background-image: url(Resources/Formant-BG4.webp);
     color: #222;
-    scroll-snap-type: y mandatory;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
     overflow-y: scroll;
-    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
   }
 footer {
   text-align: center;
   padding: 2em 1em;
-  background: black;
+  background: rgba(0, 0, 0, 0);
   color: white;
   font-size: 0.9rem;
 }
@@ -31,6 +33,19 @@ p {
 footer p {
   margin: 0;
 }
+
+
+body.lock-scroll {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+}
+
+#content.lock-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
 /* === NAVIGATION === */
 nav {
   position: fixed; top: 0; width: 100%; background: white; 
@@ -405,6 +420,8 @@ nav {
 section {
   scroll-snap-align: start;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
