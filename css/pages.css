@@ -2,10 +2,18 @@
 
 #home {
     background-image: url(../Resources/Formant-BG1.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* desktop default */
   }
   
   #about {
     background-image: url(../Resources/Formant-BG4.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* desktop default */
   }
   
   #work {
@@ -21,9 +29,18 @@
   
   #music {
     background-image: url(../Resources/Formant-BG1.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* desktop default */
   }
+  
   
   #contact {
     background-image: url(../Resources/Formant-BG5.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* desktop default */
   }
   

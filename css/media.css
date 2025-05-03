@@ -139,6 +139,12 @@
   }
 }
 @media (max-width: 600px) {
+  #contact {
+    flex-direction: column;
+    padding: 2em 1em;
+    text-align: center;
+  }
+
   .social-bar {
     flex-direction: column;
     align-items: center;
@@ -146,11 +152,15 @@
 
   .social-bar a {
     margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  #contact {
-    padding: 2em 1em;
-    text-align: center;
+  #contact h2,
+  #contact p {
+    width: 100%;
   }
 }
+
 
