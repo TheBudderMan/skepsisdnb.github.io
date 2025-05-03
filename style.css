@@ -1448,13 +1448,13 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
     margin: 0 0.5em;
     padding: 0.5em 1em;
     border: none;
-    background-color: #f1d600;
+    background-color:black;
     color: whitesmoke;
     cursor: pointer;
   }
   
   .cookie-buttons button:hover {
-    background-color: #e6c800;
+    background-color: lightslategray;
   }
   /* === Carousel Layout (shared) === */
 .carousel-container {
