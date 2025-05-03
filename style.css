@@ -1439,6 +1439,8 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
   
   .cookie-banner p {
     margin: 0 0 1em 0;
+    
+    color: whitesmoke;
     text-align: center;
   }
   
