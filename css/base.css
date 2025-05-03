@@ -1,0 +1,58 @@
+/* === GENERAL === */
+html,
+  body {
+    background-image: url(../Resources/Formant-BG4.webp);
+    color: #222;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+footer {
+  text-align: center;
+  padding: 2em 1em;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 0.9rem;
+}
+p {
+  font-weight: bold;
+  color: black; /* or “black” */
+}
+.outlined {
+  /* your fill color */
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+  line-height: 1.2;
+  min-height: 1.5em; /* ensures space is reserved */
+}
+
+footer p {
+  margin: 0;
+}
+
+
+body.lock-scroll {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+}
+
+#content.lock-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
+/* Hide scrollbars completely (Webkit & Firefox) */
+body,
+#content {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar,
+#content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

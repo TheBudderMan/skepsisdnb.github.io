@@ -1,0 +1,52 @@
+/* === NAVIGATION === */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.nav-links {
+  position: absolute;
+  left: 48vw;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+.social-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 2em 0;
+  padding: 0 1em;
+}
+
+.social-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  transition: color 0.3s;
+}

@@ -1,0 +1,464 @@
+/* === EMBED MODAL === */
+.embed-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+.embed-modal.hidden {
+  display: none;
+}
+
+.embed-modal-content {
+  width: 90vw;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  background: black;
+  position: relative;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+#embed-player-container {
+  width: 100%;
+  height: 100%;
+}
+
+#embed-player-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+#close-embed-modal {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity 0.2s ease;
+}
+
+#close-embed-modal:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .music-card {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    z-index: 999;
+    position: relative;
+  }
+
+  .embed-card {
+    width: 100%;
+    height: 70vh;
+    aspect-ratio: auto; /* Allow it to fill space better */
+    z-index: 1000;
+  }
+
+  .embed-play {
+    font-size: 3rem;
+    z-index: 1001;
+  }
+
+  .music-header {
+    display: none; /* Optional: hide the header when modal-style fullscreen cards appear */
+  }
+}
+
+@media (min-width: 600px) {
+  .embed-modal-content {
+    width: 90vw;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
+    height: auto; /* 👈 Ensures height follows aspect ratio */
+    border-radius: 0.5em;
+  }
+
+  #embed-player-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+  
+   /* ==========================================================================
+      2) Thumbnail / logo fills the card
+      ========================================================================== */
+   .embed-thumb {
+     position: absolute;
+     inset: 0;     
+     width: 30vw;
+    aspect-ratio: 16/9;           /* shorthand for top:0; right:0; bottom:0; left:0 */
+     overflow: hidden;
+   }
+   
+  .embed-thumb img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  
+   .embed-thumb img,
+   .embed-thumb .sc-wrapper,
+   .embed-thumb .sp-wrapper {
+     position: absolute;
+     inset: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;        /* for img, keeps aspect; others just stretch */
+     display: block;
+   }
+   
+   /* ==========================================================================
+      3) Play icon always centered
+      ========================================================================== */
+   .embed-play {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: clamp(2em, 6vw, 3em);
+     color: rgba(255,255,255,0.9);
+     text-shadow: 0 .2em .4em rgba(0,0,0,0.7);
+     pointer-events: none;
+   }
+   
+   /* ==========================================================================
+      4) Title underneath
+      ========================================================================== */
+   .embed-title {
+     position: relative;       /* sits after the card */
+     margin-top: 0.75em;
+     text-align: center;
+     font-size: 1em;
+     color: #111;
+   }
+   
+   /* ==========================================================================
+      5) Platform‐specific tweaks (colors/icons, etc)
+      ========================================================================== */
+   /* SoundCloud play icon in orange */
+   .sc-embed-card .embed-play {
+     color: #ff5500;
+   }
+   
+   /* Spotify play icon in green */
+   .sp-embed-card .embed-play {
+     color: #1db954;
+   }
+   
+   .not-found {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .not-found h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .not-found p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .not-found .btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: #1db954;
+    color: white;
+    border-radius: 0.3em;
+    text-decoration: none;
+  }
+  .not-found .btn:hover {
+    background: #17a44a;
+  }
+  
+  /* === Carousel Layout (shared) === */
+.carousel-container {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: #ffffff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0 0 1em 0;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.cookie-buttons button {
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cookie-buttons button:hover {
+  background-color: #444444; /* darker gray */
+  color: #ffffff; /* stay white for high contrast */
+}
+
+/* === About Section Specific === */
+.about-image-frame {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-image {
+  margin-top: 1rem;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color, #00ffff);
+}
+.about-btn-left,
+.about-btn-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.about-btn-left:hover,
+.about-btn-right:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.about-btn-left {
+  left: 1rem;
+}
+
+.about-btn-right {
+  right: 1rem;
+}
+.carousel-container,
+.work-carousel,
+.music-carousel {
+  position: relative;
+}
+
+/* Common Button Style */
+.carousel-btn,
+[data-carousel-left],
+[data-carousel-right],
+.work-left, .work-right,
+.music-left, .music-right,
+.about-btn-left, .about-btn-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+/* Left Button */
+.carousel-btn.left,
+[data-carousel-left],
+.work-left,
+.music-left,
+.about-btn-left {
+  left: 0;
+}
+
+/* Right Button */
+.carousel-btn.right,
+[data-carousel-right],
+.work-right,
+.music-right,
+.about-btn-right {
+  right: 0;
+}
+.music-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em; /* creates space between header and carousel */
+  padding-top: 4em; /* pushes it down from the top */
+  z-index: 2;
+  position: relative;
+}
+
+
+.carousel {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.gear-reset-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.gear-reset-btn:hover {
+  opacity: 1;
+  transform: rotate(20deg) scale(1.1);
+}
+
+.gear-icon {
+  pointer-events: none;
+}
+
+/* === PROJECT MODAL === */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.project-modal.hidden {
+  display: none;
+}
+
+.project-modal-content {
+  background: #111;
+  color: white;
+  max-width: 960px;
+  width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 0.5em;
+  padding: 2rem;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Modal inner sections */
+.modal-section {
+  width: 100%;
+  text-align: center;
+}
+
+/* Modal image styles */
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.3em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+}
+
+/* Modal close button */
+#close-project-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10001;
+  transition: opacity 0.2s ease;
+}
+
+#close-project-modal:hover {
+  opacity: 0.7;
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  nav {
+    display: none !important;
+  }
+}

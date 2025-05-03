@@ -1,0 +1,60 @@
+/* === About Section Specific === */
+.about-image-frame {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-image {
+    margin-top: 1rem;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color, #00ffff);
+  }
+  .about-btn-left,
+  .about-btn-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .about-btn-left:hover,
+  .about-btn-right:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .about-btn-left {
+    left: 1rem;
+  }
+  
+  .about-btn-right {
+    right: 1rem;
+  }

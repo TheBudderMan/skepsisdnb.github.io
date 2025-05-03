@@ -1,0 +1,31 @@
+/* === GLOBAL STYLES === */
+.social-bar {
+  display: flex;
+  flex-wrap: wrap; /* optional: wraps on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 2em; /* controls space between icons */
+  margin: 2em 0;
+  padding: 0 1em;
+}
+.social-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em; /* size of the icons */
+  transition: color 0.3s;
+}
+
+/* === SECTIONS === */
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
