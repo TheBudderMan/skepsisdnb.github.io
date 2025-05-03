@@ -1,11 +1,4 @@
-/* === WORK CAROUSEL === */
-.work-carousel {
-  position: relative;
-  width: 100vw;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0);
-  padding: 2em 0;
-}
+
 
 .work-selection-container {
   overflow-x: auto;
@@ -23,7 +16,7 @@
 .work-selection-track {
   display: flex;
   scroll-behavior: smooth;
-  width: max-content;
+  
 }
 
 .work-slot {
@@ -33,6 +26,7 @@
   align-items: center;
   scroll-snap-align: center;
   scroll-snap-stop: always;
+  width: max-content;
 }
 
 .work-card {
@@ -206,9 +200,10 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  width: 100%;
+  width: max-content;
   height: 100%;
 }
+
 
 .carousel-card {
   flex: 0 0 100%;

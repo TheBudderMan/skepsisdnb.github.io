@@ -163,4 +163,26 @@
   }
 }
 
+/* === MOBILE LAYOUT OVERRIDES === */
+@media (max-width: 768px) {
+  #contact,
+  #home,
+  #about,
+  #music {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1em;
+  }
 
+  .social-bar {
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+  }
+
+  .social-bar a {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+}
