@@ -1447,7 +1447,7 @@ a:focus, button:focus { outline: 3px solid Highlight; outline-offset: 2px; }
     padding: 0.5em 1em;
     border: none;
     background-color: #f1d600;
-    color: #000;
+    color: whitesmoke;
     cursor: pointer;
   }
   
