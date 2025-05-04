@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const normalizedKey = key === 'home' ? '' : key;
     const route = routes.hasOwnProperty(normalizedKey) ? routes[normalizedKey] : routes['404'];
   
-    const isGhost = normalizedKey === ''; // ghost homepage
+    const isGhost = normalizedKey === '';
     const isHome = key === 'home';
   
     // Normalize #home → #
@@ -32,18 +32,31 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo(0, 0);
     }
   
-    const html = await fetch(route.template).then(r => r.text());
+    // Load template with error catch
+    let html;
+    try {
+      const res = await fetch(route.template);
+      if (!res.ok) throw new Error(`HTTP ${res.status}: ${route.template}`);
+      html = await res.text();
+    } catch (err) {
+      console.error('Fetch error:', err);
+      html = `<section><h1>404</h1><p>Failed to load ${route.template}</p></section>`;
+    }
+  
     const outlet = document.getElementById('content');
     if (!outlet) return console.error('Router outlet (#content) not found!');
     outlet.innerHTML = html;
     if (typeof initEmbeds === 'function') initEmbeds();
-
+  
     // Inject footer
     const section = outlet.querySelector('section');
     if (section) {
       try {
-        const footerHtml = await fetch('/templates/footer.html').then(r => r.text());
-        section.insertAdjacentHTML('beforeend', footerHtml);
+        const footerRes = await fetch('templates/footer.html');
+        if (footerRes.ok) {
+          const footerHtml = await footerRes.text();
+          section.insertAdjacentHTML('beforeend', footerHtml);
+        }
       } catch (err) {
         console.warn('Footer load failed:', err);
       }
@@ -76,13 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setMeta("meta[name='twitter:title']", `Formant | ${route.title}`);
     setMeta("meta[name='twitter:description']", route.description);
   
-    // Only scroll into view for hash navigation, not ghost load
     const targetSection = document.querySelector('#content > section');
     if (targetSection && !isGhost) {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
-  
   }
+  
   
 
   function setupVerticalScrollRouting() {
