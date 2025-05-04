@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const section = outlet.querySelector('section');
     if (section) {
       try {
-        const footerRes = await fetch('footer.html');
+        const footerRes = await fetch('templates/footer.html');
         if (footerRes.ok) {
           const footerHtml = await footerRes.text();
           section.insertAdjacentHTML('beforeend', footerHtml);

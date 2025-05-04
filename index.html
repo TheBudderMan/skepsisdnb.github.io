@@ -146,13 +146,13 @@
       <!-- SPA Outlet for Router -->
       <div id="ad-placeholder"></div>
       <script>
-        fetch('ads.html')
+        fetch('templates/ads.html')
           .then(res => res.text())
           .then(html => {
             document.getElementById('ad-placeholder').innerHTML = html;
           });
       </script>
-      
+      <div id="adsense-container"></div>
       <div id="content"></div>
     </main>
     <div id="project-modal" class="project-modal hidden">
