@@ -176,6 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set up scroll/swipe routing ONCE
 setupVerticalScrollRouting();
   // Initial load: don't force any redirect — let '' stay as ghost
-
+  document.addEventListener('DOMContentLoaded', () => {
+    locationHandler();
+  });
   locationHandler();
 });
