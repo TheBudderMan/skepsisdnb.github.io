@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const routes = {
-    '':       { template: '/templates/home.html',   title: 'Home',    description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
+    '':       { template: '/templates/index.html',   title: 'Home',    description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
     'home':   { template: '/templates/home.html',   title: 'Home',    description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
     'about':  { template: '/templates/about.html',  title: 'About',   description: 'Learn more about Tyler Johnston-Kent’s background, skills, and artistic focus.' },
     'work':   { template: '/templates/work.html',   title: 'Work',    description: 'Explore creative projects by Tyler Johnston-Kent, including games, art, and interactive media.' },
