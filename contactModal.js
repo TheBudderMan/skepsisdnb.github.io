@@ -1,3 +1,5 @@
+// contactModal.js
+
 function initContactModal() {
     const modal = document.getElementById('contactModal');
     const openBtn = document.querySelector('[data-open-contact]');
@@ -26,6 +28,8 @@ function initContactModal() {
     });
   
     const form = document.getElementById('contactForm');
+    const submitBtn = form?.querySelector('button[type="submit"]');
+  
     if (!form) {
       console.warn('Form not found');
       return;
@@ -42,23 +46,32 @@ function initContactModal() {
         return;
       }
   
+      if (submitBtn) submitBtn.disabled = true;
+  
       try {
+        console.log('Submitting form to:', form.action);
         const res = await fetch(form.action, {
           method: 'POST',
-          headers: { 'Accept': 'application/json' },
+          headers: {
+            'Accept': 'application/json'
+          },
           body: formData
         });
+        console.log('Fetch completed:', res);
   
         if (res.ok) {
           showStatus('Message sent! Thank you.', 'success');
           form.reset();
         } else {
+          const text = await res.text();
+          console.error('Formspree responded with non-OK:', res.status, text);
           showStatus('Error sending message. Please try again.', 'error');
-          console.error('Formspree response not OK:', await res.text());
         }
       } catch (err) {
+        console.error('Fetch threw exception:', err);
         showStatus('Network error. Please check your connection.', 'error');
-        console.error('Fetch error:', err);
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
       }
     });
   
@@ -74,4 +87,6 @@ function initContactModal() {
       statusEl.style.color = type === 'success' ? 'green' : 'red';
     }
   }
+  
+  window.addEventListener('DOMContentLoaded', initContactModal);
   
