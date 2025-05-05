@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const consent = localStorage.getItem('cookieConsent');
 
   if (consent === 'accepted') {
-    loadThirdPartyScripts();
+    loadConsentAndThirdPartyScripts();
     banner.remove();
     return;
   }
@@ -29,10 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   `;
 
-  // Ensure event listeners are added AFTER innerHTML is set
   document.getElementById('accept-cookies').addEventListener('click', () => {
     localStorage.setItem('cookieConsent', 'accepted');
-    loadThirdPartyScripts();
+    loadConsentAndThirdPartyScripts();
     banner.remove();
   });
 
@@ -45,24 +44,32 @@ document.addEventListener('DOMContentLoaded', () => {
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
       localStorage.removeItem('cookieConsent');
-      location.reload(); // Re-trigger banner logic cleanly
+      location.reload();
     });
   }
 });
 
-function loadThirdPartyScripts() {
-  // Google Analytics
+// Sets up Google Consent Mode + loads scripts after consent
+function loadConsentAndThirdPartyScripts() {
+  // Apply granted consent to Google APIs
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  gtag('consent', 'update', {
+    ad_storage: 'granted',
+    analytics_storage: 'granted'
+  });
+
+  // Load Analytics
   const gtagScript = document.createElement('script');
   gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9';
   gtagScript.async = true;
   document.head.appendChild(gtagScript);
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'G-L499GQPJX9');
 
-  // Google AdSense
+  // Load AdSense
   const adsScript = document.createElement('script');
   adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1246706747108680';
   adsScript.async = true;
