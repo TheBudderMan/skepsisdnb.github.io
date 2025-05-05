@@ -362,13 +362,7 @@
 }
 
 
-.carousel {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-.carousel::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
-}
+
 .gear-reset-btn {
   background: none;
   border: none;
@@ -474,7 +468,7 @@
 
 .contact-modal-content {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   max-width: 500px;
   border-radius: 0.75rem;
@@ -482,7 +476,7 @@
   margin: 2rem;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: 80vh;
 }
 
 .contact-close-btn {
@@ -502,14 +496,23 @@
 
 .contact-modal-content input,
 .contact-modal-content textarea {
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  font-size: 1rem;
+  margin-bottom: .8rem;
+  padding: 0.5rem;
+  font-size: .7rem;
 }
 
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
+  #contactModal .modal-content {
+    width: 100vw;
+    height: 70vh;
+    overflow-y: hidden;
+    padding: 1em;
+    font-size: 0.4rem;
+  }
+
   nav {
     display: none !important;
   }
 }
+

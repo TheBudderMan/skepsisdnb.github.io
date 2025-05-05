@@ -86,6 +86,17 @@ function initContactModal() {
       statusEl.textContent = message;
       statusEl.style.color = type === 'success' ? 'green' : 'red';
     }
+  
+    function handleResize() {
+      // Recalculate layout or positioning on resize
+      if (!modal.classList.contains('hidden')) {
+        modal.style.display = 'none'; // Force reflow
+        void modal.offsetHeight; // Trigger reflow
+        modal.style.display = '';
+      }
+    }
+  
+    window.addEventListener('resize', handleResize);
   }
   
   window.addEventListener('DOMContentLoaded', initContactModal);

@@ -5,8 +5,20 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   width: 100%;
+  position: relative;
+}
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  width: 100%;
 }
 
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
 .work-selection-container::-webkit-scrollbar {
   display: none;
 }
@@ -79,6 +91,29 @@
   box-sizing: border-box;
 }
 
+.carousel-arrow,
+.carousel-btn {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 0.75em 1em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.carousel-arrow.left,
+.carousel-btn[data-carousel-left] {
+  left: 0;
+}
+
+.carousel-arrow.right,
+.carousel-btn[data-carousel-right] {
+  right: 0;
+}
+
 @media (max-width: 768px) {
   .project-card,
   .music-card {
@@ -103,4 +138,63 @@
   }
 }
 
-/* other existing styles remain unchanged */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  nav {
+    display: none !important;
+  }
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    max-height: 90vh;
+    min-height: 60vh;
+    align-items: stretch;
+  }
+
+  .carousel-card.selection-slot {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+  }
+  .music-card,
+  .project-card {
+    width: 95vw;
+    max-width: 95vw;
+    padding: 1em;
+    max-height: 90vh;
+    overflow-y: hidden;
+    font-size: 0.9rem;
+  }
+
+  .music-card h3,
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .music-card p,
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  .music-card button,
+  .project-card button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .project-card h3,
+  .project-card p {
+    display: none;
+  }
+
+  .music-card img,
+  .project-card img {
+    max-height: 140px;
+  }
+
+
+  .carousel-arrow,
+  .carousel-btn {
+    display: block !important;
+    top: 0.5em;
+    transform: translateY(0);
+  }
+}
