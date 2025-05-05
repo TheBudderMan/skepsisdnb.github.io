@@ -49,9 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Sets up Google Consent Mode + loads scripts after consent
+// Load scripts + update consent mode
 function loadConsentAndThirdPartyScripts() {
-  // Apply granted consent to Google APIs
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
@@ -60,7 +59,7 @@ function loadConsentAndThirdPartyScripts() {
     analytics_storage: 'granted'
   });
 
-  // Load Analytics
+  // Load Google Analytics
   const gtagScript = document.createElement('script');
   gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9';
   gtagScript.async = true;
@@ -69,10 +68,15 @@ function loadConsentAndThirdPartyScripts() {
   gtag('js', new Date());
   gtag('config', 'G-L499GQPJX9');
 
-  // Load AdSense
+  // Load AdSense and trigger ad
   const adsScript = document.createElement('script');
   adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1246706747108680';
   adsScript.async = true;
   adsScript.crossOrigin = 'anonymous';
+  adsScript.onload = () => {
+    if (window.adsbygoogle && document.querySelector('.adsbygoogle')) {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  };
   document.head.appendChild(adsScript);
 }
