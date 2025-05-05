@@ -5,13 +5,14 @@
     <meta http-equiv="Content-Security-Policy" content="
   default-src 'self';
   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com;
+  connect-src 'self' https://analytics.google.com https://stats.g.doubleclick.net https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google;
   style-src 'self' 'unsafe-inline';
   font-src 'self';
   img-src 'self' data: https://img.youtube.com https://cdn.glitch.global https://pagead2.googlesyndication.com;
-  connect-src 'self' https://analytics.google.com https://stats.g.doubleclick.net https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com;
   frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
   child-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://googleads.g.doubleclick.net;
 ">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Formant | Tyler Johnston-Kent – Developer, Sound Designer, Artist</title>
@@ -114,7 +115,7 @@
   crossorigin="anonymous"></script>
 
     <!-- Scripts -->
-    <script src="scripts/canonical.js" defer></script>
+    <script src="canonical.js" defer></script>
     <script src="ad-test.js" defer></script>
     <script src="time.js" defer></script>
     <script src="hash-router.js" defer></script>
