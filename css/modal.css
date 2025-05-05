@@ -456,6 +456,57 @@
 #close-project-modal:hover {
   opacity: 0.7;
 }
+.contact-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.92); /* darker fullscreen look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.contact-modal.hidden {
+  display: none;
+}
+
+.contact-modal-content {
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.75rem;
+  position: relative;
+  margin: 2rem;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.contact-close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.contact-modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-modal-content input,
+.contact-modal-content textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
   nav {

@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (footerRes.ok) {
           const footerHtml = await footerRes.text();
           section.insertAdjacentHTML('beforeend', footerHtml);
+          if (typeof initContactModal === 'function') initContactModal(); // <— right here
         }
       } catch (err) {
         console.warn('Footer load failed:', err);
