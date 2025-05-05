@@ -6,6 +6,11 @@ function initCarousels() {
 
     if (!container || !leftBtn || !rightBtn) return;
 
+    const visibleCards = parseInt(carouselWrapper.dataset.visible) || 1;
+    const step = parseInt(carouselWrapper.dataset.scrollStep) || visibleCards;
+    const cardWidth = container.scrollWidth / container.childElementCount;
+    const scrollAmount = cardWidth * step;
+
     function updateButtonStates() {
       const scrollLeft = container.scrollLeft;
       const maxScrollLeft = container.scrollWidth - container.clientWidth;
@@ -14,11 +19,11 @@ function initCarousels() {
     }
 
     leftBtn.addEventListener('click', () => {
-      container.scrollBy({ left: -window.innerWidth, behavior: 'smooth' });
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
 
     rightBtn.addEventListener('click', () => {
-      container.scrollBy({ left: window.innerWidth, behavior: 'smooth' });
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
 
     container.addEventListener('scroll', updateButtonStates);
@@ -49,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-section">
           <img src="Resources/Formant-BG2.webp" alt="Beau’s Island Gameplay Preview" class="modal-image">
         </div>
-        <button id="close-project-modal" aria-label="Close modal">✕</button>
+        <button id="close-project-modal" aria-label="Close modal" style="margin: 2em auto 1em; display: block;">✕</button>
       `;
       openProjectModal(html);
     }
@@ -70,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-section">
           <img src="Resources/Formant-BG4.webp" alt="Unfathomable Environment Preview" class="modal-image">
         </div>
-        <button id="close-project-modal" aria-label="Close modal">✕</button>
+        <button id="close-project-modal" aria-label="Close modal" style="margin: 2em auto 1em; display: block;">✕</button>
       `;
       openProjectModal(html);
     }
@@ -91,24 +96,21 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-section">
           <img src="Resources/Formant-BG2.webp" alt="Beau’s House Mood Preview" class="modal-image">
         </div>
-        <button id="close-project-modal" aria-label="Close modal">✕</button>
+        <button id="close-project-modal" aria-label="Close modal" style="margin: 2em auto 1em; display: block;">✕</button>
       `;
       openProjectModal(html);
     }
   });
 });
 
-
-
-
 function openProjectModal(htmlContent) {
   const modal = document.getElementById('project-modal');
   const content = document.getElementById('project-modal-content');
 
-  content.innerHTML = htmlContent;
+  content.innerHTML = `<div style="padding: 2em; box-sizing: border-box;">${htmlContent}</div>`;
   modal.classList.remove('hidden');
 
-  const closeBtn = document.getElementById('close-project-modal'); // ← moved here
+  const closeBtn = document.getElementById('close-project-modal');
 
   function closeModal() {
     modal.classList.add('hidden');
@@ -129,4 +131,3 @@ function openProjectModal(htmlContent) {
   document.addEventListener('keydown', escListener);
   modal.addEventListener('click', outsideClickListener);
 }
-

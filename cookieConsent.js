@@ -1,3 +1,5 @@
+// cookieConsent.js
+
 document.addEventListener('DOMContentLoaded', () => {
   let banner = document.getElementById('cookie-consent-banner');
 
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Load scripts + update consent mode
 function loadConsentAndThirdPartyScripts() {
   window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
+  function gtag() { dataLayer.push(arguments); }
 
   gtag('consent', 'update', {
     ad_storage: 'granted',
@@ -63,6 +65,7 @@ function loadConsentAndThirdPartyScripts() {
   const gtagScript = document.createElement('script');
   gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L499GQPJX9';
   gtagScript.async = true;
+  gtagScript.setAttribute('data-csp', 'true');
   document.head.appendChild(gtagScript);
 
   gtag('js', new Date());
@@ -73,8 +76,10 @@ function loadConsentAndThirdPartyScripts() {
   adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1246706747108680';
   adsScript.async = true;
   adsScript.crossOrigin = 'anonymous';
+  adsScript.setAttribute('data-csp', 'true');
   adsScript.onload = () => {
-    if (window.adsbygoogle && document.querySelector('.adsbygoogle')) {
+    const adSlot = document.querySelector('.adsbygoogle');
+    if (window.adsbygoogle && adSlot && adSlot.offsetWidth > 0) {
       (adsbygoogle = window.adsbygoogle || []).push({});
     }
   };

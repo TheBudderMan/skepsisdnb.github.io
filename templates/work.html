@@ -1,4 +1,4 @@
-<section id="work" data-carousel>
+<section id="work" data-carousel data-visible="1" data-scroll-step="1">
   <div class="sine-line">
     <!-- (dots unchanged) -->
     <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -12,24 +12,23 @@
     <h2 class="logo-text">My Work</h2>
   </div>
 
-  <button class="carousel-btn" data-carousel-left aria-label="Previous project item">&#8592;</button>
+  <button class="carousel-btn" data-carousel-left aria-label="Previous project">&#8592;</button>
 
   <div class="carousel" data-carousel-track>
-    <!-- Project 1: Beau’s Island -->
-    <div class="work-slot">
-      <div class="work-card large">
+    <div class="carousel-card selection-slot">
+      <div class="project-card">
         <img src="/Resources/Formant-BG1.webp" alt="Beau's Island Screenshot" />
         <h3>Beau’s Island</h3>
         <p>
           A chibi farming sim featuring animals, resource gathering, crafting,
-          and mobile-friendly gameplay. Available on the Android Play Store.
+          and mobile-friendly gameplay. Available on the Android Play Store soon!
         </p>
         <button class="work-modal-btn" data-project="beaus-island">Learn More</button>
       </div>
     </div>
-    <!-- Project 2: Unfathomable -->
-    <div class="work-slot">
-      <div class="work-card large">
+
+    <div class="carousel-card selection-slot">
+      <div class="project-card">
         <img src="/Resources/Formant-BG2.webp" alt="Unfathomable Screenshot" />
         <h3>Unfathomable</h3>
         <p>
@@ -39,9 +38,9 @@
         <button class="work-modal-btn" data-project="unfathomable">Learn More</button>
       </div>
     </div>
-    <!-- Project 3: Beau’s House -->
-    <div class="work-slot">
-      <div class="work-card large">
+
+    <div class="carousel-card selection-slot">
+      <div class="project-card">
         <img src="/Resources/Formant-BG3.webp" alt="Beau's House Screenshot" />
         <h3>Beau’s House</h3>
         <p>
@@ -52,7 +51,8 @@
       </div>
     </div>
   </div>
-  <button class="carousel-btn" data-carousel-right aria-label="Next project item">&#8594;</button>
+
+  <button class="carousel-btn" data-carousel-right aria-label="Next project">&#8594;</button>
 
   <div class="sine-line">
     <!-- (dots unchanged) -->
@@ -61,5 +61,5 @@
     <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
     <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
     <span class="dot"></span>
-  </div>  
+  </div>
 </section>
