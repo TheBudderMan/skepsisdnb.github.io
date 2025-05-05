@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   `;
 
+  // Ensure event listeners are added AFTER innerHTML is set
   document.getElementById('accept-cookies').addEventListener('click', () => {
     localStorage.setItem('cookieConsent', 'accepted');
     loadThirdPartyScripts();
