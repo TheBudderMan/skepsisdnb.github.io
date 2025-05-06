@@ -211,3 +211,173 @@
     display: none !important;
   }
 }
+
+/* === GAME BAR RESPONSIVE GRID === */
+@media (max-width: 768px) and (orientation: portrait) {
+  .game-bar {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  .game-bar .game-card {
+    width: 100%;
+    max-width: none;
+    padding: 0.75em;
+  }
+
+  .game-bar .game-card img {
+    max-height: 100px;
+    padding: 0.25em;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: black; /* Ensure it fills behind all links */
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 1rem;
+    justify-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.2s;
+  }
+
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .work-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .work-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .work-card img {
+    max-height: 100px;
+    padding: 0.25em;
+  }
+}
+
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .work-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .work-card p,
+  .work-card button {
+    display: none !important;
+  }
+  .work-card img,
+  .game-card img {
+    max-height: 40px;
+    padding: 0.25em;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-bar,
+  .music-bar,
+  .work-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .work-bar,
+  .music-bar,
+  .game-bar {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .work-card,
+  .music-card,
+  .game-card {
+    max-width: 100%;
+    padding: 0.5em;
+  }
+
+  .work-card p,
+  .music-card p,
+  .game-card p,
+  .work-card button,
+  .music-card button,
+  .game-card button {
+    display: none !important;
+  }
+
+  .work-card img,
+  .music-card img,
+  .game-card img {
+    max-height: 64px;
+    padding: 0.25em;
+  }
+
+  .music-header,
+  .section-header {
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    text-align: center;
+  }
+
+  .music-header h2,
+  .section-header h2,
+  #work h2.logo-text {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .music-header p {
+    font-size: 0.85rem;
+    margin-top: 0.5em;
+  }
+  .music-card {
+    max-width: 30vw;
+    padding: 0.1em;
+  }
+  
+  .spectrum {
+    transform: scale(0.8);
+    margin-top: 0.5em;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .game-bar {
+    grid-template-columns: 1fr;
+  }
+  .music-bar {
+    grid-template-columns: 1fr;
+  }
+}

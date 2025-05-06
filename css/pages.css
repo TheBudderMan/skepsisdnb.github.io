@@ -24,7 +24,16 @@
     
   }
   
-  
+  #games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 4em 2em 2em;
+    background-image: url(../Resources/Formant-BG3.webp);
+  }
   #contact {
     background-image: url(../Resources/Formant-BG5.webp);
     display: flex;

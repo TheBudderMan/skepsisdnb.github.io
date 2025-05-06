@@ -50,3 +50,76 @@ nav {
   font-size: 2em;
   transition: color 0.3s;
 }
+
+.game-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.music-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.work-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.game-bar .game-card {
+  width: clamp(140px, 22vw, 180px);
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1em;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.game-bar .game-card:hover {
+  transform: translateY(-4px);
+}
+
+.game-bar .game-card img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 0.5em;
+  border-radius: 6px;
+  background: #000;
+  padding: 0.4em;
+}
+
+.game-bar .game-card h3 {
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0.25em 0;
+  color: white;
+}
+
+.game-bar .game-card p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+
+

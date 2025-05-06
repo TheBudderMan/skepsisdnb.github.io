@@ -1,14 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   const routes = {
-    '':       { template: '/templates/home.html',          title: 'Home',            description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
-    'home':   { template: '/templates/home.html',          title: 'Home',            description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
+    '':       { template: '/templates/home.html',           title: 'Home',            description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
+    'home':   { template: '/templates/home.html',           title: 'Home',            description: 'Portfolio of Tyler Johnston-Kent aka Formant — developer, music producer, sound designer, and digital artist based in Canada.' },
     'about':  { template: '/templates/about.html',          title: 'About',           description: 'Learn more about Tyler Johnston-Kent’s background, skills, and artistic focus.' },
     'work':   { template: '/templates/work.html',           title: 'Work',            description: 'Explore creative projects by Tyler Johnston-Kent, including games, art, and interactive media.' },
     'music':  { template: '/templates/music.html',          title: 'Music',           description: 'Listen to Formant’s sound design and original compositions across platforms.' },
+    'games':  { template: '/templates/games.html',          title: 'Games',           description: 'Play small browser-based games created by Formant directly on the site.' },
     'contact':{ template: '/templates/contact.html',        title: 'Contact',         description: 'Contact Tyler Johnston-Kent — digital artist, developer, and music producer.' },
     'privacy-policy': { template: '/templates/privacy-policy.html', title: 'Privacy Policy', description: 'Privacy policy for formant.ca — how cookies, analytics, and ad data are handled.' },
     '404':    { template: '/templates/404.html',            title: '404',             description: 'Page not found' }
-  };
+};
+
   
   
   
@@ -103,7 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   function setupVerticalScrollRouting() {
-    const sectionOrder = ['home', 'about', 'work', 'music', 'contact'];
+    const sectionOrder = ['home', 'about', 'work', 'music', 'games', 'contact'];
+
     let scrollTimeout = null;
     let touchStartY = 0;
   

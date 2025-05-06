@@ -114,7 +114,8 @@
   crossorigin="anonymous"></script>
 
     <!-- Scripts -->
-    
+    <script src="gameModal.js" defer></script>
+
     <script src="ad-test.js" defer></script>
     <script src="time.js" defer></script>
     <script src="hash-router.js" defer></script>
@@ -155,6 +156,15 @@
       
       <div id="content"></div>
     </main>
+    <div id="game-modal" class="project-modal hidden">
+      <div class="project-modal-content" id="game-modal-content">
+        <button id="close-game-modal" aria-label="Close modal">×</button>
+        <div id="game-container">
+          <!-- game canvas + UI will be inserted here -->
+        </div>
+      </div>
+    </div>
+    
     <div id="project-modal" class="project-modal hidden">
       <div id="project-modal-content" class="project-modal-content"></div>
     </div>    
