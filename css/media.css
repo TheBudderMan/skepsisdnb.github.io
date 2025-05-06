@@ -321,7 +321,10 @@
     margin-bottom: 1rem;
     text-align: center;
   }
-
+  .music-header {
+    top: 2rem;
+    text-align: center;
+  }
   .about-header h2.logo-text {
     font-size: 1.25rem;
     line-height: 1.2;
@@ -360,7 +363,17 @@
     font-size: 1.25rem;
     line-height: 1.2;
   }
+  .game-header {
+    top: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .1rem;
+    text-align: center;
+  }
 
+  .game-header h2.logo-text {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
   .music-header p {
     font-size: 0.85rem;
     margin-top: 0.5em;
