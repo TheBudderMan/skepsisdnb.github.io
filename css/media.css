@@ -413,3 +413,24 @@
     overflow: hidden !important;
   }
 }
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .music-header,
+  .work-header,
+  .game-header,
+  .about-header,
+  .social-header,
+  .section-header,
+  .sine-line {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  .music-card {
+    max-width: 40vw;
+    padding: 0.5em;
+  }
+}
