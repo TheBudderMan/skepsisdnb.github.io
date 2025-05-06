@@ -502,17 +502,5 @@
 }
 
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
-  #contactModal .modal-content {
-    width: 100vw;
-    height: 70vh;
-    overflow-y: hidden;
-    padding: 1em;
-    font-size: 0.4rem;
-  }
 
-  nav {
-    display: none !important;
-  }
-}
 

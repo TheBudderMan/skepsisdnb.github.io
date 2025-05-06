@@ -114,93 +114,7 @@
 
 
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
-  nav {
-    display: none !important;
-  }
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    max-height: 90vh;
-    min-height: 60vh;
-    align-items: stretch;
-  }
 
-  .carousel-card.selection-slot {
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-  }
-  .project-card,
-.music-card {
-  width: 80%;
-  max-width: 80vw;
-  background: #111;
-  border: 2px solid #333;
-  border-radius: 10px;
-  padding: 0.75em;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.project-card h3,
-.music-card h3 {
-  font-size: 0.95rem;
-  margin: 0.25em 0;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-}
-
-
-  .music-card p,
-  .project-card p {
-    font-size: 0.85rem;
-  }
-
-  .project-card button,
-.music-card button {
-  margin-top: 1em;
-  background: #fff;
-  color: #111;
-  border: none;
-  padding: 0.5em 1em;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  font-size: 0.8rem;
-}
-
-  .project-card h3,
-  .project-card p {
-    display: none;
-  }
-
-  .project-card img,
-.music-card img {
-  width: 80%;
-  max-height: 80px;
-  object-fit: contain;
-  border-radius: 6px;
-  background: #000;
-  padding: 0.25em;
-  margin-bottom: 0.5em;
-}
-
-
-
-  .carousel-arrow,
-  .carousel-btn {
-    display: block !important;
-    top: 0.5em;
-    transform: translateY(0);
-  }
-}
 
 /* === GAMES CAROUSEL === */
 #games {
@@ -358,19 +272,4 @@
   font-size: 0.85rem;
   color: #ccc;
   margin-bottom: 0;
-}
-.music-card {
-  width: 100%;
-  max-width: clamp(60px, 20vw, 110px);
-  background: #111;
-  border: 2px solid #333;
-  border-radius: 10px;
-  padding: 0.25em;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
 }
