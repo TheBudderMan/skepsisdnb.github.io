@@ -185,3 +185,8 @@ setupVerticalScrollRouting();
   });
   locationHandler();
 });
+if (window.location.pathname === '/ads.txt') {
+  // Do nothing — let the browser handle it
+} else {
+  // your hash router initialization here
+}
