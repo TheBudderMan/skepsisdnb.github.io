@@ -19,12 +19,13 @@
 }
 
 .embed-card {
-  position: relative;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
-  border-radius: 0.5em;
+  display: block;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
   background: #000;
 }
 
