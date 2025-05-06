@@ -13,4 +13,8 @@
     document.addEventListener("DOMContentLoaded", setCanonicalTag);
   })();
   
-  
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      window.scrollTo(0, 1); // Trigger slight scroll
+    }, 100);
+  });
