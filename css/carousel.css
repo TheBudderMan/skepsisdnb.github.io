@@ -112,29 +112,7 @@
   right: 0;
 }
 
-@media (max-width: 768px) {
-  .project-card,
-  .music-card {
-    width: 90vw;
-    max-width: 90vw;
-    padding: 1em;
-  }
 
-  .project-card h3,
-  .music-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .project-card p,
-  .music-card p {
-    font-size: 0.95rem;
-  }
-
-  .project-card button,
-  .music-card button {
-    width: 100%;
-  }
-}
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
   nav {
